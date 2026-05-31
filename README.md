@@ -17,3 +17,7 @@ This repo is in the initial scaffold phase. Milestone 1 focuses on documentation
 - Human approval before privileged admin actions.
 - Evals before treating skills as complete.
 - Simple data structures and procedures first.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

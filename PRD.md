@@ -316,6 +316,7 @@ Future skills:
 - [x] Add MCP example configs and profiles.
 - [x] Add validation script for skill frontmatter and eval presence.
 - [x] Add public GitHub remote owned by `github.com/timhaintz`.
+- [x] Add MIT open-source license.
 - [x] Run final validation and update this checklist.
 
 ## 15. Design Principles
@@ -361,7 +362,7 @@ Milestone 3:
 2. Which Microsoft admin domains are highest priority: M365, Entra, Intune, Defender, Azure, Purview, Power Platform, Teams, Exchange, SharePoint, Partner Center, or MSP multi-tenant workflows?
 3. Should the harness ever execute admin changes, or should it remain a planning and navigation aid until a later security review?
 4. Which hosts must be first-class at launch: VS Code Copilot, Copilot CLI, Copilot cloud agent, Claude Code, OpenAI/Codex, OpenClaw, Hermes?
-5. Which open-source license should this repo use?
+5. Should any future package generated from this repo use a different license from the root MIT license?
 6. Are you comfortable depending on `msportals.io` as an upstream source, with attribution and a refresh/cache layer, rather than maintaining a separate portal database?
 7. For the shopping-cart experience, should we target GitHub/Copilot skills first, Claude plugins first, or a neutral manifest that can generate both?
 
