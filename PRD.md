@@ -315,8 +315,8 @@ Future skills:
 - [x] Add source, security, packaging, and model-best-practices docs.
 - [x] Add MCP example configs and profiles.
 - [x] Add validation script for skill frontmatter and eval presence.
-- [ ] Add public GitHub remote owned by `github.com/timhaintz`.
-- [ ] Run final validation and update this checklist.
+- [x] Add public GitHub remote owned by `github.com/timhaintz`.
+- [x] Run final validation and update this checklist.
 
 ## 15. Design Principles
 
@@ -372,4 +372,4 @@ Milestone 3:
 - [x] Add initial Agent Skills with evals.
 - [x] Add MCP example configs and profiles.
 - [x] Add validation scripts.
-- [ ] Initialize Git and create/push a public GitHub repository.
+- [x] Initialize Git and create/push a public GitHub repository.
