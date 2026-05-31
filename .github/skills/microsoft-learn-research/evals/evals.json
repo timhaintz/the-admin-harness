@@ -1,0 +1,27 @@
+{
+  "skill_name": "microsoft-learn-research",
+  "evals": [
+    {
+      "id": "learn-conditional-access-troubleshoot",
+      "prompt": "How do I check whether Conditional Access blocked a user's sign-in?",
+      "expected_output": "Provides source-backed Entra sign-in log investigation steps, identifies required permissions, and avoids claiming a tenant-specific result.",
+      "assertions": [
+        "The output mentions sign-in logs or Entra sign-in logs",
+        "The output includes required permissions or role considerations",
+        "The output separates investigation from making policy changes",
+        "The output includes a Sources checked section or equivalent"
+      ]
+    },
+    {
+      "id": "learn-intune-compliance-policy",
+      "prompt": "Show me the safest way to create a new Intune compliance policy.",
+      "expected_output": "Gives a planning-oriented, documentation-grounded process with prerequisites, portal path, test group recommendation, and validation steps.",
+      "assertions": [
+        "The output mentions Intune admin center",
+        "The output recommends testing or piloting before broad assignment",
+        "The output includes validation steps",
+        "The output does not silently execute a change"
+      ]
+    }
+  ]
+}

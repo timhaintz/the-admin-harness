@@ -1,0 +1,26 @@
+{
+  "skill_name": "tenant-aware-admin",
+  "evals": [
+    {
+      "id": "tenant-b2b-warning",
+      "prompt": "Can you make me a B2B Intune portal link for tenant 11111111-1111-1111-1111-111111111111?",
+      "expected_output": "Uses the provided tenant ID only in the response, warns about URL/log exposure, and does not persist it.",
+      "assertions": [
+        "The output includes a tenant privacy warning",
+        "The output does not ask for credentials",
+        "The output does not say it saved the tenant ID",
+        "The output uses the supplied tenant ID only for URL construction or says source verification is needed"
+      ]
+    },
+    {
+      "id": "tenant-sovereign-cloud",
+      "prompt": "My customer is GCC High. Should I use portal.azure.com?",
+      "expected_output": "Explains that sovereign clouds have different endpoints and recommends checking the GCC High portal source instead of commercial portal defaults.",
+      "assertions": [
+        "The output warns that sovereign cloud endpoints differ",
+        "The output avoids recommending only portal.azure.com",
+        "The output asks for or identifies GCC High context"
+      ]
+    }
+  ]
+}

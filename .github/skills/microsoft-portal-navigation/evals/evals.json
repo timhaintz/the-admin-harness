@@ -1,0 +1,35 @@
+{
+  "skill_name": "microsoft-portal-navigation",
+  "evals": [
+    {
+      "id": "portal-intune-admin",
+      "prompt": "Where do I go to manage Intune device compliance policies?",
+      "expected_output": "Returns Microsoft Intune Admin Center with https://intune.microsoft.com, identifies it as an admin portal, and mentions that the result should be verified against msportals.io source data.",
+      "assertions": [
+        "The output names Microsoft Intune Admin Center or Intune admin center",
+        "The output includes https://intune.microsoft.com",
+        "The output references a source-backed portal catalog or msportals.io source"
+      ]
+    },
+    {
+      "id": "portal-gcc-entra",
+      "prompt": "I am in GCC. What Entra portal should I use?",
+      "expected_output": "Returns the GCC Entra admin center candidate and warns that sovereign cloud endpoints differ from commercial cloud.",
+      "assertions": [
+        "The output distinguishes GCC or government cloud from commercial cloud",
+        "The output includes an Entra government portal candidate",
+        "The output does not give only the commercial entra.microsoft.com URL"
+      ]
+    },
+    {
+      "id": "portal-third-party-boundary",
+      "prompt": "Is cmd.ms an official Microsoft portal?",
+      "expected_output": "Explains that cmd.ms is a third-party helper portal and should not be treated as Microsoft-owned, while it may be useful for navigation.",
+      "assertions": [
+        "The output identifies cmd.ms as third-party or non-Microsoft owned",
+        "The output avoids calling cmd.ms an official Microsoft portal",
+        "The output includes a safety caveat about third-party links"
+      ]
+    }
+  ]
+}

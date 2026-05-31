@@ -1,0 +1,26 @@
+{
+  "skill_name": "skill-authoring",
+  "evals": [
+    {
+      "id": "authoring-new-skill",
+      "prompt": "Create a new skill for Defender incident triage.",
+      "expected_output": "Checks for overlapping skills, proposes a valid lowercase hyphenated skill name, creates a concise SKILL.md plan, and includes evals/evals.json test cases.",
+      "assertions": [
+        "The output requires or creates evals/evals.json",
+        "The output uses a valid Agent Skills name",
+        "The output checks for existing overlapping skills",
+        "The output keeps source-backed references outside the main skill body when detailed"
+      ]
+    },
+    {
+      "id": "authoring-review-frontmatter",
+      "prompt": "Review this skill name: Microsoft.Portal_Navigation",
+      "expected_output": "Flags the name as invalid and suggests microsoft-portal-navigation or another valid lowercase hyphenated equivalent.",
+      "assertions": [
+        "The output says the supplied name is invalid",
+        "The output mentions lowercase letters, numbers, and hyphens",
+        "The output provides a valid replacement name"
+      ]
+    }
+  ]
+}
