@@ -12,9 +12,14 @@ Never commit secrets, tenant IDs, admin credentials, access tokens, `.env` files
 
 For documentation-only changes, validate that key files exist and skill/eval pairs are present. For code changes added later, run the narrowest relevant test, lint, typecheck, or validation script before broader checks.
 
+Open pull requests for branch work, wait for validation and GitHub CodeQL/code scanning to be green, and use full merge commits. Do not squash merge.
+
 ## Sources
 
 - [GitHub Copilot repository instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
 - [VS Code custom instructions](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
 - [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+- [GitHub Actions workflow syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
+- [CodeQL code scanning](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
+- [GitHub merge methods](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github)
 - [docs/source-register.md](../docs/source-register.md)

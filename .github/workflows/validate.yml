@@ -1,0 +1,65 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  repository-validation:
+    name: Repository validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate skills
+        run: scripts/validate-skills.sh
+
+      - name: Validate documentation sources
+        run: scripts/validate-doc-sources.sh
+
+      - name: Validate portal skills
+        run: scripts/validate-portal-skills.sh
+
+      - name: Validate MCP JSON templates
+        run: |
+          python3 -m json.tool mcp/vscode.example.json >/dev/null
+          python3 -m json.tool mcp/claude-desktop.example.json >/dev/null
+
+      - name: Check for forbidden local artifacts
+        run: |
+          find . -path ./.git -prune -o \
+            \( -name .DS_Store \
+            -o -name '.env' \
+            -o -name '.env.*' \
+            -o -name node_modules \
+            -o -name dist \
+            -o -name build \
+            -o -name .cache \
+            -o -name .azure \
+            -o -name .azd \
+            -o -name .m365 \
+            -o -name .graph \
+            -o -name '.playwright' \
+            -o -name playwright-report \
+            -o -name test-results \
+            -o -name 'browser-profile*' \
+            -o -name 'user-data-dir*' \
+            -o -name 'msal_cache*' \
+            -o -name '*.token' \
+            -o -name '*.tokens' \
+            -o -name '*.pem' \
+            -o -name '*.pfx' \
+            -o -name '*.key' \) \
+            -print | tee /tmp/admin-harness-forbidden-artifacts.txt
+          test ! -s /tmp/admin-harness-forbidden-artifacts.txt

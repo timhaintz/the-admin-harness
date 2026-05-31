@@ -70,8 +70,10 @@ For any future code changes, add or update targeted tests and run the narrowest 
 - Keep changes focused and traceable to [PRD.md](PRD.md).
 - Do not commit directly unless the user asks.
 - Before publishing or pushing, check for secrets and tenant-specific values.
-- Preserve full merge commits for PRs by default unless the user requests squash.
+- Open a pull request for every branch before merging.
+- Wait for validation and GitHub CodeQL/code scanning checks to be green before merging.
+- Preserve full merge commits for PRs. Do not squash merge.
 
 ## Sources
 
-Core standards and safety rules are grounded in [docs/source-register.md](docs/source-register.md), especially [Agent Skills](https://agentskills.io/home), [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills), [GitHub Copilot repository instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot), [Claude Code memory](https://code.claude.com/docs/en/memory), [MCP security guidance](https://modelcontextprotocol.io/specification/2025-06-18), [Microsoft Zero Trust identity](https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity), and [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices).
+Core standards and safety rules are grounded in [docs/source-register.md](docs/source-register.md), especially [Agent Skills](https://agentskills.io/home), [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills), [GitHub Copilot repository instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot), [Claude Code memory](https://code.claude.com/docs/en/memory), [MCP security guidance](https://modelcontextprotocol.io/specification/2025-06-18), [Microsoft Zero Trust identity](https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity), [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices), [GitHub Actions workflow syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions), [CodeQL code scanning](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql), and [GitHub merge methods](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github).

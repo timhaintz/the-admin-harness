@@ -54,6 +54,17 @@ Every public Markdown file should either include a local `Sources` section or li
 | MIT License text and OSI-approved SPDX identifier | [Open Source Initiative: MIT License](https://opensource.org/license/mit) |
 | GitHub Actions secrets and variables should store sensitive workflow values instead of committing secrets; OIDC can avoid long-lived cloud secrets | [GitHub Docs: Using secrets in GitHub Actions](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) |
 
+## GitHub Workflow And CI
+
+| Claim area | Source |
+| --- | --- |
+| GitHub Actions workflow files use YAML and live under `.github/workflows`; `pull_request`, `push`, `workflow_dispatch`, permissions, jobs, and concurrency are workflow syntax features | [GitHub Actions workflow syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions) |
+| CodeQL code scanning supports public repositories and supports GitHub Actions workflow analysis | [About code scanning with CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) |
+| CodeQL default setup automatically chooses languages, query suite, and trigger events; do not add an advanced CodeQL workflow while default setup is enabled | [Configuring default setup for code scanning](https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning) |
+| Full merge commits preserve all commits from a feature branch and add a merge commit; squash merge combines PR commits into one commit and loses original commit SHA granularity | [GitHub merge methods](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github) |
+| Repositories can allow or disable squash merging | [Configuring commit squashing](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/configuring-commit-squashing-for-pull-requests) |
+| Repositories can allow or disable rebase merging | [Configuring commit rebasing](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/configuring-commit-rebasing-for-pull-requests) |
+
 ## Engineering Principles
 
 | Claim area | Source |
