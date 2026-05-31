@@ -355,6 +355,10 @@ Future skills:
 - [x] Add validation that portal-specific skills include portal source links, Microsoft Learn MCP grounding, and eval coverage.
 - [ ] Create first portal-specific skill batch for high-value admin portals: Microsoft 365 Admin Center, Microsoft Intune Admin Center, Microsoft Entra Admin Center, Exchange Admin Center, Teams Admin Center, SharePoint Admin Center, Microsoft Purview, Microsoft Defender, Power Platform admin center, and Azure Portal.
 - [ ] Plan complete source-backed coverage for every supported portal group.
+- [x] Require pull requests for branch work and preserve full merge commits.
+- [x] Add pull request template with validation, source, safety, and no-squash checklist.
+- [x] Add GitHub Actions validation workflow for skills, docs, portal skills, MCP JSON, and forbidden local artifacts.
+- [x] Add CodeQL workflow for GitHub Actions workflow analysis.
 
 ## 15. Design Principles
 
@@ -379,6 +383,8 @@ Milestone 1:
 - Source documentation identifies upstream portal JSON sources.
 - No secrets or tenant-specific values are committed.
 - Public repo positioning is explicit in the PRD and README.
+- PR workflow policy is explicit, with full merge commits and no squash merges.
+- Pull request validation and CodeQL/code scanning workflows exist.
 
 Milestone 2:
 
@@ -395,6 +401,7 @@ Milestone 3:
 - Optional MCP portal catalog server exposes source-backed resources.
 - Admin change workflows include approval evidence and rollback templates.
 - CI reports portal-skill coverage against supported upstream portal groups.
+- Branch protection or rulesets require validation and CodeQL/code scanning before merge.
 
 Milestone 4:
 
@@ -423,6 +430,7 @@ Milestone 4:
 - [x] Add validation scripts.
 - [x] Initialize Git and create/push a public GitHub repository.
 - [x] Define portal-specific skill template and coverage tracker.
+- [x] Add pull request policy and CI workflows.
 
 ## 19. Validated Sources
 
@@ -435,3 +443,4 @@ The source register is [docs/source-register.md](docs/source-register.md). Major
 - Portal data and examples: [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io), [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json), and [microsoft/skills](https://raw.githubusercontent.com/microsoft/skills/main/README.md).
 - Portal-specific skill grounding: [Microsoft Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp-get-started), [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io), and [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json).
 - Engineering principles: [Rob Pike, Notes on Programming in C](http://doc.cat-v.org/bell_labs/pikestyle).
+- GitHub workflow and CI: [GitHub Actions workflow syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions), [CodeQL code scanning](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql), and [GitHub merge methods](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github).
