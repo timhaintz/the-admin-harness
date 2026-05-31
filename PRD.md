@@ -353,6 +353,7 @@ Future skills:
 - [x] Define portal-specific skill template and deterministic naming scheme.
 - [x] Add portal coverage tracker mapped to upstream `msportals.io` source entries.
 - [x] Add validation that portal-specific skills include portal source links, Microsoft Learn MCP grounding, and eval coverage.
+- [x] Create first portal-specific skill: Microsoft Intune Admin Center.
 - [ ] Create first portal-specific skill batch for high-value admin portals: Microsoft 365 Admin Center, Microsoft Intune Admin Center, Microsoft Entra Admin Center, Exchange Admin Center, Teams Admin Center, SharePoint Admin Center, Microsoft Purview, Microsoft Defender, Power Platform admin center, and Azure Portal.
 - [ ] Plan complete source-backed coverage for every supported portal group.
 - [x] Require pull requests for branch work and preserve full merge commits.
