@@ -9,7 +9,7 @@ Thanks for helping improve The Admin Harness. This repo is public and source-dri
 - Keep PRs focused and traceable to [PRD.md](PRD.md) requirements or a linked issue.
 - Do not push directly to `main` except for emergency repository repair.
 - Do not squash merge. Preserve full merge commits so research, source additions, and review history stay visible.
-- Wait for required checks, including validation and CodeQL/code scanning, before merging.
+- Wait for required checks, including validation and GitHub CodeQL/code scanning, before merging.
 - Merge with a full merge commit after checks are green and review is complete.
 
 ## Required Local Checks
@@ -49,5 +49,6 @@ python3 -m json.tool mcp/claude-desktop.example.json >/dev/null
 
 - [GitHub Actions workflow syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
 - [About code scanning with CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
+- [Configuring default setup for code scanning](https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning)
 - [GitHub merge methods](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github)
 - [docs/source-register.md](docs/source-register.md)

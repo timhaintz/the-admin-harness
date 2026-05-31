@@ -358,7 +358,7 @@ Future skills:
 - [x] Require pull requests for branch work and preserve full merge commits.
 - [x] Add pull request template with validation, source, safety, and no-squash checklist.
 - [x] Add GitHub Actions validation workflow for skills, docs, portal skills, MCP JSON, and forbidden local artifacts.
-- [x] Add CodeQL workflow for GitHub Actions workflow analysis.
+- [x] Use GitHub CodeQL/code scanning default setup rather than an advanced CodeQL workflow.
 
 ## 15. Design Principles
 
@@ -384,7 +384,7 @@ Milestone 1:
 - No secrets or tenant-specific values are committed.
 - Public repo positioning is explicit in the PRD and README.
 - PR workflow policy is explicit, with full merge commits and no squash merges.
-- Pull request validation and CodeQL/code scanning workflows exist.
+- Pull request validation workflow exists and GitHub CodeQL/code scanning default setup is used.
 
 Milestone 2:
 

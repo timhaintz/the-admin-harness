@@ -71,7 +71,7 @@ For any future code changes, add or update targeted tests and run the narrowest 
 - Do not commit directly unless the user asks.
 - Before publishing or pushing, check for secrets and tenant-specific values.
 - Open a pull request for every branch before merging.
-- Wait for validation and CodeQL/code scanning checks to be green before merging.
+- Wait for validation and GitHub CodeQL/code scanning checks to be green before merging.
 - Preserve full merge commits for PRs. Do not squash merge.
 
 ## Sources

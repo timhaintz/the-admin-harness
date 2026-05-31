@@ -6,7 +6,7 @@ This project is intended to be public open source. Everything committed here sho
 
 Start with [PRD.md](PRD.md) for product scope and [AGENTS.md](AGENTS.md) for agent operating rules.
 
-Run `scripts/validate-skills.sh`, `scripts/validate-doc-sources.sh`, and `scripts/validate-portal-skills.sh` before treating skill, portal-skill, or documentation changes as complete. Pull requests also run validation and CodeQL/code scanning checks.
+Run `scripts/validate-skills.sh`, `scripts/validate-doc-sources.sh`, and `scripts/validate-portal-skills.sh` before treating skill, portal-skill, or documentation changes as complete. Pull requests also run validation and GitHub CodeQL/code scanning checks.
 
 Portal-specific skill coverage is tracked in [docs/portal-skill-coverage.md](docs/portal-skill-coverage.md), and the reusable template is [docs/portal-skill-template.md](docs/portal-skill-template.md).
 

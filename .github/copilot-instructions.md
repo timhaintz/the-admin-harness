@@ -12,7 +12,7 @@ Never commit secrets, tenant IDs, admin credentials, access tokens, `.env` files
 
 For documentation-only changes, validate that key files exist and skill/eval pairs are present. For code changes added later, run the narrowest relevant test, lint, typecheck, or validation script before broader checks.
 
-Open pull requests for branch work, wait for validation and CodeQL/code scanning to be green, and use full merge commits. Do not squash merge.
+Open pull requests for branch work, wait for validation and GitHub CodeQL/code scanning to be green, and use full merge commits. Do not squash merge.
 
 ## Sources
 
