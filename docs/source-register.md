@@ -45,6 +45,7 @@ Every public Markdown file should either include a local `Sources` section or li
 | `msportals.io` portal links are built from JSON files under `_data/portals/`; upstream is `adamfowlerit/msportals.io` | [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io) |
 | Admin portal JSON includes `groupName`, `portalName`, `primaryURL`, optional `secondaryURLs`, optional `note`, and tenant placeholders such as `{tenant_id}` | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
 | Microsoft's open-source skills repo uses `.github/skills`, `.github/plugins`, agents, prompts, MCP configs, symlinked multi-agent skill sharing, and test harnesses | [microsoft/skills README](https://raw.githubusercontent.com/microsoft/skills/main/README.md) |
+| Portal-specific skills in this repo must map upstream portal entries to Microsoft Learn MCP-grounded task guidance | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) and [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
 
 ## Open Source And Secrets
 

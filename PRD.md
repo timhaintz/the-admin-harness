@@ -350,9 +350,9 @@ Future skills:
 - [x] Add public GitHub remote owned by `github.com/timhaintz`.
 - [x] Add MIT open-source license.
 - [x] Run final validation and update this checklist.
-- [ ] Define portal-specific skill template and deterministic naming scheme.
-- [ ] Add portal coverage tracker mapped to upstream `msportals.io` source entries.
-- [ ] Add validation that portal-specific skills include portal source links, Microsoft Learn MCP grounding, and eval coverage.
+- [x] Define portal-specific skill template and deterministic naming scheme.
+- [x] Add portal coverage tracker mapped to upstream `msportals.io` source entries.
+- [x] Add validation that portal-specific skills include portal source links, Microsoft Learn MCP grounding, and eval coverage.
 - [ ] Create first portal-specific skill batch for high-value admin portals: Microsoft 365 Admin Center, Microsoft Intune Admin Center, Microsoft Entra Admin Center, Exchange Admin Center, Teams Admin Center, SharePoint Admin Center, Microsoft Purview, Microsoft Defender, Power Platform admin center, and Azure Portal.
 - [ ] Plan complete source-backed coverage for every supported portal group.
 
@@ -422,7 +422,7 @@ Milestone 4:
 - [x] Add MCP example configs and profiles.
 - [x] Add validation scripts.
 - [x] Initialize Git and create/push a public GitHub repository.
-- [ ] Define portal-specific skill template and coverage tracker.
+- [x] Define portal-specific skill template and coverage tracker.
 
 ## 19. Validated Sources
 
