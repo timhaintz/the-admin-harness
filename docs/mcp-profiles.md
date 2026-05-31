@@ -23,3 +23,11 @@ MCP profiles describe executable integrations that an agent host can use. They a
 - Future plugin bundles: package MCP profiles with the relevant skills and policy pack.
 
 See [../mcp/README.md](../mcp/README.md) for example configuration files.
+
+## Sources
+
+- [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18)
+- [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started)
+- [Azure MCP Server documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/)
+- [Claude Code MCP](https://code.claude.com/docs/en/mcp)
+- [microsoft/skills MCP servers section](https://raw.githubusercontent.com/microsoft/skills/main/README.md)

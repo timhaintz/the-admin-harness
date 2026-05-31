@@ -11,3 +11,10 @@ Do not hard-code long Microsoft portal lists into skills. Prefer upstream source
 Never commit secrets, tenant IDs, admin credentials, access tokens, `.env` files, browser profiles, or generated credential caches. Any workflow that could modify a Microsoft tenant must be planned first and require explicit human approval.
 
 For documentation-only changes, validate that key files exist and skill/eval pairs are present. For code changes added later, run the narrowest relevant test, lint, typecheck, or validation script before broader checks.
+
+## Sources
+
+- [GitHub Copilot repository instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
+- [VS Code custom instructions](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
+- [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+- [docs/source-register.md](../docs/source-register.md)

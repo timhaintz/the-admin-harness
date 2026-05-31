@@ -19,3 +19,11 @@ These examples show how The Admin Harness expects MCP servers to be wired into a
 ## Setup Notes
 
 Most local MCP servers rely on existing CLI or browser authentication. Use platform-native auth such as `az login`, GitHub OAuth, or browser sign-in instead of placing secrets in these files.
+
+## Sources
+
+- [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18)
+- [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started)
+- [Azure MCP Server documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/)
+- [Claude Code MCP](https://code.claude.com/docs/en/mcp)
+- [GitHub Actions secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)

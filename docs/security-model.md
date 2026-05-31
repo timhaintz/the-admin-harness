@@ -39,3 +39,12 @@ Browser automation may guide navigation or inspect visible state after approval.
 ## Logging and Evidence
 
 Prefer audit-friendly summaries over raw transcript dumps. Redact identifiers unless needed for the approved task. Keep approval evidence tied to the action plan, not scattered through chat history.
+
+## Sources
+
+- [MCP specification: Security and Trust & Safety](https://modelcontextprotocol.io/specification/2025-06-18)
+- [Microsoft Zero Trust identity guidance](https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity)
+- [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices)
+- [Microsoft identity platform least-privilege guidance](https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access)
+- [GitHub Actions secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)
+- [Claude Code settings: excluding sensitive files](https://code.claude.com/docs/en/settings)

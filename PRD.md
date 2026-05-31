@@ -30,7 +30,7 @@ Current gaps:
 3. Provide MCP configuration templates for Microsoft Learn MCP, Azure MCP, browser automation, GitHub, and future Microsoft Graph-oriented servers.
 4. Define safe patterns for credential use, tenant selection, login handoff, and human approval.
 5. Include evaluations for every skill from the first version, following the Agent Skills evaluation pattern.
-6. Support VS Code and GitHub Copilot first, while remaining compatible with Claude Code, OpenAI/Codex-style skills, OpenClaw, Hermes Agent, and other Agent Skills-compatible hosts.
+6. Support VS Code and GitHub Copilot first, while remaining compatible with Claude Code and other Agent Skills-compatible hosts where public host documentation validates the adapter path.
 7. Provide a clear packaging path for a future shopping-cart experience where admins can choose skill bundles, MCP profiles, and policy packs.
 8. Keep every committed artifact suitable for a public open-source repository.
 
@@ -77,7 +77,7 @@ An admin asks: "Disable external sharing for a SharePoint site." The skill shoul
 
 ### 6.6 Cross-Harness Portability
 
-An admin switches between VS Code Copilot, Copilot CLI, Claude Code, OpenClaw, and Hermes. The same skills and core instructions should remain usable with minimal adapters.
+An admin switches between VS Code Copilot, Copilot CLI, Claude Code, and another Agent Skills-compatible host. The same skills and core instructions should remain usable with minimal adapters when that host's public docs validate the expected skill and instruction locations.
 
 ## 7. Source Strategy
 
@@ -107,10 +107,7 @@ Use Azure MCP for Azure resource inspection and operations. Any mutation must be
 
 ### 7.4 Model and Agent Guidance
 
-Use current model-specific best practices as references, not as hard dependencies:
-
-- GPT-5.5: outcome-first prompts, concise behavior/personality blocks, explicit stopping conditions, retrieval budgets, validation commands, and trace/dataset evals.
-- Claude Opus 4.8: explicit scope, `high` or `xhigh` effort for coding/agentic work, clear tool-use guidance, carefully controlled subagent spawning, source verification, and eval-tuned review prompts.
+Use agent-host and model guidance only when it has a public source or repo-local eval evidence. Current source-backed guidance comes from Agent Skills, VS Code/GitHub Copilot customization docs, Claude Code docs, MCP security guidance, and Microsoft Learn/Azure MCP docs. Provider/model-specific tuning claims must be added only with a source or measured eval evidence.
 
 ## 8. Agent and Packaging Standards
 
@@ -292,19 +289,21 @@ Future skills:
 | Agentic harness for IT admins | User request | PRD, AGENTS.md, skills |
 | Include all Microsoft portals | User request | Source-backed catalog strategy, portal skill |
 | Use source information, avoid hard-coded skills | User request | `docs/sources.md`, portal source references |
-| Support OpenClaw and Hermes-style agents | User request | AGENTS.md, Agent Skills, adapter notes |
+| Support future Agent Skills-compatible hosts | User request | AGENTS.md, Agent Skills, adapter notes, source validation before first-class claims |
 | Support VS Code and GitHub Copilot | User correction | `.github/skills`, `.github/copilot-instructions.md` |
 | Follow Agent Skills standards and evals | User correction | Skill frontmatter, evals/evals.json |
 | Include MCP config options | User request | `mcp/*.example.json`, docs |
 | Clarify plugins | User question | Plugin/catalog packaging section |
-| Include model best practices | User request | `docs/model-best-practices.md` future artifact |
+| Include source-backed agent/model practices | User request | `docs/model-best-practices.md`, source register |
 | Follow Rob Pike rules | User request | Design principles section |
 | Document `.claude/` structure | User correction | PRD, `.claude/README.md` |
 | Consider `microsoft/skills` | User correction | PRD reference pattern, future sourcing |
 
 ## 14. Implementation Checklist
 
-- [x] Research AGENTS.md, Agent Skills, Anthropic skills/subagents/memory, Copilot custom instructions, Copilot skills, MCP, msportals.io, OpenClaw/Hermes harness patterns, GPT-5.5 guidance, and Claude Opus 4.8 guidance.
+- [x] Research AGENTS.md, Agent Skills, Anthropic skills/subagents/memory, Copilot custom instructions, Copilot skills, MCP, msportals.io, Microsoft skills, and public source requirements.
+- [x] Add validated source register and per-file source sections.
+- [x] Add documentation source-section validation script.
 - [x] Create [PRD.md](PRD.md) first as the traceable product source of truth.
 - [x] Add root [AGENTS.md](AGENTS.md) cross-agent instructions.
 - [x] Add [CLAUDE.md](CLAUDE.md) import shim for Claude Code compatibility.
@@ -361,7 +360,7 @@ Milestone 3:
 1. Should the first repo be documentation/skills only, or should it include a minimal MCP portal catalog server immediately?
 2. Which Microsoft admin domains are highest priority: M365, Entra, Intune, Defender, Azure, Purview, Power Platform, Teams, Exchange, SharePoint, Partner Center, or MSP multi-tenant workflows?
 3. Should the harness ever execute admin changes, or should it remain a planning and navigation aid until a later security review?
-4. Which hosts must be first-class at launch: VS Code Copilot, Copilot CLI, Copilot cloud agent, Claude Code, OpenAI/Codex, OpenClaw, Hermes?
+4. Which additional hosts should get first-class adapters after we validate their public skill and instruction docs?
 5. Should any future package generated from this repo use a different license from the root MIT license?
 6. Are you comfortable depending on `msportals.io` as an upstream source, with attribution and a refresh/cache layer, rather than maintaining a separate portal database?
 7. For the shopping-cart experience, should we target GitHub/Copilot skills first, Claude plugins first, or a neutral manifest that can generate both?
@@ -374,3 +373,14 @@ Milestone 3:
 - [x] Add MCP example configs and profiles.
 - [x] Add validation scripts.
 - [x] Initialize Git and create/push a public GitHub repository.
+
+## 19. Validated Sources
+
+The source register is [docs/source-register.md](docs/source-register.md). Major source categories:
+
+- Agent Skills standard: [agentskills.io](https://agentskills.io/home) and [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills).
+- Copilot instructions and agents: [VS Code custom instructions](https://code.visualstudio.com/docs/copilot/customization/custom-instructions), [GitHub repository instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot), and [agentsmd/agents.md](https://github.com/agentsmd/agents.md).
+- Claude adapter paths: [Claude Code settings](https://code.claude.com/docs/en/settings), [memory](https://code.claude.com/docs/en/memory), [skills](https://code.claude.com/docs/en/skills), [subagents](https://code.claude.com/docs/en/sub-agents), [MCP](https://code.claude.com/docs/en/mcp), and [plugins](https://code.claude.com/docs/en/plugins).
+- Microsoft admin sources: [Microsoft Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp-get-started), [Azure MCP](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/), [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18), [Microsoft Zero Trust identity](https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity), [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices), and [Microsoft least-privilege guidance](https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access).
+- Portal data and examples: [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io), [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json), and [microsoft/skills](https://raw.githubusercontent.com/microsoft/skills/main/README.md).
+- Engineering principles: [Rob Pike, Notes on Programming in C](http://doc.cat-v.org/bell_labs/pikestyle).

@@ -10,7 +10,7 @@ Primary supported surfaces:
 - GitHub Copilot CLI.
 - GitHub Copilot cloud agent.
 - Claude Code through `CLAUDE.md` importing this file.
-- Other Agent Skills-compatible harnesses, including OpenClaw and Hermes-style agents.
+- Other Agent Skills-compatible harnesses after their public docs validate the adapter path.
 
 ## Repository Rules
 
@@ -71,3 +71,7 @@ For any future code changes, add or update targeted tests and run the narrowest 
 - Do not commit directly unless the user asks.
 - Before publishing or pushing, check for secrets and tenant-specific values.
 - Preserve full merge commits for PRs by default unless the user requests squash.
+
+## Sources
+
+Core standards and safety rules are grounded in [docs/source-register.md](docs/source-register.md), especially [Agent Skills](https://agentskills.io/home), [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills), [GitHub Copilot repository instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot), [Claude Code memory](https://code.claude.com/docs/en/memory), [MCP security guidance](https://modelcontextprotocol.io/specification/2025-06-18), [Microsoft Zero Trust identity](https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity), and [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices).

@@ -25,3 +25,11 @@ Risk tiers: `read`, `diagnostic`, `change` only for approved repo mutations.
 Use for visible portal navigation and inspection after user approval. Initial server: Playwright MCP or another browser automation MCP.
 
 Risk tiers: `read`, `diagnostic`; never silent credential entry.
+
+## Sources
+
+- [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18)
+- [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started)
+- [Azure MCP Server documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/)
+- [Claude Code MCP](https://code.claude.com/docs/en/mcp)
+- [Claude Code plugins](https://code.claude.com/docs/en/plugins)

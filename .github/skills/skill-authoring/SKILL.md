@@ -1,6 +1,6 @@
 ---
 name: skill-authoring
-description: Create, review, or improve The Admin Harness skills using the Agent Skills specification, progressive disclosure, source-backed references, and evals. Use when adding a new skill, editing SKILL.md frontmatter, writing evals/evals.json, or preparing skills for Copilot, VS Code, Claude, OpenClaw, or Hermes.
+description: Create, review, or improve The Admin Harness skills using the Agent Skills specification, progressive disclosure, source-backed references, and evals. Use when adding a new skill, editing SKILL.md frontmatter, writing evals/evals.json, or preparing skills for Copilot, VS Code, Claude, or another validated Agent Skills-compatible host.
 compatibility: Requires access to the repository files. Optional validation can use skills-ref when installed.
 ---
 
@@ -44,3 +44,11 @@ Use this `evals/evals.json` shape:
 - Do not duplicate source data across multiple skills.
 - Do not write skills that request secrets in chat.
 - Do not create a skill without evals.
+
+## Sources
+
+- [Agent Skills overview](https://agentskills.io/home)
+- [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+- [Claude Code skills](https://code.claude.com/docs/en/skills)
+- [microsoft/skills README](https://raw.githubusercontent.com/microsoft/skills/main/README.md)
+- [docs/source-register.md](../../../docs/source-register.md)

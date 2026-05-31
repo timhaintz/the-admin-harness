@@ -29,3 +29,9 @@ Tenant-aware notes:
 - Upstream uses placeholder `00000000-0000-0000-0000-000000000000` in some B2B links.
 - Warn that tenant IDs placed in URLs or bookmarks can appear in logs.
 - Do not persist tenant IDs in repo files, skill outputs, or eval artifacts.
+
+## Sources
+
+- [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io)
+- [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json)
+- [docs/source-register.md](../../../../docs/source-register.md)

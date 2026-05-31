@@ -1,22 +1,20 @@
-# Model Best Practices
+# Agent Guidance Practices
 
-This repo uses model guidance as a design reference, not as a hard dependency. Skills should remain host-portable and should not require one provider-specific model to function.
+This repo uses source-backed agent and model guidance as a design reference, not as a hard dependency. Skills should remain host-portable and should not require one provider-specific model to function.
 
-## GPT-5.5-Oriented Guidance
+## Source-Backed Guidance
 
-- Start with the outcome and stopping condition.
-- Keep durable instructions concise and specific.
-- Use retrieval budgets so agents search only as much as needed before acting.
-- Prefer structured data, validation commands, and eval traces over long prose prompts.
-- Add explicit safety gates for tenant changes.
+- Use Agent Skills for specialized, reusable procedures that load on demand.
+- Use `.github/copilot-instructions.md`, `AGENTS.md`, and `CLAUDE.md` for durable project context.
+- Keep persistent instructions concise, specific, and non-conflicting.
+- Move detailed procedure, examples, scripts, and reference material into skills or source files.
+- Prefer official documentation and MCP sources for current product guidance.
+- Treat MCP tools and external content as requiring consent, privacy review, and tool-safety controls.
+- Add explicit safety gates for tenant or Azure changes.
 
-## Claude Opus 4.8-Oriented Guidance
+## Provider-Specific Guidance
 
-- Define scope, boundaries, and source hierarchy clearly.
-- Use higher effort for coding, research, or admin planning tasks that cross multiple systems.
-- Keep tool-use guidance explicit, especially around credentials and browser automation.
-- Spawn subagents only for clearly separable research or review tasks.
-- Validate source claims before presenting admin procedures.
+Provider/model-specific prompt or effort guidance must be added only with a public vendor source or repo-local eval evidence. Until then, keep model guidance portable and use host-agnostic validation.
 
 ## Cross-Model Rules
 
@@ -25,3 +23,14 @@ This repo uses model guidance as a design reference, not as a hard dependency. S
 - Put execution behind MCP tools with clear auth boundaries.
 - Put policy in shared instructions and skill-specific safety steps.
 - Evaluate skills with realistic prompts before treating them as complete.
+
+## Sources
+
+- [Agent Skills overview](https://agentskills.io/home)
+- [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+- [VS Code custom instructions](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
+- [GitHub Copilot repository instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
+- [Claude Code memory](https://code.claude.com/docs/en/memory)
+- [Claude Code settings](https://code.claude.com/docs/en/settings)
+- [Claude Code subagents](https://code.claude.com/docs/en/sub-agents)
+- [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18)

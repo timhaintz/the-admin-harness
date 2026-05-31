@@ -42,3 +42,9 @@ Use this shape:
 - Do not cite community blogs as authoritative for Microsoft role requirements.
 - Do not perform tenant changes.
 - If the user wants execution, produce an approval-ready plan and hand off to `admin-change-safety`.
+
+## Sources
+
+- [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started)
+- [Microsoft Learn](https://learn.microsoft.com/)
+- [docs/source-register.md](../../../docs/source-register.md)

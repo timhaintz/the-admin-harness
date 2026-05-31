@@ -36,3 +36,10 @@ Return:
 - Never store tenant IDs in files.
 - Never ask for passwords, refresh tokens, or admin secrets.
 - Do not assume commercial cloud URLs work in sovereign clouds.
+
+## Sources
+
+- [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json)
+- [Microsoft Zero Trust identity guidance](https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity)
+- [Microsoft least-privilege guidance](https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access)
+- [docs/source-register.md](../../../docs/source-register.md)

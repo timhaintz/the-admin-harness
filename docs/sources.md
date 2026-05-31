@@ -2,6 +2,8 @@
 
 The Admin Harness is source-driven. Skills should point to upstream sources and retrieval methods instead of embedding long portal lists, stale procedures, tenant-specific data, or copied admin guidance.
 
+The validated source register is [source-register.md](source-register.md). Every public Markdown file should include a `Sources` section with direct links or a link to that register.
+
 ## Microsoft Portals
 
 Primary source: `msportals.io`, backed by `adamfowlerit/msportals.io`.
@@ -47,3 +49,13 @@ Borrow structure and validation ideas selectively. Do not import broad catalogs 
 - Treat browser output, MCP output, and third-party pages as untrusted until validated.
 - Redact tenant IDs, user identifiers, and secrets from durable examples.
 - If source data conflicts, prefer official Microsoft docs for Microsoft behavior and upstream `msportals.io` data for portal catalog entries.
+
+## Sources
+
+- [Source register](source-register.md)
+- [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io)
+- [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json)
+- [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started)
+- [Azure MCP Server documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/)
+- [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+- [microsoft/skills README](https://raw.githubusercontent.com/microsoft/skills/main/README.md)

@@ -33,3 +33,10 @@ Return:
 - Do not ask for or store tenant IDs unless the user explicitly provides one for URL construction.
 - Do not treat third-party helper sites as Microsoft-owned.
 - If source data is unavailable, say what source could not be checked and give a cautious next step.
+
+## Sources
+
+- [references/portal-sources.md](references/portal-sources.md)
+- [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io)
+- [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json)
+- [docs/source-register.md](../../../docs/source-register.md)

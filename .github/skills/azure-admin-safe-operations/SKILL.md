@@ -45,3 +45,10 @@ Use this skill for Azure operational tasks. Prefer read-only discovery first.
 - Do not broaden RBAC scope without explicit approval.
 - Do not delete, redeploy, rotate, disable, or expose resources without approval.
 - Treat production, identity, networking, secrets, backup, and policy changes as high risk.
+
+## Sources
+
+- [Azure MCP Server documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/)
+- [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices)
+- [MCP specification: Security and Trust & Safety](https://modelcontextprotocol.io/specification/2025-06-18)
+- [docs/source-register.md](../../../docs/source-register.md)

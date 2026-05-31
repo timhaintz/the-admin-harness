@@ -1,7 +1,7 @@
 ---
 name: admin-change-safety
 description: Build approval-ready safety plans for Microsoft tenant or Azure administrative changes. Use before any workflow that could modify identity, access, devices, data retention, security policy, licensing, networking, production resources, or tenant-wide settings.
-compatibility: Cross-agent safety skill for Copilot, Claude, OpenClaw, Hermes, and other Agent Skills-compatible hosts.
+compatibility: Cross-agent safety skill for Copilot, Claude, and other Agent Skills-compatible hosts with validated adapter paths.
 ---
 
 # Admin Change Safety
@@ -42,3 +42,11 @@ Reply with explicit approval before execution.
 - Do not bypass approval because a task seems simple.
 - Do not treat tests or examples as approval.
 - If rollback is unclear, escalate the risk tier.
+
+## Sources
+
+- [MCP specification: Security and Trust & Safety](https://modelcontextprotocol.io/specification/2025-06-18)
+- [Microsoft Zero Trust identity guidance](https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity)
+- [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices)
+- [Microsoft least-privilege guidance](https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access)
+- [docs/source-register.md](../../../docs/source-register.md)

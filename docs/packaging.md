@@ -12,7 +12,7 @@ The Admin Harness separates capability, execution, policy, and distribution.
 
 ## Initial Direction
 
-Milestone 1 stays repo-local and source-driven. It should work directly in VS Code GitHub Copilot and remain understandable to Claude Code, OpenClaw, Hermes, and other Agent Skills-compatible hosts.
+Milestone 1 stays repo-local and source-driven. It should work directly in VS Code GitHub Copilot and remain understandable to Claude Code and other Agent Skills-compatible hosts after their public docs validate the adapter path.
 
 Milestone 2 can add a neutral manifest that describes bundles such as portal discovery, Azure admin, Microsoft 365 admin, security admin, and MSP multi-tenant operations.
 
@@ -30,3 +30,11 @@ Milestone 3 can package those bundles as plugins or catalog entries.
 - tests with acceptance criteria and scenarios.
 
 The Admin Harness should use this pattern for structure, not as permission to load every available skill. Selective installation matters because loading too many skills dilutes the agent context.
+
+## Sources
+
+- [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+- [Claude Code plugins](https://code.claude.com/docs/en/plugins)
+- [Claude Code skills](https://code.claude.com/docs/en/skills)
+- [microsoft/skills README](https://raw.githubusercontent.com/microsoft/skills/main/README.md)
+- [github/awesome-copilot](https://github.com/github/awesome-copilot)
