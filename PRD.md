@@ -27,12 +27,13 @@ Current gaps:
 
 1. Provide a cross-agent, source-driven skill library for IT admin workflows.
 2. Keep portal data sourced from upstream catalogs, especially `msportals.io` JSON data, instead of hard-coding long portal lists in skill bodies.
-3. Provide MCP configuration templates for Microsoft Learn MCP, Azure MCP, browser automation, GitHub, and future Microsoft Graph-oriented servers.
-4. Define safe patterns for credential use, tenant selection, login handoff, and human approval.
-5. Include evaluations for every skill from the first version, following the Agent Skills evaluation pattern.
-6. Support VS Code and GitHub Copilot first, while remaining compatible with Claude Code and other Agent Skills-compatible hosts where public host documentation validates the adapter path.
-7. Provide a clear packaging path for a future shopping-cart experience where admins can choose skill bundles, MCP profiles, and policy packs.
-8. Keep every committed artifact suitable for a public open-source repository.
+3. Provide portal-specific skills for every supported portal entry, grounded in the Microsoft Learn MCP server and official Microsoft documentation where the portal is Microsoft-owned.
+4. Provide MCP configuration templates for Microsoft Learn MCP, Azure MCP, browser automation, GitHub, and future Microsoft Graph-oriented servers.
+5. Define safe patterns for credential use, tenant selection, login handoff, and human approval.
+6. Include evaluations for every skill from the first version, following the Agent Skills evaluation pattern.
+7. Support VS Code and GitHub Copilot first, while remaining compatible with Claude Code and other Agent Skills-compatible hosts where public host documentation validates the adapter path.
+8. Provide a clear packaging path for a future shopping-cart experience where admins can choose skill bundles, MCP profiles, and policy packs.
+9. Keep every committed artifact suitable for a public open-source repository.
 
 ## 4. Non-Goals
 
@@ -79,6 +80,10 @@ An admin asks: "Disable external sharing for a SharePoint site." The skill shoul
 
 An admin switches between VS Code Copilot, Copilot CLI, Claude Code, and another Agent Skills-compatible host. The same skills and core instructions should remain usable with minimal adapters when that host's public docs validate the expected skill and instruction locations.
 
+### 6.7 Portal-Specific Skill Assistance
+
+An admin asks: "Help me use the Intune admin portal to investigate compliance policy status." The agent should load a portal-specific skill for Microsoft Intune Admin Center that starts from the source-backed portal entry, uses Microsoft Learn MCP or official Microsoft docs for current procedural guidance, separates read-only investigation from changes, lists required roles/prerequisites, and hands off to `admin-change-safety` before any tenant mutation.
+
 ## 7. Source Strategy
 
 Source-driven content is a product requirement.
@@ -108,6 +113,18 @@ Use Azure MCP for Azure resource inspection and operations. Any mutation must be
 ### 7.4 Model and Agent Guidance
 
 Use agent-host and model guidance only when it has a public source or repo-local eval evidence. Current source-backed guidance comes from Agent Skills, VS Code/GitHub Copilot customization docs, Claude Code docs, MCP security guidance, and Microsoft Learn/Azure MCP docs. Provider/model-specific tuning claims must be added only with a source or measured eval evidence.
+
+### 7.5 Portal-Specific Skill Source Requirements
+
+Every supported portal entry should eventually have a portal-specific skill artifact or an explicit source-gap exception. A portal-specific skill must be traceable to:
+
+- the upstream portal source entry, including source JSON file, portal name, primary URL, secondary URLs when useful, notes, and cloud/tenant caveats;
+- Microsoft Learn MCP or official Microsoft documentation for Microsoft-owned portal procedures, roles, prerequisites, warnings, and validation steps;
+- the relevant risk tier and handoff path for actions that move from navigation or diagnostics into tenant/resource changes.
+
+Portal-specific skills should not copy long procedural docs into `SKILL.md`. They should provide focused task routing, recommended Microsoft Learn MCP search/fetch behavior, common task categories, safety boundaries, and links to source references. If no official Microsoft Learn source can be validated for a Microsoft-owned portal, the skill must mark that as a source gap and stay navigation-focused until the gap is resolved.
+
+Third-party helper portals may have skills only when their ownership boundary is explicit. Those skills must not imply Microsoft ownership and must include a third-party caveat.
 
 ## 8. Agent and Packaging Standards
 
@@ -141,6 +158,8 @@ Reference implementation pattern: `github.com/microsoft/skills` is an open-sourc
 
 Each skill must include `evals/evals.json` with realistic prompts, expected outputs, optional files, and assertions when appropriate. The eval pattern should compare skill behavior against baseline/no-skill or previous-skill behavior, capture timing/token data when available, and record grading evidence.
 
+Portal-specific skills must include evals that prove the agent uses the source-backed portal entry and Microsoft Learn MCP or official docs before giving procedural guidance. At minimum, each portal-specific skill needs one navigation eval and one task-guidance eval.
+
 ### 8.5 Plugins and Shopping Cart Experience
 
 Plugins are the right pattern for an installable shopping-cart experience, but they should package rather than replace skills.
@@ -171,6 +190,18 @@ Recommended structure:
 ```
 
 Root `CLAUDE.md` should remain small and import `AGENTS.md` so cross-agent rules are not duplicated.
+
+### 8.7 Portal-Specific Skill Pattern
+
+Portal-specific skills should use a consistent naming and content pattern so coverage can be generated, audited, and packaged:
+
+- Directory name: `portal-<normalized-portal-name>` or another approved deterministic naming scheme.
+- Frontmatter `description`: include the portal name, service area, and when to use the skill.
+- Body sections: `Portal Source`, `When To Use`, `Microsoft Learn MCP Grounding`, `Common Tasks`, `Safety Boundaries`, `Outputs`, and `Sources`.
+- References: keep source maps, task matrices, and Learn MCP query suggestions in `references/` when they grow beyond concise instructions.
+- Evals: include navigation, documentation-grounded guidance, and safety-boundary cases.
+
+Because `msportals.io` contains hundreds of entries, milestone work should start with a curated high-value admin portal batch and a coverage tracker. The long-term requirement is complete source-backed coverage for every portal entry in the supported upstream groups, either as individual skills or generated skill artifacts that can be packaged selectively.
 
 ## 9. MCP Strategy
 
@@ -238,6 +269,7 @@ Milestone 1 skills:
 
 Future skills:
 
+- Portal-specific Microsoft Learn MCP skills for every supported source-backed portal entry, starting with high-value admin portals.
 - Intune troubleshooting.
 - Entra Conditional Access investigation.
 - Defender incident triage.
@@ -298,6 +330,7 @@ Future skills:
 | Follow Rob Pike rules | User request | Design principles section |
 | Document `.claude/` structure | User correction | PRD, `.claude/README.md` |
 | Consider `microsoft/skills` | User correction | PRD reference pattern, future sourcing |
+| Each portal should have Microsoft Learn MCP-grounded skills | User request | Portal-specific skill pattern, source requirements, coverage tracker |
 
 ## 14. Implementation Checklist
 
@@ -317,6 +350,11 @@ Future skills:
 - [x] Add public GitHub remote owned by `github.com/timhaintz`.
 - [x] Add MIT open-source license.
 - [x] Run final validation and update this checklist.
+- [ ] Define portal-specific skill template and deterministic naming scheme.
+- [ ] Add portal coverage tracker mapped to upstream `msportals.io` source entries.
+- [ ] Add validation that portal-specific skills include portal source links, Microsoft Learn MCP grounding, and eval coverage.
+- [ ] Create first portal-specific skill batch for high-value admin portals: Microsoft 365 Admin Center, Microsoft Intune Admin Center, Microsoft Entra Admin Center, Exchange Admin Center, Teams Admin Center, SharePoint Admin Center, Microsoft Purview, Microsoft Defender, Power Platform admin center, and Azure Portal.
+- [ ] Plan complete source-backed coverage for every supported portal group.
 
 ## 15. Design Principles
 
@@ -348,12 +386,21 @@ Milestone 2:
 - Skill validation script checks frontmatter, directory/name matching, and eval presence.
 - At least one skill has a runbook-grade eval with assertions and grading notes.
 - Packaging manifest defines bundles for portal discovery, Azure admin, M365 admin, and security admin.
+- Portal-specific skill template and coverage tracker exist.
+- First curated batch of Microsoft-owned admin portal skills exists and is grounded in Microsoft Learn MCP or official Microsoft docs.
 
 Milestone 3:
 
 - Optional plugin package or catalog manifest supports the shopping-cart selection experience.
 - Optional MCP portal catalog server exposes source-backed resources.
 - Admin change workflows include approval evidence and rollback templates.
+- CI reports portal-skill coverage against supported upstream portal groups.
+
+Milestone 4:
+
+- Every supported `msportals.io` portal entry has a portal-specific skill artifact or an explicit source-gap exception.
+- Every Microsoft-owned portal skill has Microsoft Learn MCP or official Microsoft documentation grounding for common tasks.
+- Third-party helper portal skills include ownership and trust-boundary caveats.
 
 ## 17. Open Questions for Tim
 
@@ -364,6 +411,8 @@ Milestone 3:
 5. Should any future package generated from this repo use a different license from the root MIT license?
 6. Are you comfortable depending on `msportals.io` as an upstream source, with attribution and a refresh/cache layer, rather than maintaining a separate portal database?
 7. For the shopping-cart experience, should we target GitHub/Copilot skills first, Claude plugins first, or a neutral manifest that can generate both?
+8. Should portal-specific skills be generated into individual `SKILL.md` files, generated as packaged artifacts, or stored as structured portal-skill data that can emit skills for selected hosts?
+9. Which portal groups should be covered first after the high-value admin batch: user portals, government, China/21Vianet, training, licensing, consumer, education, or third-party helper portals?
 
 ## 18. Immediate Build Plan
 
@@ -373,6 +422,7 @@ Milestone 3:
 - [x] Add MCP example configs and profiles.
 - [x] Add validation scripts.
 - [x] Initialize Git and create/push a public GitHub repository.
+- [ ] Define portal-specific skill template and coverage tracker.
 
 ## 19. Validated Sources
 
@@ -383,4 +433,5 @@ The source register is [docs/source-register.md](docs/source-register.md). Major
 - Claude adapter paths: [Claude Code settings](https://code.claude.com/docs/en/settings), [memory](https://code.claude.com/docs/en/memory), [skills](https://code.claude.com/docs/en/skills), [subagents](https://code.claude.com/docs/en/sub-agents), [MCP](https://code.claude.com/docs/en/mcp), and [plugins](https://code.claude.com/docs/en/plugins).
 - Microsoft admin sources: [Microsoft Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp-get-started), [Azure MCP](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/), [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18), [Microsoft Zero Trust identity](https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity), [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices), and [Microsoft least-privilege guidance](https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access).
 - Portal data and examples: [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io), [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json), and [microsoft/skills](https://raw.githubusercontent.com/microsoft/skills/main/README.md).
+- Portal-specific skill grounding: [Microsoft Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp-get-started), [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io), and [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json).
 - Engineering principles: [Rob Pike, Notes on Programming in C](http://doc.cat-v.org/bell_labs/pikestyle).
