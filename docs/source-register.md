@@ -47,6 +47,18 @@ Every public Markdown file should either include a local `Sources` section or li
 | Microsoft's open-source skills repo uses `.github/skills`, `.github/plugins`, agents, prompts, MCP configs, symlinked multi-agent skill sharing, and test harnesses | [microsoft/skills README](https://raw.githubusercontent.com/microsoft/skills/main/README.md) |
 | Portal-specific skills in this repo must map upstream portal entries to Microsoft Learn MCP-grounded task guidance | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) and [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
 
+## Portal Skill Sources
+
+| Portal skill | Source |
+| --- | --- |
+| `portal-microsoft-intune-admin-center`: source-backed portal entry | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
+| `portal-microsoft-intune-admin-center`: Learn MCP grounding | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) |
+| `portal-microsoft-intune-admin-center`: admin center navigation and workloads | [Tutorial: Walkthrough Microsoft Intune Admin Center](https://learn.microsoft.com/en-us/intune/fundamentals/tutorial-admin-center-walkthrough) |
+| `portal-microsoft-intune-admin-center`: compliance policy overview and Conditional Access integration | [Use compliance policies to set rules for devices you manage with Intune](https://learn.microsoft.com/en-us/intune/device-security/compliance/overview) |
+| `portal-microsoft-intune-admin-center`: create compliance policy requirements and workflow | [Create a compliance policy in Microsoft Intune](https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy) |
+| `portal-microsoft-intune-admin-center`: monitor compliance policy reports and reporting caveats | [Monitor results of your Intune device compliance policies](https://learn.microsoft.com/en-us/intune/device-security/compliance/monitor-policy) |
+| `portal-microsoft-intune-admin-center`: RBAC and least-privilege admin roles | [Role-based access control (RBAC) with Microsoft Intune](https://learn.microsoft.com/en-us/intune/fundamentals/role-based-access-control/overview) |
+
 ## Open Source And Secrets
 
 | Claim area | Source |

@@ -1,0 +1,36 @@
+{
+  "skill_name": "portal-microsoft-intune-admin-center",
+  "evals": [
+    {
+      "id": "intune-admin-center-navigation",
+      "prompt": "Where do I go to use the Microsoft Intune admin center?",
+      "expected_output": "Returns Microsoft Intune Admin Center with https://intune.microsoft.com, includes source-backed portal entry details, and does not invent URLs.",
+      "assertions": [
+        "The output includes Microsoft Intune Admin Center",
+        "The output includes https://intune.microsoft.com",
+        "The output references msportals admin.json or the portal source references"
+      ]
+    },
+    {
+      "id": "intune-compliance-monitor-learn-grounded",
+      "prompt": "Help me use Intune to investigate why devices are showing noncompliant for a compliance policy.",
+      "expected_output": "Uses Microsoft Learn MCP or official Microsoft documentation before giving guidance, starts with read-only compliance dashboard or policy report steps, mentions device check-in/reporting caveats, and identifies approval boundaries for changes.",
+      "assertions": [
+        "The output mentions Microsoft Learn MCP or official Microsoft documentation",
+        "The output includes read-only navigation such as Devices > Compliance > Monitor or policy-specific Monitor reports",
+        "The output mentions reporting or device check-in caveats",
+        "The output separates investigation from policy or assignment changes"
+      ]
+    },
+    {
+      "id": "intune-rbac-least-privilege-boundary",
+      "prompt": "What role should I use for day-to-day Intune compliance policy administration?",
+      "expected_output": "Uses official Intune RBAC guidance, recommends least-privileged Intune built-in or custom roles rather than routine Global Administrator or Intune Administrator use, and describes approval boundaries for role changes.",
+      "assertions": [
+        "The output references Intune RBAC or least-privilege guidance",
+        "The output discourages routine Global Administrator or Intune Administrator use for day-to-day tasks",
+        "The output identifies role changes as requiring safety review or approval"
+      ]
+    }
+  ]
+}
