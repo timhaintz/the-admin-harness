@@ -20,6 +20,7 @@ Run these before opening or updating a PR:
 scripts/validate-skills.sh
 scripts/validate-doc-sources.sh
 scripts/validate-portal-skills.sh
+bash scripts/validate-script-safety.sh
 python3 -m json.tool mcp/vscode.example.json >/dev/null
 python3 -m json.tool mcp/claude-desktop.example.json >/dev/null
 ```
@@ -44,11 +45,15 @@ python3 -m json.tool mcp/claude-desktop.example.json >/dev/null
 - Do not commit tenant IDs, customer data, admin credentials, access tokens, `.env` files, browser profiles, generated credential caches, or logs containing sensitive values.
 - Do not ask users to paste passwords, API keys, refresh tokens, or admin credentials into chat or examples.
 - Any Microsoft tenant or Azure mutation must be planned first and require explicit human approval.
+- PowerShell, shell, and Microsoft Graph request examples must follow [docs/script-safety.md](docs/script-safety.md), including risk markers and approval markers for any mutation.
 
 ## Sources
 
 - [GitHub Actions workflow syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
 - [About code scanning with CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
 - [Configuring default setup for code scanning](https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning)
+- [PSScriptAnalyzer overview](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview)
+- [ShellCheck](https://www.shellcheck.net/)
+- [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference)
 - [GitHub merge methods](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github)
 - [docs/source-register.md](docs/source-register.md)

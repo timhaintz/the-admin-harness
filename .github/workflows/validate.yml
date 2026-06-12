@@ -31,6 +31,9 @@ jobs:
       - name: Validate portal skills
         run: scripts/validate-portal-skills.sh
 
+      - name: Validate script safety
+        run: bash scripts/validate-script-safety.sh
+
       - name: Validate MCP JSON templates
         run: |
           python3 -m json.tool mcp/vscode.example.json >/dev/null

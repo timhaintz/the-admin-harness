@@ -37,6 +37,30 @@ Every public Markdown file should either include a local `Sources` section or li
 | Microsoft Zero Trust identity guidance: verify explicitly, use least-privileged access, assume breach | [Securing identity with Zero Trust](https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity) |
 | Azure RBAC best practices: least privilege, narrow scopes, PIM, limited subscription owners, avoid wildcard custom roles | [Best practices for Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices) |
 | Microsoft identity platform least-privilege guidance for applications and consent | [Enhance security with the principle of least privilege](https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access) |
+| Microsoft Graph request structure, HTTP methods, `v1.0` versus `beta`, Graph Explorer, and resource permissions | [Use the Microsoft Graph API](https://learn.microsoft.com/en-us/graph/use-the-api) |
+| Microsoft Graph authentication, authorization, app access, permissions, and throttling entry points | [Microsoft Graph authentication and authorization overview](https://learn.microsoft.com/en-us/graph/auth/) |
+| Microsoft Graph permissions reference, least-privilege warning, delegated/application permissions, and high-risk permission cautions | [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference) |
+| Microsoft Graph PowerShell SDK uses Microsoft Graph APIs, modern authentication through MSAL, least-privilege permission requests, and cross-platform PowerShell support | [Microsoft Graph PowerShell overview](https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview) |
+
+## Script And Graph Safety Sources
+
+| Claim area | Source |
+| --- | --- |
+| PSScriptAnalyzer is a static code checker for PowerShell modules and scripts with built-in rules for code quality and potential defects | [PSScriptAnalyzer overview](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview) |
+| PSScriptAnalyzer is an open-source PowerShell static analyzer with rules for uninitialized variables, PSCredential use, Invoke-Expression, and more | [PowerShell/PSScriptAnalyzer](https://github.com/PowerShell/PSScriptAnalyzer) |
+| ShellCheck finds bugs in shell scripts and is available as a local CLI, web tool, editor integration, and build/test-suite check | [ShellCheck](https://www.shellcheck.net/) and [koalaman/shellcheck](https://github.com/koalaman/shellcheck) |
+| Microsoft Graph writes use POST/PATCH/PUT/DELETE while GET reads data; write requests require a request body and should be treated as change operations in this repo | [Use the Microsoft Graph API: HTTP methods](https://learn.microsoft.com/en-us/graph/use-the-api#http-methods) |
+| Microsoft recommends least-privileged Graph permissions and cautions against broad permissions such as write, grant, role-management, and credential-management permissions | [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference) |
+
+## Merill Fernando Tool Research
+
+| Tool area | Source |
+| --- | --- |
+| Merill Fernando's public tools include Maester, cmd.ms, Graph X-Ray, lokka.dev, graph.pm, Graph Permissions Explorer, idPowerToys, Entra sign-in URL builder, Entra Exporter, MSIdentityTools, and related Microsoft security/community tools | [Merill Fernando](https://merill.net/) |
+| Maester is an open-source Microsoft 365 security test automation framework with curated tests, Pester/Microsoft Graph foundations, reports, and CI/CD monitoring patterns | [Maester](https://maester.dev/) and [maester365/maester](https://github.com/maester365/maester) |
+| Graph X-Ray captures Microsoft admin portal Graph API calls and generates code snippets for automation; it is independently developed and open source | [Graph X-Ray](https://graphxray.merill.net/) |
+| `cmd.ms` provides Microsoft Cloud command shortcuts for admin portals and documentation pages | [cmd.ms](https://cmd.ms/) |
+| Graph Permissions Explorer is a community tool for browsing Microsoft Graph APIs and permission exposure; official Graph permissions docs remain authoritative for committed guidance | [Merill Fernando](https://merill.net/) and [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference) |
 
 ## Portal And Skills Repositories
 
