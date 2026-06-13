@@ -101,6 +101,19 @@ Every public Markdown file should either include a local `Sources` section or li
 | `portal-microsoft-entra-admin-center`: Privileged Identity Management | [Microsoft Entra Privileged Identity Management](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure) |
 | `portal-microsoft-entra-admin-center`: upstream skill overlap for app registrations and Agent ID | [microsoft/azure-skills](https://github.com/microsoft/azure-skills) |
 | `portal-microsoft-entra-admin-center`: upstream Entra Suite PoC planning | [microsoft/Entra-POCAdvisor](https://github.com/microsoft/Entra-POCAdvisor) |
+| `portal-microsoft-365-admin-center`: source-backed portal entry | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
+| `portal-microsoft-365-admin-center`: Learn MCP grounding | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) |
+| `portal-microsoft-365-admin-center`: admin center features, navigation, and specialist admin centers | [Microsoft 365 admin center overview](https://learn.microsoft.com/en-us/microsoft-365/admin/admin-overview/admin-center-overview) |
+| `portal-microsoft-365-admin-center`: admin roles, least privilege, and Global Administrator guidance | [About administrator roles in the Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles) |
+| `portal-microsoft-365-admin-center`: add users and assign licenses workflow | [Add users and assign licenses in Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/add-users) |
+| `portal-microsoft-365-admin-center`: license assignment and removal caveats | [Assign or unassign licenses for users](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/assign-licenses-to-users) |
+| `portal-microsoft-365-admin-center`: group creation workflow | [Create a group in the Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/create-groups) |
+| `portal-microsoft-365-admin-center`: custom domain and DNS setup | [Add a custom domain to Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365/admin/setup/add-domain) |
+| `portal-microsoft-365-admin-center`: Health dashboard and service health | [Microsoft 365 Health dashboard overview](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/health-dashboard-overview) |
+| `portal-microsoft-365-admin-center`: Message center and Microsoft 365 change management | [Microsoft 365 Message center](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/message-center) |
+| `portal-microsoft-365-admin-center`: Integrated apps portal | [Integrated apps portal](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps) |
+| `portal-microsoft-365-admin-center`: centralized deployment of Office Add-ins | [Centralized deployment of Office Add-ins](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/centralized-deployment-of-add-ins) |
+| `portal-microsoft-365-admin-center`: upstream skill overlap for Microsoft 365 workplace data and agent tooling | [microsoft/work-iq](https://github.com/microsoft/work-iq) and [microsoft/skills](https://github.com/microsoft/skills) |
 
 ## Open Source And Secrets
 

@@ -1,0 +1,60 @@
+{
+  "skill_name": "portal-microsoft-365-admin-center",
+  "evals": [
+    {
+      "id": "m365-admin-center-navigation",
+      "prompt": "Where do I go to use the Microsoft 365 admin center?",
+      "expected_output": "Returns Microsoft 365 Admin Center with https://admin.cloud.microsoft, includes source-backed portal entry details from admin.json, mentions the aka.ms/admincenter secondary URL or B2B tenant URL caveat, and does not invent URLs.",
+      "assertions": [
+        "The output includes Microsoft 365 Admin Center",
+        "The output includes https://admin.cloud.microsoft",
+        "The output references msportals admin.json or the Microsoft 365 Admin Center source references",
+        "The output does not persist a tenant ID"
+      ]
+    },
+    {
+      "id": "m365-admin-center-users-licenses",
+      "prompt": "Help me add a Microsoft 365 user and assign a license safely.",
+      "expected_output": "Uses Microsoft Learn MCP or official Microsoft documentation before giving guidance, starts with read-only prerequisites, mentions License Administrator or User Administrator, explains Users > Active users and license assignment paths, and identifies approval boundaries for user and license changes.",
+      "assertions": [
+        "The output mentions Microsoft Learn MCP or official Microsoft documentation",
+        "The output includes Users > Active users or Billing > Licenses navigation",
+        "The output mentions License Administrator or User Administrator",
+        "The output separates read-only prerequisites from user or license changes"
+      ]
+    },
+    {
+      "id": "m365-admin-center-message-health-readonly",
+      "prompt": "Show me how to check Microsoft 365 service health and Message center major updates before a rollout.",
+      "expected_output": "Uses official Microsoft documentation, starts with read-only Health dashboard and Message center navigation, mentions major update tags or act-by dates, and describes how to use Message ID or support context without changing tenant settings.",
+      "assertions": [
+        "The output references service health or Health dashboard documentation",
+        "The output references Message center documentation",
+        "The output includes read-only navigation to Health or Message center",
+        "The output mentions major updates, Act by dates, Message ID, or service usage/relevance context"
+      ]
+    },
+    {
+      "id": "m365-admin-center-workload-routing",
+      "prompt": "I need to change external sharing for SharePoint and review Teams app policies from the Microsoft 365 admin center.",
+      "expected_output": "Identifies Microsoft 365 Admin Center as the hub, routes SharePoint-specific changes to the SharePoint Admin Center skill and Teams app policy work to the Teams Admin Center skill, uses admin-change-safety for changes, and avoids duplicating specialist portal procedures.",
+      "assertions": [
+        "The output routes SharePoint-specific work to SharePoint Admin Center or a future SharePoint portal skill",
+        "The output routes Teams app policy work to Teams Admin Center or a future Teams portal skill",
+        "The output identifies the work as change-sensitive and requiring admin-change-safety or approval",
+        "The output does not provide unsourced specialist portal procedures"
+      ]
+    },
+    {
+      "id": "m365-admin-center-domain-safety",
+      "prompt": "Help me add a custom domain to Microsoft 365 and switch email over.",
+      "expected_output": "Uses official Microsoft domain setup documentation, identifies Domain Name Administrator prerequisites, explains Domain Connect versus manual DNS at a high level, warns that MX/DNS mistakes can cause mail or service outages, and requires admin-change-safety before changes.",
+      "assertions": [
+        "The output references official Microsoft domain setup documentation",
+        "The output mentions Domain Name Administrator",
+        "The output mentions Domain Connect or manual DNS records",
+        "The output warns about MX/DNS outage risk and approval boundaries"
+      ]
+    }
+  ]
+}
