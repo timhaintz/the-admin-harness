@@ -10,6 +10,8 @@ Run `scripts/validate-skills.sh`, `scripts/validate-doc-sources.sh`, `scripts/va
 
 Portal-specific skill coverage is tracked in [docs/portal-skill-coverage.md](docs/portal-skill-coverage.md), and the reusable template is [docs/portal-skill-template.md](docs/portal-skill-template.md).
 
+Official and Microsoft-owned upstream skill sources are tracked in [docs/upstream-skill-register.md](docs/upstream-skill-register.md). New local skills should reference or route to upstream skills when they already cover a workflow.
+
 PowerShell, shell, and Microsoft Graph request safety standards are documented in [docs/script-safety.md](docs/script-safety.md).
 
 Contributions should follow [CONTRIBUTING.md](CONTRIBUTING.md): branch per change, pull request before merge, green checks first, and full merge commits only.
@@ -32,4 +34,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Sources
 
-The source register is [docs/source-register.md](docs/source-register.md). Key upstream sources include [Agent Skills](https://agentskills.io/home), [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills), [GitHub Copilot repository instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot), [Claude Code settings](https://code.claude.com/docs/en/settings), [Microsoft Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp-get-started), [Azure MCP](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/), [msportals.io source data](https://github.com/adamfowlerit/msportals.io), and the [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18).
+The source register is [docs/source-register.md](docs/source-register.md). Key upstream sources include [Agent Skills](https://agentskills.io/home), [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills), [GitHub Copilot repository instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot), [Claude Code settings](https://code.claude.com/docs/en/settings), [Microsoft Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp-get-started), [Azure MCP](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/), [microsoft/skills](https://github.com/microsoft/skills), [microsoft/azure-skills](https://github.com/microsoft/azure-skills), [msportals.io source data](https://github.com/adamfowlerit/msportals.io), and the [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18).
