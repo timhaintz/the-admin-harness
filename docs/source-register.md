@@ -87,6 +87,20 @@ Every public Markdown file should either include a local `Sources` section or li
 | `portal-microsoft-intune-admin-center`: create compliance policy requirements and workflow | [Create a compliance policy in Microsoft Intune](https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy) |
 | `portal-microsoft-intune-admin-center`: monitor compliance policy reports and reporting caveats | [Monitor results of your Intune device compliance policies](https://learn.microsoft.com/en-us/intune/device-security/compliance/monitor-policy) |
 | `portal-microsoft-intune-admin-center`: RBAC and least-privilege admin roles | [Role-based access control (RBAC) with Microsoft Intune](https://learn.microsoft.com/en-us/intune/fundamentals/role-based-access-control/overview) |
+| `portal-microsoft-entra-admin-center`: source-backed portal entry | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
+| `portal-microsoft-entra-admin-center`: Learn MCP grounding | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) |
+| `portal-microsoft-entra-admin-center`: admin center navigation and product areas | [Microsoft Entra admin center overview](https://learn.microsoft.com/en-us/entra/fundamentals/entra-admin-center) |
+| `portal-microsoft-entra-admin-center`: Entra product family and management surfaces | [What is Microsoft Entra?](https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra) |
+| `portal-microsoft-entra-admin-center`: Conditional Access overview and admin experience | [Conditional Access overview](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) |
+| `portal-microsoft-entra-admin-center`: Conditional Access troubleshooting and lockout warnings | [Troubleshoot Conditional Access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/troubleshoot-conditional-access) |
+| `portal-microsoft-entra-admin-center`: Conditional Access What If tool | [Conditional Access What If tool](https://learn.microsoft.com/en-us/entra/identity/conditional-access/what-if-tool) |
+| `portal-microsoft-entra-admin-center`: sign-in logs and read-only investigation | [Microsoft Entra sign-in logs](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-ins) |
+| `portal-microsoft-entra-admin-center`: app registration workflow and prerequisites | [Register an application in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app) |
+| `portal-microsoft-entra-admin-center`: role best practices, PIM, and Global Administrator limits | [Best practices for Microsoft Entra roles](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/best-practices) |
+| `portal-microsoft-entra-admin-center`: built-in roles and permissions | [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference) |
+| `portal-microsoft-entra-admin-center`: Privileged Identity Management | [Microsoft Entra Privileged Identity Management](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure) |
+| `portal-microsoft-entra-admin-center`: upstream skill overlap for app registrations and Agent ID | [microsoft/azure-skills](https://github.com/microsoft/azure-skills) |
+| `portal-microsoft-entra-admin-center`: upstream Entra Suite PoC planning | [microsoft/Entra-POCAdvisor](https://github.com/microsoft/Entra-POCAdvisor) |
 
 ## Open Source And Secrets
 
