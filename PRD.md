@@ -34,6 +34,7 @@ Current gaps:
 7. Support VS Code and GitHub Copilot first, while remaining compatible with Claude Code and other Agent Skills-compatible hosts where public host documentation validates the adapter path.
 8. Provide a clear packaging path for a future shopping-cart experience where admins can choose skill bundles, MCP profiles, and policy packs.
 9. Keep every committed artifact suitable for a public open-source repository.
+10. Define source-backed safety standards and validation for PowerShell, shell, and Microsoft Graph request examples before adding tenant-adjacent helper scripts.
 
 ## 4. Non-Goals
 
@@ -331,6 +332,8 @@ Future skills:
 | Document `.claude/` structure | User correction | PRD, `.claude/README.md` |
 | Consider `microsoft/skills` | User correction | PRD reference pattern, future sourcing |
 | Each portal should have Microsoft Learn MCP-grounded skills | User request | Portal-specific skill pattern, source requirements, coverage tracker |
+| Research Merill Fernando tools for Microsoft admin/script safety patterns | User request | `docs/script-safety.md`, source register |
+| Prepare for safe PowerShell and Graph helper scripts | User request | `docs/script-safety.md`, `scripts/validate-script-safety.sh`, CI workflow |
 
 ## 14. Implementation Checklist
 
@@ -360,6 +363,10 @@ Future skills:
 - [x] Add pull request template with validation, source, safety, and no-squash checklist.
 - [x] Add GitHub Actions validation workflow for skills, docs, portal skills, MCP JSON, and forbidden local artifacts.
 - [x] Use GitHub CodeQL/code scanning default setup rather than an advanced CodeQL workflow.
+- [x] Research Merill Fernando's public Microsoft 365, Entra, Graph, and security tooling for reusable references.
+- [x] Add PowerShell, shell, and Microsoft Graph request safety standards.
+- [x] Add script-safety validation for secrets, tenant GUIDs, Graph writes, PowerShell mutation markers, and shell safety settings.
+- [x] Wire script-safety validation into GitHub Actions and contributor checks.
 
 ## 15. Design Principles
 
@@ -386,6 +393,7 @@ Milestone 1:
 - Public repo positioning is explicit in the PRD and README.
 - PR workflow policy is explicit, with full merge commits and no squash merges.
 - Pull request validation workflow exists and GitHub CodeQL/code scanning default setup is used.
+- Script-safety standards and validation exist before adding Microsoft Graph or PowerShell helper examples.
 
 Milestone 2:
 
@@ -432,6 +440,7 @@ Milestone 4:
 - [x] Initialize Git and create/push a public GitHub repository.
 - [x] Define portal-specific skill template and coverage tracker.
 - [x] Add pull request policy and CI workflows.
+- [x] Add script-safety standards and validation for future PowerShell and Graph helpers.
 
 ## 19. Validated Sources
 
@@ -441,6 +450,8 @@ The source register is [docs/source-register.md](docs/source-register.md). Major
 - Copilot instructions and agents: [VS Code custom instructions](https://code.visualstudio.com/docs/copilot/customization/custom-instructions), [GitHub repository instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot), and [agentsmd/agents.md](https://github.com/agentsmd/agents.md).
 - Claude adapter paths: [Claude Code settings](https://code.claude.com/docs/en/settings), [memory](https://code.claude.com/docs/en/memory), [skills](https://code.claude.com/docs/en/skills), [subagents](https://code.claude.com/docs/en/sub-agents), [MCP](https://code.claude.com/docs/en/mcp), and [plugins](https://code.claude.com/docs/en/plugins).
 - Microsoft admin sources: [Microsoft Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp-get-started), [Azure MCP](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/), [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18), [Microsoft Zero Trust identity](https://learn.microsoft.com/en-us/security/zero-trust/deploy/identity), [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices), and [Microsoft least-privilege guidance](https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access).
+- Script and Graph safety: [Microsoft Graph API usage](https://learn.microsoft.com/en-us/graph/use-the-api), [Microsoft Graph authentication and authorization](https://learn.microsoft.com/en-us/graph/auth/), [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference), [Microsoft Graph PowerShell overview](https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview), [PSScriptAnalyzer](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview), and [ShellCheck](https://www.shellcheck.net/).
+- Merill Fernando research: [Merill Fernando](https://merill.net/), [Maester](https://maester.dev/), [Graph X-Ray](https://graphxray.merill.net/), and [cmd.ms](https://cmd.ms/).
 - Portal data and examples: [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io), [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json), and [microsoft/skills](https://raw.githubusercontent.com/microsoft/skills/main/README.md).
 - Portal-specific skill grounding: [Microsoft Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp-get-started), [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io), and [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json).
 - Engineering principles: [Rob Pike, Notes on Programming in C](http://doc.cat-v.org/bell_labs/pikestyle).
