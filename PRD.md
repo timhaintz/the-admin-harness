@@ -35,6 +35,7 @@ Current gaps:
 8. Provide a clear packaging path for a future shopping-cart experience where admins can choose skill bundles, MCP profiles, and policy packs.
 9. Keep every committed artifact suitable for a public open-source repository.
 10. Define source-backed safety standards and validation for PowerShell, shell, and Microsoft Graph request examples before adding tenant-adjacent helper scripts.
+11. Prefer official Microsoft skills, plugins, MCP servers, and Microsoft-owned domain repos when they already cover a workflow, and use The Admin Harness as a routing, portal-source, and safety layer instead of duplicating upstream content.
 
 ## 4. Non-Goals
 
@@ -127,6 +128,19 @@ Portal-specific skills should not copy long procedural docs into `SKILL.md`. The
 
 Third-party helper portals may have skills only when their ownership boundary is explicit. Those skills must not imply Microsoft ownership and must include a third-party caveat.
 
+### 7.6 Upstream Skill Reuse
+
+Before creating a new Admin Harness skill, check official and Microsoft-owned upstream skill sources. The current priority sources are [microsoft/skills](https://github.com/microsoft/skills), [microsoft/azure-skills](https://github.com/microsoft/azure-skills), [microsoft/GitHub-Copilot-for-Azure](https://github.com/microsoft/GitHub-Copilot-for-Azure), and product-specific Microsoft-owned repositories tracked in [docs/upstream-skill-register.md](docs/upstream-skill-register.md).
+
+The preferred decision order is reference, route, wrap, vendor, or create locally. Local skills should be created only when they add Admin Harness-specific value such as source-backed portal routing, tenant-aware navigation, risk classification, approval handoff, or cross-agent packaging metadata. If an upstream skill already handles the product workflow, the local skill should point to that upstream skill or plugin instead of copying long instructions.
+
+Examples:
+
+- Azure Portal and Azure resource workflows should route to `microsoft/azure-skills` and Azure MCP where available.
+- Entra app registration and Entra Agent ID workflows should route to official upstream skills when installed, while local Entra portal skills provide portal source, tenant, and safety context.
+- Purview Data Lifecycle Management diagnostics should route to `microsoft/purview-dlm-mcp` where applicable.
+- Power Platform and Dataverse workflows should check Microsoft-owned Power Platform and Dataverse skill repos before adding local procedure.
+
 ## 8. Agent and Packaging Standards
 
 ### 8.1 AGENTS.md
@@ -154,6 +168,8 @@ Agent Skills requirements:
 - Keep `SKILL.md` under 500 lines and preferably under 5000 tokens.
 
 Reference implementation pattern: `github.com/microsoft/skills` is an open-source Microsoft skills environment for Azure SDK and Microsoft AI Foundry development. It uses `.github/skills/` as the project skills surface, plugin bundles under `.github/plugins/`, custom agents under `.github/agents/`, prompts under `.github/prompts/`, MCP config under `.vscode/mcp.json`, symlinks into `.claude/skills` for multi-agent sharing, and a test harness with acceptance scenarios. The Admin Harness should borrow that shape selectively rather than copying broad skill catalogs.
+
+Official upstream skills are dependencies and routing targets, not content to duplicate by default. The Admin Harness should maintain an upstream skill register, document overlap decisions, and keep local skills focused on IT-admin portal context, source provenance, tenant safety, and workflow handoffs.
 
 ### 8.4 Evaluations
 
@@ -334,6 +350,7 @@ Future skills:
 | Each portal should have Microsoft Learn MCP-grounded skills | User request | Portal-specific skill pattern, source requirements, coverage tracker |
 | Research Merill Fernando tools for Microsoft admin/script safety patterns | User request | `docs/script-safety.md`, source register |
 | Prepare for safe PowerShell and Graph helper scripts | User request | `docs/script-safety.md`, `scripts/validate-script-safety.sh`, CI workflow |
+| Avoid duplicating official Microsoft skills and repositories | User request | `docs/upstream-skill-register.md`, PRD, skill-authoring guidance |
 
 ## 14. Implementation Checklist
 
@@ -367,6 +384,8 @@ Future skills:
 - [x] Add PowerShell, shell, and Microsoft Graph request safety standards.
 - [x] Add script-safety validation for secrets, tenant GUIDs, Graph writes, PowerShell mutation markers, and shell safety settings.
 - [x] Wire script-safety validation into GitHub Actions and contributor checks.
+- [x] Research official and Microsoft-owned upstream skill repositories for overlap.
+- [x] Add upstream skill register and anti-duplication routing policy.
 
 ## 15. Design Principles
 
@@ -403,6 +422,7 @@ Milestone 2:
 - Packaging manifest defines bundles for portal discovery, Azure admin, M365 admin, and security admin.
 - Portal-specific skill template and coverage tracker exist.
 - First curated batch of Microsoft-owned admin portal skills exists and is grounded in Microsoft Learn MCP or official Microsoft docs.
+- Upstream skill register exists and new skills document whether they reference, route to, wrap, vendor, or create local alternatives to official Microsoft skills.
 
 Milestone 3:
 
@@ -441,6 +461,7 @@ Milestone 4:
 - [x] Define portal-specific skill template and coverage tracker.
 - [x] Add pull request policy and CI workflows.
 - [x] Add script-safety standards and validation for future PowerShell and Graph helpers.
+- [x] Add upstream skill register and official-skill anti-duplication policy.
 
 ## 19. Validated Sources
 
@@ -453,6 +474,7 @@ The source register is [docs/source-register.md](docs/source-register.md). Major
 - Script and Graph safety: [Microsoft Graph API usage](https://learn.microsoft.com/en-us/graph/use-the-api), [Microsoft Graph authentication and authorization](https://learn.microsoft.com/en-us/graph/auth/), [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference), [Microsoft Graph PowerShell overview](https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview), [PSScriptAnalyzer](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview), and [ShellCheck](https://www.shellcheck.net/).
 - Merill Fernando research: [Merill Fernando](https://merill.net/), [Maester](https://maester.dev/), [Graph X-Ray](https://graphxray.merill.net/), and [cmd.ms](https://cmd.ms/).
 - Portal data and examples: [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io), [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json), and [microsoft/skills](https://raw.githubusercontent.com/microsoft/skills/main/README.md).
+- Upstream skill reuse: [microsoft/skills](https://github.com/microsoft/skills), [microsoft/azure-skills](https://github.com/microsoft/azure-skills), [microsoft/GitHub-Copilot-for-Azure](https://github.com/microsoft/GitHub-Copilot-for-Azure), and [docs/upstream-skill-register.md](docs/upstream-skill-register.md).
 - Portal-specific skill grounding: [Microsoft Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp-get-started), [adamfowlerit/msportals.io](https://github.com/adamfowlerit/msportals.io), and [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json).
 - Engineering principles: [Rob Pike, Notes on Programming in C](http://doc.cat-v.org/bell_labs/pikestyle).
 - GitHub workflow and CI: [GitHub Actions workflow syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions), [CodeQL code scanning](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql), and [GitHub merge methods](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github).

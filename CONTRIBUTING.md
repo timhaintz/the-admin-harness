@@ -36,6 +36,8 @@ python3 -m json.tool mcp/claude-desktop.example.json >/dev/null
 ## Skill Rules
 
 - Keep canonical skills under `.github/skills/<skill-name>/SKILL.md`.
+- Before adding a skill, check [docs/upstream-skill-register.md](docs/upstream-skill-register.md) and official Microsoft skill sources for overlap.
+- If an upstream skill exists, explain whether the local change references, routes to, wraps, vendors, or intentionally creates an alternative to it.
 - Every skill must include `evals/evals.json` with at least two realistic evals.
 - Portal-specific skills must follow [docs/portal-skill-template.md](docs/portal-skill-template.md) and be tracked in [docs/portal-skill-coverage.md](docs/portal-skill-coverage.md).
 - Do not hard-code long portal lists into skill bodies.
@@ -52,6 +54,8 @@ python3 -m json.tool mcp/claude-desktop.example.json >/dev/null
 - [GitHub Actions workflow syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
 - [About code scanning with CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
 - [Configuring default setup for code scanning](https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning)
+- [microsoft/skills](https://github.com/microsoft/skills)
+- [microsoft/azure-skills](https://github.com/microsoft/azure-skills)
 - [PSScriptAnalyzer overview](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview)
 - [ShellCheck](https://www.shellcheck.net/)
 - [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference)
