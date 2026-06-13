@@ -114,6 +114,19 @@ Every public Markdown file should either include a local `Sources` section or li
 | `portal-microsoft-365-admin-center`: Integrated apps portal | [Integrated apps portal](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps) |
 | `portal-microsoft-365-admin-center`: centralized deployment of Office Add-ins | [Centralized deployment of Office Add-ins](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/centralized-deployment-of-add-ins) |
 | `portal-microsoft-365-admin-center`: upstream skill overlap for Microsoft 365 workplace data and agent tooling | [microsoft/work-iq](https://github.com/microsoft/work-iq) and [microsoft/skills](https://github.com/microsoft/skills) |
+| `portal-exchange-admin-center`: source-backed portal entry | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
+| `portal-exchange-admin-center`: Learn MCP grounding | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) |
+| `portal-exchange-admin-center`: EAC overview, URL, and RBAC visibility | [Exchange admin center in Exchange Online](https://learn.microsoft.com/en-us/exchange/exchange-admin-center) |
+| `portal-exchange-admin-center`: Exchange Online recipient types | [Recipients in Exchange Online](https://learn.microsoft.com/en-us/exchange/recipients-in-exchange-online/recipients-in-exchange-online) |
+| `portal-exchange-admin-center`: Exchange Online permissions and RBAC | [Permissions in Exchange Online](https://learn.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) |
+| `portal-exchange-admin-center`: role group management | [Manage role groups in Exchange Online](https://learn.microsoft.com/en-us/exchange/permissions-exo/role-groups) |
+| `portal-exchange-admin-center`: Exchange Administrator role | [Exchange Administrator role](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-exchange-online-admin-role) |
+| `portal-exchange-admin-center`: mail flow best practices and DNS records | [Mail flow best practices](https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/mail-flow-best-practices) |
+| `portal-exchange-admin-center`: connector scenarios and open relay warning | [Configure mail flow using connectors](https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) |
+| `portal-exchange-admin-center`: accepted domain types | [Manage accepted domains](https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) |
+| `portal-exchange-admin-center`: mail flow rules and safety caveats | [Mail flow rules](https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) |
+| `portal-exchange-admin-center`: mailbox migration options | [Mailbox migration options](https://learn.microsoft.com/en-us/exchange/mailbox-migration/mailbox-migration) |
+| `portal-exchange-admin-center`: upstream Purview DLM diagnostic overlap | [microsoft/purview-dlm-mcp](https://github.com/microsoft/purview-dlm-mcp) |
 
 ## Open Source And Secrets
 
