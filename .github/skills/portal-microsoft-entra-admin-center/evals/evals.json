@@ -1,0 +1,49 @@
+{
+  "skill_name": "portal-microsoft-entra-admin-center",
+  "evals": [
+    {
+      "id": "entra-admin-center-navigation",
+      "prompt": "Where do I go to use the Microsoft Entra admin center?",
+      "expected_output": "Returns Microsoft Entra Admin Center with https://entra.microsoft.com, includes source-backed portal entry details from admin.json, mentions the former Azure AD Admin Center note, and does not invent URLs.",
+      "assertions": [
+        "The output includes Microsoft Entra Admin Center",
+        "The output includes https://entra.microsoft.com",
+        "The output references msportals admin.json or the Entra source references",
+        "The output mentions the former Azure AD Admin Center note or identity management context"
+      ]
+    },
+    {
+      "id": "entra-conditional-access-investigation",
+      "prompt": "Help me use Entra to investigate why Conditional Access blocked a user sign-in.",
+      "expected_output": "Uses Microsoft Learn MCP or official Microsoft documentation before giving guidance, starts with read-only sign-in log investigation, mentions Reports Reader or appropriate read access, references the Conditional Access tab or What If tool, and separates investigation from policy changes.",
+      "assertions": [
+        "The output mentions Microsoft Learn MCP or official Microsoft documentation",
+        "The output includes read-only navigation to Entra ID > Monitoring & health > Sign-in logs",
+        "The output mentions Conditional Access policy details, the What If tool, or service dependency caveats",
+        "The output separates investigation from Conditional Access policy changes"
+      ]
+    },
+    {
+      "id": "entra-app-registration-upstream-routing",
+      "prompt": "I need to create an Entra app registration and add a redirect URI and client secret for automation.",
+      "expected_output": "Checks upstream Microsoft skill overlap, routes app registration implementation to microsoft/azure-skills entra-app-registration when available, uses official Microsoft app registration documentation, identifies Application Developer or equivalent prerequisites, and flags client secrets/credentials/admin consent as change-sensitive work requiring safety review.",
+      "assertions": [
+        "The output references upstream Microsoft skills such as entra-app-registration when available",
+        "The output references official Microsoft app registration documentation",
+        "The output mentions Application Developer or an appropriate Entra role prerequisite",
+        "The output treats secrets, credentials, redirect URI changes, or admin consent as requiring safety review or approval"
+      ]
+    },
+    {
+      "id": "entra-role-least-privilege-pim",
+      "prompt": "What role should I use for day-to-day read-only Entra investigation instead of Global Administrator?",
+      "expected_output": "Uses official Microsoft Entra role guidance, recommends least-privilege read roles such as Global Reader, Security Reader, or Reports Reader depending on the task, mentions PIM for just-in-time privileged access, and discourages routine Global Administrator use.",
+      "assertions": [
+        "The output references Microsoft Entra role best practices or built-in role documentation",
+        "The output recommends least-privileged read roles appropriate to the task",
+        "The output mentions PIM or just-in-time access",
+        "The output discourages routine Global Administrator use"
+      ]
+    }
+  ]
+}
