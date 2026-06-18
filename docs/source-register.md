@@ -127,6 +127,24 @@ Every public Markdown file should either include a local `Sources` section or li
 | `portal-exchange-admin-center`: mail flow rules and safety caveats | [Mail flow rules](https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) |
 | `portal-exchange-admin-center`: mailbox migration options | [Mailbox migration options](https://learn.microsoft.com/en-us/exchange/mailbox-migration/mailbox-migration) |
 | `portal-exchange-admin-center`: upstream Purview DLM diagnostic overlap | [microsoft/purview-dlm-mcp](https://github.com/microsoft/purview-dlm-mcp) |
+| `portal-microsoft-teams-admin-center`: source-backed portal entry | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
+| `portal-microsoft-teams-admin-center`: Learn MCP grounding | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) |
+| `portal-microsoft-teams-admin-center`: Teams administration roadmap | [Manage and monitor Teams](https://learn.microsoft.com/en-us/microsoftteams/manage-teams-overview) |
+| `portal-microsoft-teams-admin-center`: Teams admin center team management | [Manage teams in the Microsoft Teams admin center](https://learn.microsoft.com/en-us/microsoftteams/manage-teams-in-modern-portal) |
+| `portal-microsoft-teams-admin-center`: Teams admin roles and least privilege | [Use Microsoft Teams administrator roles to manage Teams](https://learn.microsoft.com/en-us/microsoftteams/using-admin-roles) |
+| `portal-microsoft-teams-admin-center`: Teams policy assignment concepts | [Assign policies in Teams](https://learn.microsoft.com/en-us/microsoftteams/policy-assignment-overview) |
+| `portal-microsoft-teams-admin-center`: Teams policy assignment operations | [Assign policies to users and groups](https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups) |
+| `portal-microsoft-teams-admin-center`: channel policies | [Manage channel policies in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/teams-policies) |
+| `portal-microsoft-teams-admin-center`: meeting and event policies | [Manage meeting and event policies in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-overview) |
+| `portal-microsoft-teams-admin-center`: messaging policies | [Manage messaging policies in Teams](https://learn.microsoft.com/en-us/microsoftteams/messaging-policies-in-teams) |
+| `portal-microsoft-teams-admin-center`: app and agent governance | [Manage your apps in the Microsoft Teams admin center](https://learn.microsoft.com/en-us/microsoftteams/manage-apps) |
+| `portal-microsoft-teams-admin-center`: app permission policy caveats | [Manage app permission policies in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/teams-app-permission-policies) |
+| `portal-microsoft-teams-admin-center`: external access | [Manage external meetings and chat with people and organizations using Microsoft identities](https://learn.microsoft.com/en-us/microsoftteams/manage-external-access) |
+| `portal-microsoft-teams-admin-center`: guest access and B2B dependencies | [Guest access in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/guest-access) |
+| `portal-microsoft-teams-admin-center`: Teams Phone and cloud voice | [Teams calling and cloud voice overview](https://learn.microsoft.com/en-us/microsoftteams/cloud-voice-landing-page) |
+| `portal-microsoft-teams-admin-center`: Teams device management | [Manage devices in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/devices/device-management) |
+| `portal-microsoft-teams-admin-center`: analytics and reporting | [Microsoft Teams analytics and reporting](https://learn.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference) |
+| `portal-microsoft-teams-admin-center`: upstream Microsoft 365 data, app development, Graph, and DLM overlap | [microsoft/work-iq](https://github.com/microsoft/work-iq), [microsoft/skills](https://github.com/microsoft/skills), [microsoft/Migrate2GSA](https://github.com/microsoft/Migrate2GSA), and [microsoft/purview-dlm-mcp](https://github.com/microsoft/purview-dlm-mcp) |
 
 ## Open Source And Secrets
 

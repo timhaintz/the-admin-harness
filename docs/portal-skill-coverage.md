@@ -18,7 +18,7 @@ This tracker records portal-specific skill coverage against source-backed `mspor
 | [x] | Microsoft Intune Admin Center | `admin.json` | `https://intune.microsoft.com` | `.github/skills/portal-microsoft-intune-admin-center/` | [x] | [x] |
 | [x] | Microsoft Entra Admin Center | `admin.json` | `https://entra.microsoft.com` | `.github/skills/portal-microsoft-entra-admin-center/` | [x] | [x] |
 | [x] | Exchange Admin Center (EAC) | `admin.json` | `https://admin.cloud.microsoft/exchange#/homepage` | `.github/skills/portal-exchange-admin-center/` | [x] | [x] |
-| [ ] | Microsoft Teams Admin Center | `admin.json` | `https://admin.teams.microsoft.com` | `.github/skills/portal-microsoft-teams-admin-center/` | [ ] | [ ] |
+| [x] | Microsoft Teams Admin Center | `admin.json` | `https://admin.teams.microsoft.com` | `.github/skills/portal-microsoft-teams-admin-center/` | [x] | [x] |
 | [ ] | SharePoint Admin Center | `admin.json` | `https://admin.microsoft.com/sharepoint` | `.github/skills/portal-sharepoint-admin-center/` | [ ] | [ ] |
 | [ ] | Microsoft Purview | `admin.json` | `https://purview.microsoft.com/` | `.github/skills/portal-microsoft-purview/` | [ ] | [ ] |
 | [ ] | Microsoft 365 Defender | `admin.json` | `https://security.microsoft.com` | `.github/skills/portal-microsoft-365-defender/` | [ ] | [ ] |
