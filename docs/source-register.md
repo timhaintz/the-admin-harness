@@ -203,6 +203,20 @@ Every public Markdown file should either include a local `Sources` section or li
 | `portal-microsoft-365-defender`: Defender for Cloud Apps | [Microsoft Defender for Cloud Apps](https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps) |
 | `portal-microsoft-365-defender`: Defender for Cloud Apps in Defender portal | [Defender for Cloud Apps in the Defender portal](https://learn.microsoft.com/en-us/defender-cloud-apps/microsoft-365-security-center-defender-cloud-apps) |
 | `portal-microsoft-365-defender`: upstream Azure, Agent 365, and Graph overlap | [microsoft/azure-skills](https://github.com/microsoft/azure-skills), [microsoft/agent365-skills](https://github.com/microsoft/agent365-skills), and [microsoft/Migrate2GSA](https://github.com/microsoft/Migrate2GSA) |
+| `portal-power-platform-admin-center`: source-backed portal entry | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
+| `portal-power-platform-admin-center`: Learn MCP grounding | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) |
+| `portal-power-platform-admin-center`: admin center overview | [Overview of the Power Platform admin center](https://learn.microsoft.com/en-us/power-platform/admin/admin-documentation) |
+| `portal-power-platform-admin-center`: environments overview | [Power Platform environments overview](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) |
+| `portal-power-platform-admin-center`: environment creation | [Create and manage environments](https://learn.microsoft.com/en-us/power-platform/admin/create-environment) |
+| `portal-power-platform-admin-center`: Dataverse role types | [Role-based security roles for Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/database-security) |
+| `portal-power-platform-admin-center`: Dataverse security roles and privileges | [Security roles and privileges for Dataverse](https://learn.microsoft.com/en-us/power-platform/admin/security-roles-privileges) |
+| `portal-power-platform-admin-center`: data policies | [Data policies](https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention) |
+| `portal-power-platform-admin-center`: connector classification | [Connector classification](https://learn.microsoft.com/en-us/power-platform/admin/dlp-connector-classification) |
+| `portal-power-platform-admin-center`: Managed Environments | [Managed Environments overview](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview) |
+| `portal-power-platform-admin-center`: Dataverse capacity and storage | [Dataverse capacity-based storage](https://learn.microsoft.com/en-us/power-platform/admin/capacity-storage) |
+| `portal-power-platform-admin-center`: tenant settings | [Tenant settings](https://learn.microsoft.com/en-us/power-platform/admin/tenant-settings) |
+| `portal-power-platform-admin-center`: governance considerations | [Security and governance considerations](https://learn.microsoft.com/en-us/power-platform/admin/governance-considerations) |
+| `portal-power-platform-admin-center`: upstream Power Platform, Dataverse, managed app, Copilot Studio, Power CAT, and build-tools overlap | [microsoft/power-platform-skills](https://github.com/microsoft/power-platform-skills), [microsoft/Dataverse-skills](https://github.com/microsoft/Dataverse-skills), [microsoft/Managed-Apps](https://github.com/microsoft/Managed-Apps), [microsoft/skills-for-copilot-studio](https://github.com/microsoft/skills-for-copilot-studio), [microsoft/power-cat-skills](https://github.com/microsoft/power-cat-skills), and [microsoft/powerplatform-build-tools](https://github.com/microsoft/powerplatform-build-tools) |
 
 ## Open Source And Secrets
 
