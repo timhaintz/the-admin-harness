@@ -49,6 +49,7 @@ Local portal-specific skills should usually be routing and safety layers. They s
 | `portal-sharepoint-admin-center` | `microsoft/SharePoint-Embedded-Samples`, `microsoft/work-iq`, `microsoft/power-platform-skills`, `microsoft/Managed-Apps`, `microsoft/purview-dlm-mcp`, Microsoft Graph sample leads | Keep local SharePoint Admin Center portal skill as a router/safety layer. Route SharePoint Embedded, app connector/developer, workplace-data, Purview DLM, and Graph sample workflows upstream when relevant. |
 | Future Azure Portal skill | `microsoft/azure-skills` | Build local Azure Portal skill only for portal navigation, tenant/cloud routing, and safety handoff. Use official Azure skills for Azure resource workflows. |
 | `portal-microsoft-purview` | `microsoft/purview-dlm-mcp`, `microsoft/Dataverse-skills`, `microsoft/power-platform-skills`, `microsoft/work-iq`, Microsoft Graph sample leads | Keep local Purview portal skill as a router/safety layer. Route DLM diagnostics, Dataverse/Power Platform audit and retention, workplace-data, and Graph sample workflows upstream when relevant. |
+| `portal-microsoft-365-defender` | `microsoft/azure-skills`, `microsoft/agent365-skills`, Microsoft Graph sample leads | Keep local Microsoft 365 Defender portal skill as a router/safety layer. Route Azure/Sentinel/Defender for Cloud resource work, Agent 365 observability, and Graph sample workflows upstream when relevant. |
 | Future Power Platform skill | `power-platform-skills`, `Dataverse-skills` | Build local Power Platform admin center skill as a router/safety layer. Route product-specific build/deploy/admin operations to upstream where relevant. |
 
 ## Required Check Before New Skills
@@ -79,3 +80,4 @@ If an upstream skill exists, the PR should explain why the local skill is a refe
 - [microsoft/Migrate2GSA](https://github.com/microsoft/Migrate2GSA)
 - [microsoft/SharePoint-Embedded-Samples](https://github.com/microsoft/SharePoint-Embedded-Samples)
 - [microsoft/Managed-Apps](https://github.com/microsoft/Managed-Apps)
+- [microsoft/agent365-skills](https://github.com/microsoft/agent365-skills)

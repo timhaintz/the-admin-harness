@@ -380,6 +380,7 @@ Future skills:
 - [x] Create fifth portal-specific skill: Microsoft Teams Admin Center.
 - [x] Create sixth portal-specific skill: SharePoint Admin Center.
 - [x] Create seventh portal-specific skill: Microsoft Purview.
+- [x] Create eighth portal-specific skill: Microsoft 365 Defender.
 - [ ] Create first portal-specific skill batch for high-value admin portals: Microsoft 365 Admin Center, Microsoft Intune Admin Center, Microsoft Entra Admin Center, Exchange Admin Center, Teams Admin Center, SharePoint Admin Center, Microsoft Purview, Microsoft Defender, Power Platform admin center, and Azure Portal.
 - [ ] Plan complete source-backed coverage for every supported portal group.
 - [x] Require pull requests for branch work and preserve full merge commits.
