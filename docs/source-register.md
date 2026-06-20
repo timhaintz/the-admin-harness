@@ -160,6 +160,28 @@ Every public Markdown file should either include a local `Sources` section or li
 | `portal-sharepoint-admin-center`: user profile administration | [Manage user profiles](https://learn.microsoft.com/en-us/sharepoint/manage-user-profiles) |
 | `portal-sharepoint-admin-center`: custom script safety | [Allow or prevent custom scripts](https://learn.microsoft.com/en-us/sharepoint/allow-or-prevent-custom-script) |
 | `portal-sharepoint-admin-center`: upstream SharePoint Embedded, app connector, WorkIQ, DLM, and Graph overlap | [microsoft/SharePoint-Embedded-Samples](https://github.com/microsoft/SharePoint-Embedded-Samples), [microsoft/power-platform-skills](https://github.com/microsoft/power-platform-skills), [microsoft/Managed-Apps](https://github.com/microsoft/Managed-Apps), [microsoft/work-iq](https://github.com/microsoft/work-iq), [microsoft/purview-dlm-mcp](https://github.com/microsoft/purview-dlm-mcp), and [microsoft/Migrate2GSA](https://github.com/microsoft/Migrate2GSA) |
+| `portal-microsoft-purview`: source-backed portal entry | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
+| `portal-microsoft-purview`: Learn MCP grounding | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) |
+| `portal-microsoft-purview`: product scope | [Learn about Microsoft Purview](https://learn.microsoft.com/en-us/purview/purview) |
+| `portal-microsoft-purview`: portal navigation and solution cards | [Microsoft Purview portal](https://learn.microsoft.com/en-us/purview/purview-portal) |
+| `portal-microsoft-purview`: permissions, role groups, Entra role precedence, and admin units | [Permissions in the Microsoft Purview portal](https://learn.microsoft.com/en-us/purview/purview-permissions) |
+| `portal-microsoft-purview`: Data Lifecycle Management | [Data Lifecycle Management](https://learn.microsoft.com/en-us/purview/data-lifecycle-management) |
+| `portal-microsoft-purview`: retention policy creation and timing caveats | [Create retention policies](https://learn.microsoft.com/en-us/purview/create-retention-policies) |
+| `portal-microsoft-purview`: records management | [Records management](https://learn.microsoft.com/en-us/purview/records-management) |
+| `portal-microsoft-purview`: eDiscovery current experience | [eDiscovery](https://learn.microsoft.com/en-us/purview/edisc) |
+| `portal-microsoft-purview`: audit capabilities | [Audit solutions](https://learn.microsoft.com/en-us/purview/audit-solutions-overview) |
+| `portal-microsoft-purview`: audit search | [Search the audit log](https://learn.microsoft.com/en-us/purview/audit-new-search) |
+| `portal-microsoft-purview`: Data Loss Prevention | [Data Loss Prevention](https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp) |
+| `portal-microsoft-purview`: Information Protection | [Information Protection](https://learn.microsoft.com/en-us/purview/information-protection) |
+| `portal-microsoft-purview`: sensitivity labels | [Sensitivity labels](https://learn.microsoft.com/en-us/purview/sensitivity-labels) |
+| `portal-microsoft-purview`: Insider Risk Management | [Insider Risk Management](https://learn.microsoft.com/en-us/purview/insider-risk-management) |
+| `portal-microsoft-purview`: Communication Compliance | [Communication Compliance](https://learn.microsoft.com/en-us/purview/communication-compliance) |
+| `portal-microsoft-purview`: Compliance Manager | [Compliance Manager](https://learn.microsoft.com/en-us/purview/compliance-manager) |
+| `portal-microsoft-purview`: data governance | [Data governance](https://learn.microsoft.com/en-us/purview/data-governance-overview) |
+| `portal-microsoft-purview`: Data Map | [Data Map](https://learn.microsoft.com/en-us/purview/data-map) |
+| `portal-microsoft-purview`: Unified Catalog | [Unified Catalog](https://learn.microsoft.com/en-us/purview/unified-catalog) |
+| `portal-microsoft-purview`: AI data security and compliance | [AI data security and compliance](https://learn.microsoft.com/en-us/purview/ai-microsoft-purview) |
+| `portal-microsoft-purview`: upstream DLM, Dataverse/Power Platform, WorkIQ, and Graph overlap | [microsoft/purview-dlm-mcp](https://github.com/microsoft/purview-dlm-mcp), [microsoft/Dataverse-skills](https://github.com/microsoft/Dataverse-skills), [microsoft/power-platform-skills](https://github.com/microsoft/power-platform-skills), [microsoft/work-iq](https://github.com/microsoft/work-iq), and [microsoft/Migrate2GSA](https://github.com/microsoft/Migrate2GSA) |
 
 ## Open Source And Secrets
 
