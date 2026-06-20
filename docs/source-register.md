@@ -145,6 +145,21 @@ Every public Markdown file should either include a local `Sources` section or li
 | `portal-microsoft-teams-admin-center`: Teams device management | [Manage devices in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/devices/device-management) |
 | `portal-microsoft-teams-admin-center`: analytics and reporting | [Microsoft Teams analytics and reporting](https://learn.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference) |
 | `portal-microsoft-teams-admin-center`: upstream Microsoft 365 data, app development, Graph, and DLM overlap | [microsoft/work-iq](https://github.com/microsoft/work-iq), [microsoft/skills](https://github.com/microsoft/skills), [microsoft/Migrate2GSA](https://github.com/microsoft/Migrate2GSA), and [microsoft/purview-dlm-mcp](https://github.com/microsoft/purview-dlm-mcp) |
+| `portal-sharepoint-admin-center`: source-backed portal entry | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
+| `portal-sharepoint-admin-center`: Learn MCP grounding | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) |
+| `portal-sharepoint-admin-center`: active sites and site management | [Manage sites in the SharePoint admin center](https://learn.microsoft.com/en-us/sharepoint/manage-sites-in-new-admin-center) |
+| `portal-sharepoint-admin-center`: SharePoint Administrator role and least privilege | [About the SharePoint Administrator role](https://learn.microsoft.com/en-us/sharepoint/sharepoint-admin-role) |
+| `portal-sharepoint-admin-center`: site creation | [Create a site](https://learn.microsoft.com/en-us/sharepoint/create-site-collection) |
+| `portal-sharepoint-admin-center`: external sharing overview and Entra B2B relationship | [Overview of external sharing in SharePoint and OneDrive](https://learn.microsoft.com/en-us/sharepoint/external-sharing-overview) |
+| `portal-sharepoint-admin-center`: sharing settings for SharePoint and OneDrive | [Manage sharing settings for SharePoint and OneDrive](https://learn.microsoft.com/en-us/sharepoint/turn-external-sharing-on-or-off) |
+| `portal-sharepoint-admin-center`: site storage limits | [Manage site storage limits](https://learn.microsoft.com/en-us/sharepoint/manage-site-collection-storage-limits) |
+| `portal-sharepoint-admin-center`: site address changes | [Change a site address](https://learn.microsoft.com/en-us/sharepoint/change-site-address) |
+| `portal-sharepoint-admin-center`: migration overview | [Migrate to Microsoft 365](https://learn.microsoft.com/en-us/sharepointmigration/migrate-to-sharepoint-online) |
+| `portal-sharepoint-admin-center`: Migration Manager | [Migrate file shares with Migration Manager](https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started) |
+| `portal-sharepoint-admin-center`: SharePoint Migration Tool | [SharePoint Migration Tool](https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool) |
+| `portal-sharepoint-admin-center`: user profile administration | [Manage user profiles](https://learn.microsoft.com/en-us/sharepoint/manage-user-profiles) |
+| `portal-sharepoint-admin-center`: custom script safety | [Allow or prevent custom scripts](https://learn.microsoft.com/en-us/sharepoint/allow-or-prevent-custom-script) |
+| `portal-sharepoint-admin-center`: upstream SharePoint Embedded, app connector, WorkIQ, DLM, and Graph overlap | [microsoft/SharePoint-Embedded-Samples](https://github.com/microsoft/SharePoint-Embedded-Samples), [microsoft/power-platform-skills](https://github.com/microsoft/power-platform-skills), [microsoft/Managed-Apps](https://github.com/microsoft/Managed-Apps), [microsoft/work-iq](https://github.com/microsoft/work-iq), [microsoft/purview-dlm-mcp](https://github.com/microsoft/purview-dlm-mcp), and [microsoft/Migrate2GSA](https://github.com/microsoft/Migrate2GSA) |
 
 ## Open Source And Secrets
 
