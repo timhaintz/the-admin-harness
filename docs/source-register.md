@@ -182,6 +182,27 @@ Every public Markdown file should either include a local `Sources` section or li
 | `portal-microsoft-purview`: Unified Catalog | [Unified Catalog](https://learn.microsoft.com/en-us/purview/unified-catalog) |
 | `portal-microsoft-purview`: AI data security and compliance | [AI data security and compliance](https://learn.microsoft.com/en-us/purview/ai-microsoft-purview) |
 | `portal-microsoft-purview`: upstream DLM, Dataverse/Power Platform, WorkIQ, and Graph overlap | [microsoft/purview-dlm-mcp](https://github.com/microsoft/purview-dlm-mcp), [microsoft/Dataverse-skills](https://github.com/microsoft/Dataverse-skills), [microsoft/power-platform-skills](https://github.com/microsoft/power-platform-skills), [microsoft/work-iq](https://github.com/microsoft/work-iq), and [microsoft/Migrate2GSA](https://github.com/microsoft/Migrate2GSA) |
+| `portal-microsoft-365-defender`: source-backed portal entry | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
+| `portal-microsoft-365-defender`: Learn MCP grounding | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) |
+| `portal-microsoft-365-defender`: Defender portal overview | [Microsoft Defender XDR in the Microsoft Defender portal](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender-portal) |
+| `portal-microsoft-365-defender`: Defender XDR product scope | [What is Microsoft Defender XDR?](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender) |
+| `portal-microsoft-365-defender`: Entra global role access | [Manage access to Microsoft Defender XDR](https://learn.microsoft.com/en-us/defender-xdr/m365d-permissions) |
+| `portal-microsoft-365-defender`: unified RBAC | [Microsoft Defender unified RBAC](https://learn.microsoft.com/en-us/defender-xdr/manage-rbac) |
+| `portal-microsoft-365-defender`: incidents and alerts | [Incidents and alerts](https://learn.microsoft.com/en-us/defender-xdr/incidents-overview) |
+| `portal-microsoft-365-defender`: incident investigation | [Investigate incidents](https://learn.microsoft.com/en-us/defender-xdr/investigate-incidents) |
+| `portal-microsoft-365-defender`: advanced hunting | [Advanced hunting overview](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview) |
+| `portal-microsoft-365-defender`: Action center | [Action center](https://learn.microsoft.com/en-us/defender-xdr/m365d-action-center) |
+| `portal-microsoft-365-defender`: automated investigation and response | [Automated investigation and response](https://learn.microsoft.com/en-us/defender-xdr/m365d-autoir) |
+| `portal-microsoft-365-defender`: Secure Score | [Microsoft Secure Score](https://learn.microsoft.com/en-us/defender-xdr/microsoft-secure-score) |
+| `portal-microsoft-365-defender`: Defender for Office 365 portal experience | [Defender for Office 365 in the Defender portal](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-security-center-mdo) |
+| `portal-microsoft-365-defender`: Defender for Office 365 plans and capabilities | [Defender for Office 365 overview](https://learn.microsoft.com/en-us/defender-office-365/mdo-about) |
+| `portal-microsoft-365-defender`: Defender for Office 365 permissions | [Defender for Office 365 permissions](https://learn.microsoft.com/en-us/defender-office-365/mdo-portal-permissions) |
+| `portal-microsoft-365-defender`: submissions and Tenant Allow/Block List caveats | [Manage submissions](https://learn.microsoft.com/en-us/defender-office-365/submissions-admin) |
+| `portal-microsoft-365-defender`: Defender for Endpoint | [Microsoft Defender for Endpoint](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint) |
+| `portal-microsoft-365-defender`: Defender for Identity | [Microsoft Defender for Identity](https://learn.microsoft.com/en-us/defender-for-identity/what-is) |
+| `portal-microsoft-365-defender`: Defender for Cloud Apps | [Microsoft Defender for Cloud Apps](https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps) |
+| `portal-microsoft-365-defender`: Defender for Cloud Apps in Defender portal | [Defender for Cloud Apps in the Defender portal](https://learn.microsoft.com/en-us/defender-cloud-apps/microsoft-365-security-center-defender-cloud-apps) |
+| `portal-microsoft-365-defender`: upstream Azure, Agent 365, and Graph overlap | [microsoft/azure-skills](https://github.com/microsoft/azure-skills), [microsoft/agent365-skills](https://github.com/microsoft/agent365-skills), and [microsoft/Migrate2GSA](https://github.com/microsoft/Migrate2GSA) |
 
 ## Open Source And Secrets
 
