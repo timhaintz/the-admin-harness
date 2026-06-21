@@ -40,6 +40,8 @@ Third-party posts may help discovery, but they are not authoritative for roles, 
 
 Use the Agent Skills standard for skill structure and eval expectations. Use `github.com/microsoft/skills` as an open-source reference for Copilot-first skills, plugin bundles, MCP config examples, symlinked multi-agent skill sharing, and test harness patterns.
 
+Microsoft Scout is relevant because it supports custom `SKILL.md` skills and can AI-augment an admin across files, shell, browser, Microsoft 365, Work IQ, and automations. In this repo, Scout is a standards-compatible host for the harness, while `.github/skills/` remains the canonical skill source.
+
 Borrow structure and validation ideas selectively. Do not import broad catalogs without an explicit product decision.
 
 ## Source Handling Rules
@@ -59,3 +61,6 @@ Borrow structure and validation ideas selectively. Do not import broad catalogs 
 - [Azure MCP Server documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/)
 - [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
 - [microsoft/skills README](https://raw.githubusercontent.com/microsoft/skills/main/README.md)
+- [Microsoft Scout overview](https://learn.microsoft.com/en-us/microsoft-scout/overview)
+- [Use Microsoft Scout](https://learn.microsoft.com/en-us/microsoft-scout/use-microsoft-scout)
+- [Work IQ overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq/)

@@ -10,6 +10,8 @@ Run `scripts/validate-skills.sh`, `scripts/validate-doc-sources.sh`, `scripts/va
 
 Portal-specific skill coverage is tracked in [docs/portal-skill-coverage.md](docs/portal-skill-coverage.md), and the reusable template is [docs/portal-skill-template.md](docs/portal-skill-template.md).
 
+Agent host compatibility, including how Microsoft Scout can use the harness as an Agent Skills-based admin augmentation layer, is described in [docs/agent-host-compatibility.md](docs/agent-host-compatibility.md).
+
 Official and Microsoft-owned upstream skill sources are tracked in [docs/upstream-skill-register.md](docs/upstream-skill-register.md). New local skills should reference or route to upstream skills when they already cover a workflow.
 
 PowerShell, shell, and Microsoft Graph request safety standards are documented in [docs/script-safety.md](docs/script-safety.md).
