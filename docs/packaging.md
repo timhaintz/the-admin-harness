@@ -12,7 +12,9 @@ The Admin Harness separates capability, execution, policy, and distribution.
 
 ## Initial Direction
 
-Milestone 1 stays repo-local and source-driven. It should work directly in VS Code GitHub Copilot and remain understandable to Claude Code and other Agent Skills-compatible hosts after their public docs validate the adapter path.
+Milestone 1 stays repo-local and source-driven. It should work directly in VS Code GitHub Copilot and remain understandable to Claude Code, Microsoft Scout, and other Agent Skills-compatible hosts after their public docs validate the adapter path.
+
+Microsoft Scout should be treated as a standards-compatible custom skill host, not as a separate source of truth. Scout can point at this repo or import selected `SKILL.md` folders from `.github/skills/` using its custom skill model. The packaging layer can come later for curated bundles.
 
 Milestone 2 can add a neutral manifest that describes bundles such as portal discovery, Azure admin, Microsoft 365 admin, security admin, and MSP multi-tenant operations.
 
@@ -38,3 +40,5 @@ The Admin Harness should use this pattern for structure, not as permission to lo
 - [Claude Code skills](https://code.claude.com/docs/en/skills)
 - [microsoft/skills README](https://raw.githubusercontent.com/microsoft/skills/main/README.md)
 - [github/awesome-copilot](https://github.com/github/awesome-copilot)
+- [Microsoft Scout custom skills](https://learn.microsoft.com/en-us/microsoft-scout/use-microsoft-scout#manage-skills)
+- [docs/agent-host-compatibility.md](agent-host-compatibility.md)
