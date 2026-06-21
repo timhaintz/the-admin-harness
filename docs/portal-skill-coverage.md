@@ -23,7 +23,7 @@ This tracker records portal-specific skill coverage against source-backed `mspor
 | [x] | Microsoft Purview | `admin.json` | `https://purview.microsoft.com/` | `.github/skills/portal-microsoft-purview/` | [x] | [x] |
 | [x] | Microsoft 365 Defender | `admin.json` | `https://security.microsoft.com` | `.github/skills/portal-microsoft-365-defender/` | [x] | [x] |
 | [x] | Power Platform admin center | `admin.json` | `https://admin.powerplatform.microsoft.com` | `.github/skills/portal-power-platform-admin-center/` | [x] | [x] |
-| [ ] | Microsoft Azure Portal | `admin.json` | `https://portal.azure.com` | `.github/skills/portal-microsoft-azure-portal/` | [ ] | [ ] |
+| [x] | Microsoft Azure Portal | `admin.json` | `https://portal.azure.com` | `.github/skills/portal-microsoft-azure-portal/` | [x] | [x] |
 
 ## Upstream Group Coverage
 

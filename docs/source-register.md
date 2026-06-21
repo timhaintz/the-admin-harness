@@ -217,6 +217,21 @@ Every public Markdown file should either include a local `Sources` section or li
 | `portal-power-platform-admin-center`: tenant settings | [Tenant settings](https://learn.microsoft.com/en-us/power-platform/admin/tenant-settings) |
 | `portal-power-platform-admin-center`: governance considerations | [Security and governance considerations](https://learn.microsoft.com/en-us/power-platform/admin/governance-considerations) |
 | `portal-power-platform-admin-center`: upstream Power Platform, Dataverse, managed app, Copilot Studio, Power CAT, and build-tools overlap | [microsoft/power-platform-skills](https://github.com/microsoft/power-platform-skills), [microsoft/Dataverse-skills](https://github.com/microsoft/Dataverse-skills), [microsoft/Managed-Apps](https://github.com/microsoft/Managed-Apps), [microsoft/skills-for-copilot-studio](https://github.com/microsoft/skills-for-copilot-studio), [microsoft/power-cat-skills](https://github.com/microsoft/power-cat-skills), and [microsoft/powerplatform-build-tools](https://github.com/microsoft/powerplatform-build-tools) |
+| `portal-microsoft-azure-portal`: source-backed portal entry | [msportals admin.json](https://raw.githubusercontent.com/adamfowlerit/msportals.io/master/_data/portals/admin.json) |
+| `portal-microsoft-azure-portal`: Learn MCP grounding | [Microsoft Learn MCP get started](https://learn.microsoft.com/en-us/training/support/mcp-get-started) |
+| `portal-microsoft-azure-portal`: Azure Portal overview | [What is the Azure portal?](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview) |
+| `portal-microsoft-azure-portal`: Azure Resource Manager | [What is Azure Resource Manager?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview) |
+| `portal-microsoft-azure-portal`: resource groups in portal | [Manage resource groups in the Azure portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) |
+| `portal-microsoft-azure-portal`: Azure RBAC overview | [What is Azure RBAC?](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview) |
+| `portal-microsoft-azure-portal`: Azure RBAC best practices | [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices) |
+| `portal-microsoft-azure-portal`: Azure role assignments in portal | [Assign Azure roles using the Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) |
+| `portal-microsoft-azure-portal`: Azure Policy | [Overview of Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/overview) |
+| `portal-microsoft-azure-portal`: Azure Monitor | [Azure Monitor overview](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview) |
+| `portal-microsoft-azure-portal`: Azure Service Health | [What is Azure Service Health?](https://learn.microsoft.com/en-us/azure/service-health/overview) |
+| `portal-microsoft-azure-portal`: Azure Cloud Shell | [What is Azure Cloud Shell?](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) |
+| `portal-microsoft-azure-portal`: Cost Analysis | [Start using Cost Analysis](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis) |
+| `portal-microsoft-azure-portal`: Azure subscription and service limits | [Azure subscription and service limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits) |
+| `portal-microsoft-azure-portal`: Azure MCP and upstream Azure skills overlap | [Azure MCP Server documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/), [microsoft/azure-skills](https://github.com/microsoft/azure-skills), and [microsoft/GitHub-Copilot-for-Azure](https://github.com/microsoft/GitHub-Copilot-for-Azure) |
 
 ## Open Source And Secrets
 
