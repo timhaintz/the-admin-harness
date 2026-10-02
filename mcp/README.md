@@ -27,6 +27,20 @@ The discovery examples configure public documentation/registry endpoints without
 
 For Claude Desktop, use the vendor's native custom-connector UI for remote endpoints; the local JSON example no longer launches the third-party `mcp-remote` bridge. Anthropic documents that remote custom connectors connect from its cloud infrastructure, so they do not provide local access to a private LAN endpoint. Desktop local-server configuration and Claude Code configuration are separate mechanisms. Host login and compatibility trials remain unperformed.
 
+### Codex Public Discovery Setup
+
+Codex supports native Streamable HTTP and shares host configuration between its desktop app, CLI and IDE extension. To opt into the two public endpoints tested here:
+
+```bash
+codex mcp add redis-docs --url https://redis.io/mcp
+codex mcp add opentofu --url https://mcp.opentofu.org/mcp
+codex mcp list
+```
+
+The CLI saves these entries in the user's Codex configuration; `list` confirms registration, not connectivity. In the desktop app, open **Settings → MCP servers** and select **Restart** to refresh the configured servers. Use `/mcp` to inspect connected servers, then request a public Redis documentation search or OpenTofu provider lookup. These endpoints do not require target credentials.
+
+The [measured native Codex test](../docs/evals/admin-domain-validation.md) records successful discovery and one public tool call per server on macOS with CLI 0.159.2. This is a narrow public-service check, not a database/infrastructure integration or proof that this repository's skill layout is loaded by Codex.
+
 ## Sources
 
 - [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18)
@@ -36,4 +50,5 @@ For Claude Desktop, use the vendor's native custom-connector UI for remote endpo
 - [Claude native remote connectors](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
 - [Redis documentation MCP](https://redis.io/docs/latest/develop/setup/build-with-an-agent/)
 - [OpenTofu official MCP](https://github.com/opentofu/opentofu-mcp-server)
+- [Official Codex MCP configuration](https://learn.chatgpt.com/docs/extend/mcp)
 - [GitHub Actions secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)

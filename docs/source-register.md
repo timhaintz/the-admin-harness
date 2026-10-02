@@ -486,6 +486,14 @@ Claim context: [Tool Creation official inventory](mcp-domains/tool-creation.md).
 - [PostgreSQL EXPLAIN execution and effects](https://www.postgresql.org/docs/18/sql-explain.html)
 - [Microsoft Playwright MCP](https://github.com/microsoft/playwright-mcp)
 
+### Native Codex MCP Verification
+
+Claim context: [MCP setup](../mcp/README.md) and [the dated validation record](evals/admin-domain-validation.md). macOS Codex 0.159.2 discovery and public Redis Docs/OpenTofu queries passed; the initial Python HTTP errors remain recorded.
+
+- [Official Codex MCP configuration and desktop refresh](https://learn.chatgpt.com/docs/extend/mcp)
+- [Official Codex app-server direct MCP discovery/call API](https://learn.chatgpt.com/docs/app-server)
+- [Cloudflare client-signature blocking, error 1010](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/)
+
 ## User-Requested Requirements
 
 These items are requirements from the project owner and should be implemented only where public technical sources support the mechanics:
@@ -505,7 +513,7 @@ These items are requirements from the project owner and should be implemented on
 
 - First-class claims for specific non-Copilot/non-Claude hosts need host-specific public docs before they are advertised as supported.
 - Provider/model-specific prompt tuning claims need public vendor documentation or eval evidence before they become project guidance.
-- Broader-domain skills and eval fixtures are authored, and official MCP publication/upstream reuse are recorded. Target installations, authenticated tool effects, licensing, practical recovery and workstation parity remain unverified. Microsoft Learn metadata negotiation passed; Redis Docs/OpenTofu initialization returned HTTP 403 from the local environment. These narrow checks do not establish a target integration.
+- Broader-domain skills and eval fixtures are authored, and official MCP publication/upstream reuse are recorded. Target installations, authenticated tool effects, licensing, practical recovery and workstation parity remain unverified. Microsoft Learn metadata negotiation passed; initial Python Redis Docs/OpenTofu probes returned HTTP 403, while native macOS Codex discovery and one public query per server subsequently passed. These narrow checks do not establish a target integration.
 - No independent ranking metric or adoption dataset has been established for the five-organisation shortlists.
 
 ## Sources
