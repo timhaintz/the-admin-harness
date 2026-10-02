@@ -1,6 +1,6 @@
 # The Admin Harness
 
-The Admin Harness is a source-driven agentic resource for IT administrators. It packages Microsoft portal discovery, documentation-grounded admin workflows, MCP configuration examples, Agent Skills, and safety policies for agents such as VS Code GitHub Copilot, Copilot CLI, Copilot cloud agent, Claude Code, Microsoft Scout, and other Agent Skills-compatible hosts.
+The Admin Harness is a source-driven agentic resource for IT administrators. It packages Microsoft portal discovery, documentation-grounded admin workflows, MCP configuration examples, Agent Skills, safety policies, and research across systems, networking, databases, cloud infrastructure, and tool creation for agents such as VS Code GitHub Copilot, Copilot CLI, Copilot cloud agent, Claude Code, Microsoft Scout, and other Agent Skills-compatible hosts.
 
 This project is intended to be public open source. Everything committed here should be safe for public viewing: no tenant IDs, admin credentials, tokens, `.env` files, browser profiles, customer data, or generated credential caches.
 
@@ -21,6 +21,8 @@ Contributions should follow [CONTRIBUTING.md](CONTRIBUTING.md): branch per chang
 ## Current Status
 
 This repo is in an early public preview phase. It includes cross-agent instructions, Agent Skills, evaluations, MCP configuration templates, source-backed portal coverage tracking, and an initial batch of common Microsoft admin portal skills. It does not yet execute Microsoft tenant changes.
+
+The [administration domain catalog](docs/admin-domain-catalog.md) adds five vendor or maintainer shortlists for systems and services, networking, databases, cloud and infrastructure, and tool creation. Each area records five organisations, representative products, official documentation, workflow research leads, and validation gaps. These are editorial research selections, not market-share rankings or implemented integrations. Existing Microsoft portal skills remain the implemented skill coverage; the broader catalog does not install tools, provision services, or certify a ready-to-run workstation.
 
 ## Design Principles
 

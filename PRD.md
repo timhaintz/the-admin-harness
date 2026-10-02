@@ -10,9 +10,13 @@ The repository is intended to be public open source. Everything committed here m
 
 The first implementation milestone is a documentation and skills harness, not an autonomous admin-action product. The harness should help an admin find authoritative portals and documentation, decide which MCP servers and credentials are needed, and follow safe workflows. Any login, tenant mutation, or privileged admin action must be handled through explicit configuration, least-privilege credentials, step-up approval, auditable logs, and eval coverage.
 
+The 2 October 2026 scope addition extends source-backed research to systems and services, networking, databases, cloud and infrastructure, and tool creation. Each area captures five relevant vendors or upstream maintainers, representative product families, official documentation, workflow leads, and evidence gaps. This is a research catalog; existing skills remain the implemented coverage. It does not claim that tools are installed, profiles provision services, or cross-platform workstation delivery is implemented.
+
 ## 2. Problem
 
 IT admins work across hundreds of Microsoft portals, product-specific admin centers, sovereign cloud endpoints, licensing pages, service health portals, and documentation surfaces. Assistant agents can help, but only if they are grounded in current sources and constrained by a safe operating model.
+
+Broader administration also spans operating systems, network devices, databases, infrastructure providers, and automation toolchains. The domain catalog makes their authoritative documentation discoverable while keeping product/version, identity, effects, and verification requirements explicit.
 
 Current gaps:
 
@@ -36,6 +40,7 @@ Current gaps:
 9. Keep every committed artifact suitable for a public open-source repository.
 10. Define source-backed safety standards and validation for PowerShell, shell, and Microsoft Graph request examples before adding tenant-adjacent helper scripts.
 11. Prefer official Microsoft skills, plugins, MCP servers, and Microsoft-owned domain repos when they already cover a workflow, and use The Admin Harness as a routing, portal-source, and safety layer instead of duplicating upstream content.
+12. Maintain source-backed research for the five administration domains, with five vendor/maintainer selections per domain and clear distinctions between official product facts, proposed workflows, and locally verified integrations.
 
 ## 4. Non-Goals
 
@@ -54,6 +59,7 @@ Current gaps:
 - Security, compliance, and identity administrators.
 - MSP and partner administrators managing multiple tenants.
 - IT generalists who need guided discovery across Microsoft admin surfaces.
+- Systems, network, database, and infrastructure administrators researching workflows across multiple vendors.
 - Agent/harness builders who want reusable IT admin skills and MCP profiles.
 
 ## 6. Use Cases
@@ -85,6 +91,10 @@ An admin switches between VS Code Copilot, Copilot CLI, Claude Code, and another
 ### 6.7 Portal-Specific Skill Assistance
 
 An admin asks: "Help me use the Intune admin portal to investigate compliance policy status." The agent should load a portal-specific skill for Microsoft Intune Admin Center that starts from the source-backed portal entry, uses Microsoft Learn MCP or official Microsoft docs for current procedural guidance, separates read-only investigation from changes, lists required roles/prerequisites, and hands off to `admin-change-safety` before any tenant mutation.
+
+### 6.8 Administration Domain And Organisation Discovery
+
+An admin selects systems/services, networking, databases, cloud/infrastructure, tool creation, or a combination, and supplies their actual products, versions, environment, and task. Use [the domain catalog](docs/admin-domain-catalog.md) to find relevant organisations and authoritative documentation; then check available upstream skills, tools, permissions, and validation requirements. Selecting a domain does not grant target authority or install/provision a component. Future selectable bundles need explicit supported artifacts, effect scope, dependencies, resource budgets, lifecycle rules, and evaluated workflows before they can be advertised as ready.
 
 ## 7. Source Strategy
 
@@ -140,6 +150,12 @@ Examples:
 - Entra app registration and Entra Agent ID workflows should route to official upstream skills when installed, while local Entra portal skills provide portal source, tenant, and safety context.
 - Purview Data Lifecycle Management diagnostics should route to `microsoft/purview-dlm-mcp` where applicable.
 - Power Platform and Dataverse workflows should check Microsoft-owned Power Platform and Dataverse skill repos before adding local procedure.
+
+### 7.7 Broader Domain Research
+
+Use official vendor or upstream-maintainer documentation for non-Microsoft products. The catalog's five organisations per domain form a non-exhaustive editorial shortlist selected for relevant administrative scope, representative platform coverage, and available authoritative documentation. An organisation may occur in multiple domains. Numbering identifies entries; it does not imply market-share, popularity, revenue, or suitability rank. A future ranked list must state its metric, population, measurement date, and independent evidence rather than infer adoption from a vendor's documentation.
+
+Each domain guide records its check date, product/version context, primary references, research leads, authority requirements, proposed independent verification, and missing implementation/evaluation evidence. Do not copy private operational data or whole vendor manuals. Recheck version-specific procedures and upstream overlaps before turning a research lead into a skill or MCP profile. Public links and source review establish research provenance, not runtime support or permission to redistribute vendor tools.
 
 ## 8. Agent and Packaging Standards
 
@@ -351,8 +367,14 @@ Future skills:
 | Research Merill Fernando tools for Microsoft admin/script safety patterns | User request | `docs/script-safety.md`, source register |
 | Prepare for safe PowerShell and Graph helper scripts | User request | `docs/script-safety.md`, `scripts/validate-script-safety.sh`, CI workflow |
 | Avoid duplicating official Microsoft skills and repositories | User request | `docs/upstream-skill-register.md`, PRD, skill-authoring guidance |
+| Source-backed coverage for systems/services, networking, databases, cloud/infrastructure, and tool creation | User request, 2 October 2026 | `docs/admin-domain-catalog.md`, domain guides, source register |
+| Capture five main organisations per administration area | User request, 2 October 2026; editorial shortlist pending any explicit ranking metric | Five vendor/maintainer entries per domain, official product sources, selection method and gaps |
 
 ## 14. Implementation Checklist
+
+- [x] Add five source-backed administration domain guides and a five-organisation shortlist for each.
+- [ ] Evaluate and implement selected broader-domain skills and integrations; document upstream reuse decisions before adding local skills.
+- [ ] Implement and validate selectable domain/profile provisioning and cross-platform workstation packaging before advertising those capabilities.
 
 - [x] Research AGENTS.md, Agent Skills, Anthropic skills/subagents/memory, Copilot custom instructions, Copilot skills, MCP, msportals.io, Microsoft skills, and public source requirements.
 - [x] Add validated source register and per-file source sections.

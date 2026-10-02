@@ -1,6 +1,6 @@
 # Source Register
 
-This register lists public sources retrieved and used to ground The Admin Harness docs, skills, MCP templates, and repository conventions. Retrieved: 2026-05-31.
+This register lists public sources retrieved and used to ground The Admin Harness docs, skills, MCP templates, and repository conventions. Original retrieval: 2026-05-31. The administration-domain sources below were reviewed on 2026-10-02; older sections were not wholly revalidated by that addition.
 
 Every public Markdown file should either include a local `Sources` section or link to this register. Product requirements that came from the project owner are marked as user-requested; technical standards and implementation claims should point to public sources.
 
@@ -262,6 +262,113 @@ Every public Markdown file should either include a local `Sources` section or li
 | --- | --- |
 | Rob Pike's programming rules: measure before optimizing, prefer simple algorithms/data structures, and let data dominate | [Rob Pike, Notes on Programming in C](http://doc.cat-v.org/bell_labs/pikestyle) |
 
+## Administration Domain Sources
+
+Reviewed: 2026-10-02. The [domain catalog](admin-domain-catalog.md) records five editorial organisation/maintainer selections per domain. The references below ground product facts; they do not establish a market ranking or a supported runtime integration. Each guide carries claim-level links, version context, proposed evaluation and remaining gaps.
+
+### Systems And Services
+
+Claim context and version notes: [Systems And Services guide](admin-domains/systems-and-services.md). These sources support documented product capabilities and boundaries; the proposed workflows remain unevaluated.
+
+- [Microsoft: Windows Server management overview](https://learn.microsoft.com/en-us/windows-server/administration/overview)
+- [Microsoft: Windows Admin Center user access options](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/plan/user-access-options)
+- [Red Hat: RHEL 10 service management](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_systemd_unit_files_to_customize_and_optimize_your_system/managing-system-services-with-systemctl)
+- [Red Hat: RHEL 10 security hardening and sudo access](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/security_hardening/index#managing-sudo-access_security-hardening)
+- [Canonical: Ubuntu project, publisher, and lifecycle](https://ubuntu.com/about)
+- [Canonical: Ubuntu Server user management](https://ubuntu.com/server/docs/how-to/security/user-management/)
+- [Canonical: Ubuntu Server OpenSSH](https://ubuntu.com/server/docs/how-to/security/openssh-server/)
+- [SUSE: SLES 15 SP7 administration guide](https://documentation.suse.com/en-us/sles/15-SP7/html/SLES-all/book-administration.html)
+- [SUSE: SLES 15 SP7 systemd](https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-systemd.html)
+- [SUSE: SLES 15 SP7 sudo basics](https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-adm-sudo.html)
+- [Broadcom: completed VMware acquisition](https://investors.broadcom.com/news-releases/news-release-details/broadcom-completes-acquisition-vmware)
+- [Broadcom: scoped vCenter inventory permissions](https://knowledge.broadcom.com/external/article/417071/create-custom-role-to-restrict-users-fro.html)
+- [Broadcom: vCenter VM-list API](https://developer.broadcom.com/xapis/vsphere-automation-api/latest/api/vcenter/vm/get/)
+
+### Networking
+
+Claim context and version notes: [Networking guide](admin-domains/networking.md). These sources support documented product capabilities and boundaries; the proposed workflows remain unevaluated.
+
+- [Cisco: IOS XE 17.18.x RESTCONF](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/1718/b-1718-programmability-cg/restconf_protocol.html)
+- [Cisco: IOS XE 17.18.x model-based AAA](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/1718/b-1718-programmability-cg/model-based-aaa.html)
+- [HPE: completion of the Juniper acquisition](https://www.hpe.com/us/en/newsroom/press-release/2025/07/hewlett-packard-enterprise-closes-acquisition-of-juniper-networks-to-offer-industry-leading-comprehensive-cloud-native-ai-driven-portfolio.html)
+- [HPE Aruba Networking: AOS-CX 10.15 REST API access modes](https://arubanetworking.hpe.com/techdocs/AOS-CX/10.15/HTML/rest_v10-0x/Content/Chp_Intro/res-api-acc-mod-10.htm)
+- [Juniper: Junos login classes](https://www.juniper.net/documentation/us/en/software/junos/user-access/topics/topic-map/junos-os-login-class-overview.html)
+- [Juniper: Junos configuration commit and confirmation](https://www.juniper.net/documentation/us/en/software/junos/cli/topics/topic-map/junos-configuration-commit.html)
+- [Arista: EOS user security](https://www.arista.com/en/um-eos/eos-user-security)
+- [Arista: EOS API/session management](https://www.arista.com/en/um-eos/eos-session-management-commands)
+- [Fortinet: FortiOS 7.6.2 administrator profiles](https://docs.fortinet.com/document/fortigate/7.6.2/administration-guide/294491)
+- [Fortinet: FortiOS 7.6.2 REST API administrator](https://docs.fortinet.com/document/fortigate/7.6.2/administration-guide/399023)
+- [Palo Alto Networks: PAN-OS XML API overview](https://docs.paloaltonetworks.com/ngfw/api/getting-started)
+- [Palo Alto Networks: API authentication and security](https://docs.paloaltonetworks.com/ngfw/api/api-authentication-and-security)
+- [Palo Alto Networks: Panorama administrative roles](https://docs.paloaltonetworks.com/panorama/getting-started/panorama-overview/role-based-access-control/administrative-roles)
+
+### Databases
+
+Claim context and version notes: [Databases guide](admin-domains/databases.md). These sources support documented product capabilities and boundaries; the proposed workflows remain unevaluated.
+
+- [Microsoft: Database Engine permissions](https://learn.microsoft.com/en-us/sql/relational-databases/security/authentication-access/getting-started-with-database-engine-permissions?view=sql-server-ver17)
+- [Microsoft: Back up and restore SQL Server databases](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17)
+- [Microsoft: SQL Server 2025 editions and supported features](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2025?view=sql-server-ver17)
+- [MongoDB: Security](https://www.mongodb.com/docs/manual/security/)
+- [MongoDB: Performance](https://www.mongodb.com/docs/manual/administration/analyzing-mongodb-performance/)
+- [MongoDB: Backup methods](https://www.mongodb.com/docs/manual/core/backups/)
+- [Oracle: Getting started with database administration, 26ai](https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/getting-started-with-database-administration.html)
+- [Oracle: Backup and recovery user's guide, 26ai](https://docs.oracle.com/en/database/oracle/oracle-database/26/bradv/)
+- [PostgreSQL: About the project](https://www.postgresql.org/about/)
+- [PostgreSQL 18: Database roles](https://www.postgresql.org/docs/18/user-manag.html)
+- [PostgreSQL 18: Monitoring database activity](https://www.postgresql.org/docs/18/monitoring.html)
+- [PostgreSQL 18: Backup and restore](https://www.postgresql.org/docs/18/backup.html)
+- [Redis: ACLs](https://redis.io/docs/latest/operate/oss_and_stack/management/security/acl/)
+- [Redis: Security](https://redis.io/docs/latest/operate/oss_and_stack/management/security/)
+- [Redis: Persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)
+- [Redis: Licenses](https://redis.io/legal/licenses/)
+
+### Cloud And Infrastructure
+
+Claim context and version notes: [Cloud And Infrastructure guide](admin-domains/cloud-and-infrastructure.md). These sources support documented product capabilities and boundaries; the proposed workflows remain unevaluated.
+
+- [AWS: IAM security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [AWS: What is AWS Backup?](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html)
+- [AWS: Managing costs with AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html)
+- [Google Cloud: IAM overview](https://docs.cloud.google.com/iam/docs/overview)
+- [Google Cloud: Backup and DR overview](https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-dr)
+- [Google Cloud: Budgets and budget alerts](https://docs.cloud.google.com/billing/docs/how-to/budgets)
+- [IBM Cloud: Getting started with IAM](https://cloud.ibm.com/docs/iam?topic=iam-iamoverview)
+- [IBM Cloud: Backup for VPC](https://cloud.ibm.com/docs/vpc?topic=vpc-backup-service-about)
+- [IBM Cloud: Spending notifications](https://cloud.ibm.com/docs/support?topic=support-spending)
+- [Microsoft: Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices)
+- [Microsoft: Azure Backup overview](https://learn.microsoft.com/en-us/azure/backup/backup-overview)
+- [Microsoft: Create and manage Cost Management budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+- [Oracle: OCI IAM overview](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/overview.htm)
+- [Oracle: Block Volume backups](https://docs.oracle.com/en-us/iaas/Content/Block/Concepts/blockvolumebackups.htm)
+- [Oracle: OCI budgets](https://docs.oracle.com/en-us/iaas/Content/Billing/Concepts/budgetsoverview.htm)
+- [Microsoft: Official Azure Skills](https://github.com/microsoft/azure-skills)
+- [Microsoft: Azure MCP documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/)
+
+### Tool Creation
+
+Claim context and version notes: [Tool Creation guide](admin-domains/tool-creation.md). These sources support documented product capabilities and boundaries; the proposed workflows remain unevaluated.
+
+- [Microsoft completes GitHub acquisition](https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/)
+- [PSScriptAnalyzer overview](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview)
+- [GitHub Actions secure use](https://docs.github.com/en/actions/reference/security/secure-use)
+- [GitHub Actions OpenID Connect](https://docs.github.com/en/actions/concepts/security/openid-connect)
+- [Python Software Foundation mission](https://www.python.org/psf/mission/)
+- [Python virtual environments](https://docs.python.org/3/library/venv.html)
+- [Python unittest](https://docs.python.org/3/library/unittest.html)
+- [Packaging Python projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+- [Red Hat Ansible Automation Platform](https://docs.ansible.com/platform.html)
+- [Ansible collection testing](https://docs.ansible.com/projects/ansible/latest/dev_guide/developing_collections_testing.html)
+- [Ansible connection methods](https://docs.ansible.com/projects/ansible/latest/inventory_guide/connection_details.html)
+- [Ansible check and diff modes](https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_checkmode.html)
+- [OpenTofu project](https://opentofu.org/)
+- [OpenTofu module tests](https://opentofu.org/docs/cli/commands/test/)
+- [OpenTofu plans](https://opentofu.org/docs/cli/commands/plan/)
+- [The Go project](https://go.dev/project)
+- [Go tests](https://go.dev/doc/tutorial/add-a-test)
+- [Go build and install](https://go.dev/doc/tutorial/compile-install)
+- [Go security](https://go.dev/doc/security/)
+
 ## User-Requested Requirements
 
 These items are requirements from the project owner and should be implemented only where public technical sources support the mechanics:
@@ -273,11 +380,15 @@ These items are requirements from the project owner and should be implemented on
 - Prefer official Microsoft sources and public upstream data.
 - Maintain cross-agent portability beyond the first verified hosts.
 - Build toward a future shopping-cart/plugin selection experience.
+- Add source-backed research for systems and services, networking, databases, cloud and infrastructure, and tool creation (2 October 2026).
+- Capture five main organisations per area. The initial interpretation is a transparent editorial vendor/maintainer shortlist, not an independently established adoption or market-share ranking (2 October 2026).
 
 ## Source Gaps
 
 - First-class claims for specific non-Copilot/non-Claude hosts need host-specific public docs before they are advertised as supported.
 - Provider/model-specific prompt tuning claims need public vendor documentation or eval evidence before they become project guidance.
+- The new broader-domain sources do not certify tool installation, runnable skills/MCP profiles, provisioning, or workstation parity. Each integration still needs source/version, upstream-overlap, permission, licensing, and practical evaluation evidence.
+- No independent ranking metric or adoption dataset has been established for the five-organisation shortlists.
 
 ## Sources
 
