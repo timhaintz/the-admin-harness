@@ -374,12 +374,15 @@ Future skills:
 | Source-backed coverage for systems/services, networking, databases, cloud/infrastructure, and tool creation | User request, 2 October 2026 | `docs/admin-domain-catalog.md`, domain guides, source register |
 | Capture five main organisations per administration area | User request, 2 October 2026; editorial shortlist pending any explicit ranking metric | Five vendor/maintainer entries per domain, official product sources, selection method and gaps |
 | Update skills for all five areas and 25 organisation entries; include only official sources and available official MCP servers | User request, 2 October 2026 | Domain/organisation skills and evals, official MCP inventories, upstream reuse decisions, source register and validation evidence |
+| Fully test PR #16 as a documentation/skills release; keep operational integrations and desktop delivery as future milestones | Explicit owner scope clarification, 2 October 2026 | All skill fixture responses and reviewed assertions, public MCP query evidence, configuration templates and green repository/CI checks |
 
 ## 14. Implementation Checklist
 
 - [x] Add five source-backed administration domain guides and a five-organisation shortlist for each.
 - [x] Author five domain routers, 24 new organisation routes and updates to existing Azure coverage, using official sources and eval fixtures.
 - [x] Record official MCP availability, product/authentication boundaries and upstream reuse decisions for all 25 organisation/domain entries.
+- [x] Exercise all 124 synthetic fixture cases across 45 skills and review final responses against their assertions; retain initial gaps, repeats and source-backed corrections in the validation evidence. This is model-only guidance validation, not target execution.
+- [x] Configure five official public discovery servers in a native macOS Codex client and test bounded documentation/registry queries; active-chat exposure and other hosts remain separate checks.
 - [ ] Validate selected authenticated target integrations in disposable environments; authored skills and model-only checks are not target proof.
 - [ ] Implement and validate selectable domain/profile provisioning and cross-platform workstation packaging before advertising those capabilities.
 

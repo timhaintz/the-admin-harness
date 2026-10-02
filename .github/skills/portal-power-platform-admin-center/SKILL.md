@@ -90,7 +90,7 @@ Return:
 - Microsoft Learn MCP or official Microsoft doc source checked.
 - Relevant specialist portal or upstream Microsoft skill checked when the task overlaps one.
 - Read-only navigation or investigation steps first.
-- Required roles, licenses, tenant/cloud caveats, and prerequisites.
+- Name the applicable official administrator or environment/Dataverse role and its scope, rather than saying only “appropriate permissions”. Distinguish tenant administration, Environment Admin and Dataverse System Administrator/data access; do not imply an environment role automatically grants database access. Include licenses, tenant/cloud caveats and prerequisites.
 - Risk tier and approval boundary.
 - Validation, recovery, support, or specialist-workspace next steps.
 

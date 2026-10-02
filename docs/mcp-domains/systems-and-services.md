@@ -1,6 +1,6 @@
 # Official MCP inventory: systems and services
 
-Checked **2 October 2026** against the five organisations in the [systems guide](../admin-domains/systems-and-services.md). This is a bounded source review, not a claim that unlisted servers do not exist. **No Windows/Linux/vSphere target integration was runtime-tested.** A metadata-only Microsoft Learn protocol check passed; [validation evidence](../evals/admin-domain-validation.md) records its limited scope. Local [skills](../../.github/skills/admin-systems-services/SKILL.md) route research and planning; they do not supply or configure these servers.
+Checked **2 October 2026** against the five organisations in the [systems guide](../admin-domains/systems-and-services.md). This is a bounded source review, not a claim that unlisted servers do not exist. **No Windows/Linux/vSphere target integration was runtime-tested.** Microsoft Learn native macOS Codex registration, discovery, search and fetch passed; [validation evidence](../evals/admin-domain-validation.md) records their public-documentation scope. Local [skills](../../.github/skills/admin-systems-services/SKILL.md) route research and planning; they do not supply or configure these servers.
 
 ## 1. Broadcom / VMware
 
@@ -21,7 +21,7 @@ Checked **2 October 2026** against the five organisations in the [systems guide]
 - **Verified implementation:** [Microsoft Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp) searches/fetches public documentation. It provides **documentation grounding**, not Windows Server/Hyper-V observations or administration.
 - **Transport/setup:** official [client setup](https://learn.microsoft.com/en-us/training/support/mcp-get-started) documents remote Streamable HTTP at `https://learn.microsoft.com/api/mcp`; public documentation access needs no target credentials.
 - **Authority:** documentation retrieval confers no server, Windows Admin Center, Entra or tenant authority. Route Windows documentation through the existing Learn skill and upstream `microsoft-docs` overlap in [the register](../upstream-skill-register.md).
-- **Runtime status:** metadata-only initialization/tool listing passed (three tools), as recorded in [validation evidence](../evals/admin-domain-validation.md). No client-host setup or Windows-target administration was tested.
+- **Runtime status:** native macOS Codex setup/discovery passed (three tools), with public search and fetch recorded in [validation evidence](../evals/admin-domain-validation.md). No Windows-target administration was tested.
 
 ## 4. Red Hat
 

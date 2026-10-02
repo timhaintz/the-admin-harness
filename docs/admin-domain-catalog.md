@@ -34,9 +34,9 @@ The same discovery and review concepts can be shared across Mac and Windows, but
 | Layer | Current status for this catalog |
 | --- | --- |
 | Five-domain organisation and source discovery | Documented in the linked guides |
-| Existing Microsoft portal skills | Unchanged; see [portal skill coverage](portal-skill-coverage.md) |
+| Existing Microsoft portal skills | GCC identity corrected against official documentation; fixture-driven approval, permission and navigation guidance refined; see [validation evidence](evals/admin-domain-validation.md) and [portal skill coverage](portal-skill-coverage.md) |
 | Broader-domain Agent Skills and evals | Five area routers and 25 organisation routes, with 24 new specialists and updated existing Azure coverage; fixtures and validation status recorded separately |
-| Official MCP research and configuration examples | Five inventories and native HTTP discovery templates added; no target adapters or server installations performed |
+| Official MCP research and configuration examples | Five inventories and native HTTP discovery templates added; bounded public queries tested in macOS Codex; no operational target adapters installed |
 | Tool installation, service provisioning, or profile selection UI | Proposed; not implemented or tested here |
 | Cross-platform ready-to-use desktop | Proposed deployment concern; not certified by this research |
 | Production or customer target actions | None performed by this update |

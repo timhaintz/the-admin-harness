@@ -17,7 +17,7 @@ Use this skill to create or improve skills in `.github/skills/`.
 5. Use lowercase letters, numbers, and hyphens only. Do not use slashes, dots, colons, underscores, leading/trailing hyphens, or consecutive hyphens.
 6. Write a description that covers both capability and trigger conditions.
 7. Keep `SKILL.md` concise. Move detailed source maps, templates, and advanced guidance into `references/`, `examples/`, `scripts/`, or `assets/`.
-8. Add `evals/evals.json` with at least two realistic prompts and expected outputs.
+8. Add `evals/evals.json` with at least two realistic prompts and expected outputs. State that exact artifact path/format in the proposed deliverables; a generic promise of tests leaves the package incomplete.
 9. Include assertions for objective checks where possible.
 10. Validate the skill structure before calling it complete.
 

@@ -13,7 +13,7 @@ Use this skill when the admin task depends on tenant, cloud, customer, or delega
 1. Identify whether the user is in commercial, GCC, GCC High, DoD, China/21Vianet, or another sovereign environment.
 2. Identify whether the user is acting in their own tenant or via partner/delegated/B2B context.
 3. If a tenant ID is needed, ask for the minimum required value and explain privacy risk.
-4. Build URLs only from source-backed portal patterns. Do not persist tenant IDs.
+4. Build URLs only from source-backed portal patterns. When an identifier was explicitly supplied for an ephemeral answer, construct the requested link only there and give the privacy warning; do not persist it. If the response itself will be saved as an artifact, retain a placeholder and explicitly state that the requested concrete URL is withheld from durable output. If current source verification has not happened, say verification is needed rather than claiming the template is validated. Clearly fictional fixture identifiers are test data, not private target state: use the supplied fictional value to exercise URL construction and label the result synthetic. This exception never applies to actual tenant identifiers.
 5. For MSP workflows, distinguish customer tenant context from partner tenant context.
 
 ## Privacy Warning
@@ -33,7 +33,7 @@ Return:
 ## Guardrails
 
 - Never invent a tenant ID.
-- Never store tenant IDs in files.
+- Never store actual tenant IDs in files. Use clearly labelled fictional values for synthetic fixture outputs; do not substitute live target data.
 - Never ask for passwords, refresh tokens, or admin secrets.
 - Do not assume commercial cloud URLs work in sovereign clouds.
 

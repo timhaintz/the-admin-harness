@@ -54,7 +54,7 @@ Suggested MCP queries:
 - Add or inspect users from Users > Active users, including license assignment, roles, profile information, and secure password handoff boundaries.
 - Assign or unassign licenses from Billing > Licenses or Users > Active users, including direct assignment, group-based assignment, service toggles, errors and issues, and data-retention implications of removing licenses.
 - Create or manage Microsoft 365 groups from Teams & groups > Active teams & groups, including owners, members, privacy, Teams creation, and mail behavior.
-- Plan domain setup from Settings > Domains or Setup, including Domain Connect, manual DNS records, MX record timing, and outage risks.
+- Plan domain setup from Settings > Domains or Setup. Explain the method: Domain Connect can automate verification/DNS for supported registrars; manual verification and DNS records are the alternative. Include MX timing, required authority and outage risks even in a brief plan.
 - Check Health dashboard and Service health for incidents, billing problems, app update status, license utilization, and recommended actions.
 - Track service changes from Health > Message center, using filters, major update tags, relevance, service usage, Status for your org, Act by dates, Planner sync, sharing links, and Message ID for support.
 - Use Integrated apps from Settings > Integrated apps for apps, agents, and add-ins, while checking role requirements, sovereign cloud availability, user/group assignments, support details, and specialist admin center handoffs.
@@ -76,7 +76,7 @@ Suggested MCP queries:
 
 Return:
 
-- Portal name and URL.
+- Portal name and URL. For navigation, identify the portal-entry source (the local portal source reference or upstream admin.json) separately from procedural Microsoft Learn documentation; citing only a product overview omits catalog provenance.
 - Microsoft Learn MCP or official Microsoft doc source checked.
 - Relevant specialist portal or upstream Microsoft skill checked when the task overlaps one.
 - Read-only navigation or investigation steps first.

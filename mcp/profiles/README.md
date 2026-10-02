@@ -28,7 +28,7 @@ Risk tiers: `read`, `diagnostic`; never silent credential entry.
 
 ## Broader Domain Profiles
 
-Use [the official MCP inventories](../../docs/official-mcp-catalog.md) to select product-specific documentation, systems, network, database, cloud and authoring tools. Follow each vendor's setup and authority boundary; choosing a skill does not prepare every server in that area. The [discovery examples](../README.md) provide native HTTP templates for three official public documentation/registry endpoints. Target connectors remain separately configured and untested.
+Use [the official MCP inventories](../../docs/official-mcp-catalog.md) to select product-specific documentation, systems, network, database, cloud and authoring tools. Follow each vendor's setup and authority boundary; choosing a skill does not prepare every server in that area. The [discovery examples](../README.md) provide native HTTP templates for five official public documentation/registry endpoints. Target connectors remain separately configured and untested.
 
 ## Sources
 

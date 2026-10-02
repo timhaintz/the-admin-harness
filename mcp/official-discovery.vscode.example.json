@@ -11,6 +11,14 @@
     "opentofu-registry": {
       "type": "http",
       "url": "https://mcp.opentofu.org/mcp"
+    },
+    "cisco-devnet": {
+      "type": "http",
+      "url": "https://devnet.cisco.com/v1/foundation-search-mcp/mcp"
+    },
+    "aws-knowledge": {
+      "type": "http",
+      "url": "https://knowledge-mcp.global.api.aws"
     }
   }
 }

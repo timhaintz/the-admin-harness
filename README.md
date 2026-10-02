@@ -24,7 +24,7 @@ This repo is in an early public preview phase. It includes cross-agent instructi
 
 The [administration domain catalog](docs/admin-domain-catalog.md) covers systems and services, networking, databases, cloud and infrastructure, and tool creation, with five organisations per area. [Skill coverage](docs/admin-skill-coverage.md) maps five area routers and all 25 organisation routes; Azure reuses its existing safety skill. New skills use only official vendor/upstream product sources and route to [officially published MCP servers](docs/official-mcp-catalog.md) where verified, with documentation fallback where availability is unverified.
 
-The shortlists are editorial coverage choices, not market-share rankings. Skills and eval fixtures are authored guidance; they do not install tools or certify target integration, provisioning or a ready-to-run desktop. [Validation evidence](docs/evals/admin-domain-validation.md) records structural checks, model-only trials and limited public MCP protocol checks separately. Native HTTP discovery templates are linked from [MCP setup](mcp/README.md).
+The shortlists are editorial coverage choices, not market-share rankings. Skills and eval fixtures are authored guidance; they do not install tools or certify target integration, provisioning or a ready-to-run desktop. [Validation evidence](docs/evals/admin-domain-validation.md) records 124 final reviewed model-only fixture passes across 45 skills, structural checks and ten native public queries across five official MCP servers. Native HTTP discovery templates are linked from [MCP setup](mcp/README.md).
 
 ## Design Principles
 

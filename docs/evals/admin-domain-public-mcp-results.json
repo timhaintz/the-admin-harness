@@ -1,0 +1,322 @@
+{
+  "date": "2026-10-02",
+  "host": "macOS 27.0.1, arm64",
+  "codex_cli_version": "0.159.2",
+  "transport": "native Streamable HTTP via a short-lived separate Codex app-server",
+  "active_chat_tools_refreshed": false,
+  "credentials_supplied": false,
+  "target_operations": 0,
+  "model_turns_started_for_native_probe": 0,
+  "servers": [
+    {
+      "server": "microsoft-learn",
+      "auth_status": "unsupported",
+      "server_info": {
+        "name": "Microsoft Learn MCP Server",
+        "title": null,
+        "version": "1.0.0",
+        "description": null,
+        "icons": null,
+        "websiteUrl": null
+      },
+      "tool_count": 3,
+      "tool_names": [
+        "microsoft_docs_fetch",
+        "microsoft_docs_search",
+        "microsoft_code_sample_search"
+      ],
+      "tools_error": null
+    },
+    {
+      "server": "cisco-devnet",
+      "auth_status": "unsupported",
+      "server_info": {
+        "name": "DevNet Content Retriever",
+        "title": null,
+        "version": "1.24.0",
+        "description": null,
+        "icons": null,
+        "websiteUrl": null
+      },
+      "tool_count": 3,
+      "tool_names": [
+        "Meraki-API-Doc-Search",
+        "CatalystCenter-API-Doc-Search",
+        "Meraki-API-OperationId-Search"
+      ],
+      "tools_error": null
+    },
+    {
+      "server": "aws-knowledge",
+      "auth_status": "unknown",
+      "server_info": {
+        "name": "AWSKnowledgeMCP",
+        "title": null,
+        "version": "1.0.0",
+        "description": null,
+        "icons": null,
+        "websiteUrl": null
+      },
+      "tool_count": 5,
+      "tool_names": [
+        "aws___get_regional_availability",
+        "aws___list_regions",
+        "aws___search_documentation",
+        "aws___retrieve_skill",
+        "aws___read_documentation"
+      ],
+      "tools_error": null
+    },
+    {
+      "server": "redis-docs",
+      "auth_status": "unsupported",
+      "server_info": {
+        "name": "redis-docs-mcp",
+        "title": null,
+        "version": "53c2309e3ad9de8843a4f7f24926063de2725942",
+        "description": null,
+        "icons": null,
+        "websiteUrl": null
+      },
+      "tool_count": 3,
+      "tool_names": [
+        "search",
+        "fetch",
+        "ask"
+      ],
+      "tools_error": null
+    },
+    {
+      "server": "opentofu",
+      "auth_status": "unsupported",
+      "server_info": {
+        "name": "@opentofu/opentofu-mcp-server",
+        "title": null,
+        "version": "1.0.1",
+        "description": null,
+        "icons": null,
+        "websiteUrl": null
+      },
+      "tool_count": 7,
+      "tool_names": [
+        "get-datasource-docs",
+        "get-module-versions",
+        "get-module-details",
+        "get-resource-docs",
+        "search-opentofu-registry",
+        "get-provider-details",
+        "get-provider-versions"
+      ],
+      "tools_error": null
+    }
+  ],
+  "calls": [
+    {
+      "server": "microsoft-learn",
+      "tool": "microsoft_docs_search",
+      "arguments": {
+        "query": "Azure role based access control least privilege best practices"
+      },
+      "rpc_error": null,
+      "is_error": false,
+      "response_sha256": "fcd1d82a0acbd401fc4744e2013628c9b12d4d405e7637e62045fd8f142747c8",
+      "result_count": 10,
+      "official_urls": [
+        "https://learn.microsoft.com/azure/role-based-access-control/best-practices",
+        "https://learn.microsoft.com/security/benchmark/azure/mcsb-v2-privileged-access#pa-7-follow-just-enough-administration-least-privilege-principle",
+        "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/manage-access",
+        "https://learn.microsoft.com/azure/security/fundamentals/identity-management-best-practices#use-role-based-access-control",
+        "https://learn.microsoft.com/azure/role-based-access-control/role-assignments-powershell#steps-to-assign-an-azure-role",
+        "https://learn.microsoft.com/azure/backup/azure-backup-data-protection-best-practices#pillar-1---access-control",
+        "https://learn.microsoft.com/azure/role-based-access-control/best-practices#limit-privileged-administrator-role-assignments",
+        "https://learn.microsoft.com/azure/role-based-access-control/troubleshoot-limits#symptom---no-more-role-assignments-can-be-created",
+        "https://learn.microsoft.com/security/benchmark/azure/mcsb-v2-privileged-access#pa-7-follow-just-enough-administration-least-privilege-principle",
+        "https://learn.microsoft.com/azure/security/fundamentals/paas-applications-using-storage#use-azure-role-based-access-control"
+      ]
+    },
+    {
+      "server": "cisco-devnet",
+      "tool": "Meraki-API-Doc-Search",
+      "arguments": {
+        "keyword": "getNetworkApplianceFirewallL3FirewallRules",
+        "top_k": 3,
+        "return_api_only": true
+      },
+      "rpc_error": null,
+      "is_error": false,
+      "response_sha256": "34e35c9a0c3a853ab276c19d8d406ef83f4f5fa28cdd384f41c4f4f2633e1bb2",
+      "result_count": 3,
+      "official_urls": [
+        "https://developer.cisco.com/meraki/api-v1/get-network-appliance-firewall-l-3-firewall-rules",
+        "https://developer.cisco.com/meraki/api-v1/get-network-wireless-ssid-firewall-l-3-firewall-rules",
+        "https://developer.cisco.com/meraki/api-v1/get-network-appliance-firewall-l-7-firewall-rules"
+      ],
+      "matched_operations": [
+        "getNetworkApplianceFirewallL3FirewallRules",
+        "getNetworkWirelessSsidFirewallL3FirewallRules",
+        "getNetworkApplianceFirewallL7FirewallRules"
+      ]
+    },
+    {
+      "server": "cisco-devnet",
+      "tool": "Meraki-API-OperationId-Search",
+      "arguments": {
+        "operation_id": "getNetworkApplianceFirewallL3FirewallRules"
+      },
+      "rpc_error": null,
+      "is_error": false,
+      "response_sha256": "ae90e3e9fcc4d53877d208d629b067ee6e56fa79221e3cbee3ec832d6a088030",
+      "result_count": 1,
+      "official_urls": [
+        "https://developer.cisco.com/meraki/api-v1/get-network-appliance-firewall-l-3-firewall-rules"
+      ],
+      "matched_operations": [
+        "getNetworkApplianceFirewallL3FirewallRules"
+      ]
+    },
+    {
+      "server": "cisco-devnet",
+      "tool": "CatalystCenter-API-Doc-Search",
+      "arguments": {
+        "keyword": "network device inventory",
+        "top_k": 3,
+        "return_api_only": true
+      },
+      "rpc_error": null,
+      "is_error": false,
+      "response_sha256": "ece88365bb1f11ccb288dad7ebffcb557089ad94a6c5441e4125a2a296d213a1",
+      "result_count": 3,
+      "official_urls": [
+        "https://developer.cisco.com/docs/catalyst-center/3-1-6/retrieve-network-devices",
+        "https://developer.cisco.com/docs/catalyst-center/3-1-6/get-network-device-by-pagination-range",
+        "https://developer.cisco.com/docs/catalyst-center/3-1-6/get-device-list"
+      ],
+      "matched_operations": [
+        "retrieveNetworkDevices",
+        "getNetworkDeviceByPaginationRange",
+        "getDeviceList"
+      ]
+    },
+    {
+      "server": "aws-knowledge",
+      "tool": "aws___search_documentation",
+      "arguments": {
+        "search_phrase": "S3 GetBucketVersioning API permission",
+        "topics": [
+          "reference_documentation"
+        ],
+        "limit": 3
+      },
+      "rpc_error": null,
+      "is_error": false,
+      "response_sha256": "f5ff5a08548556c6c35a405dd9716b16891da75a8e2f6f5a082a2fbe4c50b226",
+      "result_count": 3,
+      "official_urls": [
+        "https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/MIS3GetBucketVersioningGetBucketVersioningRequest.html",
+        "https://docs.aws.amazon.com/sdkfornet/v3/apidocs/index.html?page=MIS3ControlGetBucketVersioningGetBucketVersioningRequest.html&tocid=Amazon_S3Control_IAmazonS3Control",
+        "https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3Control/MIS3ControlGetBucketVersioningGetBucketVersioningRequest.html"
+      ],
+      "summary": "Returned adjacent SDK references; requested ownership/permission detail absent from these search chunks."
+    },
+    {
+      "server": "redis-docs",
+      "tool": "search",
+      "arguments": {
+        "query": "EXPIRE key expiration"
+      },
+      "rpc_error": null,
+      "is_error": false,
+      "response_sha256": "324413b5f9abc74f95b4849cb255c21109f72f46a2e8500c762a2bcb01878b5a",
+      "result_count": 8,
+      "official_urls": [
+        "https://redis.io/docs/latest/develop/ai/search-and-query/advanced-concepts/expiration/",
+        "https://redis.io/docs/latest/commands/expire/",
+        "https://redis.io/docs/latest/commands/expiretime/",
+        "https://redis.io/docs/latest/develop/using-commands/keyspace/#key-expiration",
+        "https://redis.io/docs/latest/commands/expireat/",
+        "https://redis.io/docs/latest/integrate/redis-data-integration/1.19.1/data-pipelines/transform-examples/redis-expiration-example/"
+      ]
+    },
+    {
+      "server": "opentofu",
+      "tool": "get-provider-versions",
+      "arguments": {
+        "namespace": "hashicorp",
+        "name": "random"
+      },
+      "rpc_error": null,
+      "is_error": false,
+      "response_sha256": "71d953e1ec7e575015adb55a070724c4806cccdc15b88d46df3bb34811353be3",
+      "result_count": 42,
+      "latest_provider_version": "v3.9.1"
+    },
+    {
+      "server": "microsoft-learn",
+      "tool": "microsoft_docs_fetch",
+      "arguments": {
+        "url": "https://learn.microsoft.com/azure/role-based-access-control/best-practices"
+      },
+      "rpc_error": null,
+      "is_error": false,
+      "response_sha256": "734e8d5934dc1ba43a35365b3ad19ae559e4e6d8ce1f8117f7a1f7f623eddd96",
+      "text_chars": 5421,
+      "summary": "Retrieved the selected official Azure RBAC best-practices document."
+    },
+    {
+      "server": "aws-knowledge",
+      "tool": "aws___search_documentation",
+      "arguments": {
+        "search_phrase": "Amazon S3 API_GetBucketVersioning s3:GetBucketVersioning permission",
+        "topics": [
+          "reference_documentation"
+        ],
+        "limit": 3
+      },
+      "rpc_error": null,
+      "is_error": false,
+      "response_sha256": "f2a6fd6b135635f5f679abd3ac433c10dc4ef3354ea0b1642fa24321f50eba39",
+      "result_count": 3,
+      "official_urls": [
+        "https://docs.aws.amazon.com/sdk-for-go/api/service/s3control/index.html",
+        "https://docs.aws.amazon.com/sdkfornet/v3/apidocs/index.html?page=MIS3ControlGetBucketVersioningGetBucketVersioningRequest.html&tocid=Amazon_S3Control_IAmazonS3Control",
+        "https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3Control/MIS3ControlGetBucketVersioningGetBucketVersioningRequest.html"
+      ],
+      "summary": "Returned adjacent SDK references; requested ownership/permission detail absent from these search chunks."
+    },
+    {
+      "server": "aws-knowledge",
+      "tool": "aws___read_documentation",
+      "arguments": {
+        "requests": [
+          {
+            "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketVersioning.html",
+            "max_length": 6000
+          },
+          {
+            "url": "https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/MIS3GetBucketVersioningGetBucketVersioningRequest.html",
+            "max_length": 3000
+          }
+        ]
+      },
+      "rpc_error": null,
+      "is_error": false,
+      "response_sha256": "a5b376b7e0a263c5a995cc70d99d50f74ff607c45f9f7145f74e38c75e022285",
+      "summary": "Retrieved both selected official pages with SUCCESS; REST reference supplied the ownership requirement missing from search chunks.",
+      "structured_keys": [
+        "result"
+      ],
+      "read_results": [
+        {
+          "status": "SUCCESS",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketVersioning.html",
+          "text_chars": 3610
+        },
+        {
+          "status": "SUCCESS",
+          "url": "https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/MIS3GetBucketVersioningGetBucketVersioningRequest.html",
+          "text_chars": 2031
+        }
+      ]
+    }
+  ]
+}

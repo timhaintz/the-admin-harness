@@ -18,6 +18,8 @@ Use this skill for Azure operational tasks. Prefer read-only discovery first.
 6. For `change` and `dangerous`, use [admin-change-safety](../admin-change-safety/SKILL.md) to produce a reviewed plan instead of executing. Approval must bind the exact artifact and fresh scope/state.
 7. Verify control-plane state and application health separately. For recovery, validate a separate restore target; for cost, identify budget/action behaviour and retained resources. Record permission, regional support and evidence gaps.
 
+State the exact human approval prerequisite before a mutation; safety routing or review alone is not approval. Preserve existing explicit authority only for its exact artifact, scope and fresh preconditions. For a documentation-only assessment, state unresolved target read permissions as well as inventory/scope gaps; do not imply that a manual checklist already has account access.
+
 ## Output
 
 ```markdown
@@ -55,6 +57,7 @@ Use this skill for Azure operational tasks. Prefer read-only discovery first.
 - [Azure MCP tool parameters and modes](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/tools/)
 - [Azure MCP authentication and deployment security](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/security)
 - [Official Azure Skills](https://github.com/microsoft/azure-skills)
+- [Azure Backup role/permission scope](https://learn.microsoft.com/en-us/azure/backup/backup-rbac-rs-vault)
 - [Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices)
 - [MCP specification: Security and Trust & Safety](https://modelcontextprotocol.io/specification/2025-06-18)
 - [docs/source-register.md](../../../docs/source-register.md)
