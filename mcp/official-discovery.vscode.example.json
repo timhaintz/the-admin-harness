@@ -1,0 +1,24 @@
+{
+  "servers": {
+    "microsoft-learn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "redis-docs": {
+      "type": "http",
+      "url": "https://redis.io/mcp"
+    },
+    "opentofu-registry": {
+      "type": "http",
+      "url": "https://mcp.opentofu.org/mcp"
+    },
+    "cisco-devnet": {
+      "type": "http",
+      "url": "https://devnet.cisco.com/v1/foundation-search-mcp/mcp"
+    },
+    "aws-knowledge": {
+      "type": "http",
+      "url": "https://knowledge-mcp.global.api.aws"
+    }
+  }
+}

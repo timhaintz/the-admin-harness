@@ -1,6 +1,6 @@
 # Source Register
 
-This register lists public sources retrieved and used to ground The Admin Harness docs, skills, MCP templates, and repository conventions. Retrieved: 2026-05-31.
+This register lists public sources retrieved and used to ground The Admin Harness docs, skills, MCP templates, and repository conventions. Original retrieval: 2026-05-31. The administration-domain sources below were reviewed on 2026-10-02; older sections were not wholly revalidated by that addition.
 
 Every public Markdown file should either include a local `Sources` section or link to this register. Product requirements that came from the project owner are marked as user-requested; technical standards and implementation claims should point to public sources.
 
@@ -262,6 +262,252 @@ Every public Markdown file should either include a local `Sources` section or li
 | --- | --- |
 | Rob Pike's programming rules: measure before optimizing, prefer simple algorithms/data structures, and let data dominate | [Rob Pike, Notes on Programming in C](http://doc.cat-v.org/bell_labs/pikestyle) |
 
+## Administration Domain Sources
+
+Reviewed: 2026-10-02. The [domain catalog](admin-domain-catalog.md) records five editorial organisation/maintainer selections per domain. The references below ground product facts; they do not establish a market ranking or a supported runtime integration. Each guide carries claim-level links, version context, proposed evaluation and remaining gaps.
+
+### Systems And Services
+
+Claim context and version notes: [Systems And Services guide](admin-domains/systems-and-services.md). These sources support documented product capabilities and boundaries; the proposed workflows remain unevaluated.
+
+- [Microsoft: Windows Server management overview](https://learn.microsoft.com/en-us/windows-server/administration/overview)
+- [Microsoft: Windows Admin Center user access options](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/plan/user-access-options)
+- [Red Hat: RHEL 10 service management](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_systemd_unit_files_to_customize_and_optimize_your_system/managing-system-services-with-systemctl)
+- [Red Hat: RHEL 10 security hardening and sudo access](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/security_hardening/index#managing-sudo-access_security-hardening)
+- [Canonical: Ubuntu project, publisher, and lifecycle](https://ubuntu.com/about)
+- [Canonical: Ubuntu Server user management](https://ubuntu.com/server/docs/how-to/security/user-management/)
+- [Canonical: Ubuntu Server OpenSSH](https://ubuntu.com/server/docs/how-to/security/openssh-server/)
+- [SUSE: SLES 15 SP7 administration guide](https://documentation.suse.com/en-us/sles/15-SP7/html/SLES-all/book-administration.html)
+- [SUSE: SLES 15 SP7 systemd](https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-systemd.html)
+- [SUSE: SLES 15 SP7 sudo basics](https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-adm-sudo.html)
+- [Broadcom: completed VMware acquisition](https://investors.broadcom.com/news-releases/news-release-details/broadcom-completes-acquisition-vmware)
+- [Broadcom: scoped vCenter inventory permissions](https://knowledge.broadcom.com/external/article/417071/create-custom-role-to-restrict-users-fro.html)
+- [Broadcom: vCenter VM-list API](https://developer.broadcom.com/xapis/vsphere-automation-api/latest/api/vcenter/vm/get/)
+
+### Networking
+
+Claim context and version notes: [Networking guide](admin-domains/networking.md). These sources support documented product capabilities and boundaries; the proposed workflows remain unevaluated.
+
+- [Cisco: IOS XE 17.18.x RESTCONF](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/1718/b-1718-programmability-cg/restconf_protocol.html)
+- [Cisco: IOS XE 17.18.x model-based AAA](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/1718/b-1718-programmability-cg/model-based-aaa.html)
+- [HPE: completion of the Juniper acquisition](https://www.hpe.com/us/en/newsroom/press-release/2025/07/hewlett-packard-enterprise-closes-acquisition-of-juniper-networks-to-offer-industry-leading-comprehensive-cloud-native-ai-driven-portfolio.html)
+- [HPE Aruba Networking: AOS-CX 10.15 REST API access modes](https://arubanetworking.hpe.com/techdocs/AOS-CX/10.15/HTML/rest_v10-0x/Content/Chp_Intro/res-api-acc-mod-10.htm)
+- [Juniper: Junos login classes](https://www.juniper.net/documentation/us/en/software/junos/user-access/topics/topic-map/junos-os-login-class-overview.html)
+- [Juniper: Junos configuration commit and confirmation](https://www.juniper.net/documentation/us/en/software/junos/cli/topics/topic-map/junos-configuration-commit.html)
+- [Arista: EOS user security](https://www.arista.com/en/um-eos/eos-user-security)
+- [Arista: EOS API/session management](https://www.arista.com/en/um-eos/eos-session-management-commands)
+- [Fortinet: FortiOS 7.6.2 administrator profiles](https://docs.fortinet.com/document/fortigate/7.6.2/administration-guide/294491)
+- [Fortinet: FortiOS 7.6.2 REST API administrator](https://docs.fortinet.com/document/fortigate/7.6.2/administration-guide/399023)
+- [Palo Alto Networks: PAN-OS XML API overview](https://docs.paloaltonetworks.com/ngfw/api/getting-started)
+- [Palo Alto Networks: API authentication and security](https://docs.paloaltonetworks.com/ngfw/api/api-authentication-and-security)
+- [Palo Alto Networks: Panorama administrative roles](https://docs.paloaltonetworks.com/panorama/getting-started/panorama-overview/role-based-access-control/administrative-roles)
+
+### Databases
+
+Claim context and version notes: [Databases guide](admin-domains/databases.md). These sources support documented product capabilities and boundaries; the proposed workflows remain unevaluated.
+
+- [Microsoft: Database Engine permissions](https://learn.microsoft.com/en-us/sql/relational-databases/security/authentication-access/getting-started-with-database-engine-permissions?view=sql-server-ver17)
+- [Microsoft: Back up and restore SQL Server databases](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17)
+- [Microsoft: SQL Server 2025 editions and supported features](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2025?view=sql-server-ver17)
+- [MongoDB: Security](https://www.mongodb.com/docs/manual/security/)
+- [MongoDB: Performance](https://www.mongodb.com/docs/manual/administration/analyzing-mongodb-performance/)
+- [MongoDB: Backup methods](https://www.mongodb.com/docs/manual/core/backups/)
+- [Oracle: Getting started with database administration, 26ai](https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/getting-started-with-database-administration.html)
+- [Oracle: Backup and recovery user's guide, 26ai](https://docs.oracle.com/en/database/oracle/oracle-database/26/bradv/)
+- [PostgreSQL: About the project](https://www.postgresql.org/about/)
+- [PostgreSQL 18: Database roles](https://www.postgresql.org/docs/18/user-manag.html)
+- [PostgreSQL 18: Monitoring database activity](https://www.postgresql.org/docs/18/monitoring.html)
+- [PostgreSQL 18: Backup and restore](https://www.postgresql.org/docs/18/backup.html)
+- [Redis: ACLs](https://redis.io/docs/latest/operate/oss_and_stack/management/security/acl/)
+- [Redis: Security](https://redis.io/docs/latest/operate/oss_and_stack/management/security/)
+- [Redis: Persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)
+- [Redis: Licenses](https://redis.io/legal/licenses/)
+
+### Cloud And Infrastructure
+
+Claim context and version notes: [Cloud And Infrastructure guide](admin-domains/cloud-and-infrastructure.md). These sources support documented product capabilities and boundaries; the proposed workflows remain unevaluated.
+
+- [AWS: IAM security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [AWS: What is AWS Backup?](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html)
+- [AWS: Managing costs with AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html)
+- [Google Cloud: IAM overview](https://docs.cloud.google.com/iam/docs/overview)
+- [Google Cloud: Backup and DR overview](https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-dr)
+- [Google Cloud: Budgets and budget alerts](https://docs.cloud.google.com/billing/docs/how-to/budgets)
+- [IBM Cloud: Getting started with IAM](https://cloud.ibm.com/docs/iam?topic=iam-iamoverview)
+- [IBM Cloud: Backup for VPC](https://cloud.ibm.com/docs/vpc?topic=vpc-backup-service-about)
+- [IBM Cloud: Spending notifications](https://cloud.ibm.com/docs/support?topic=support-spending)
+- [Microsoft: Azure RBAC best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices)
+- [Microsoft: Azure Backup overview](https://learn.microsoft.com/en-us/azure/backup/backup-overview)
+- [Microsoft: Create and manage Cost Management budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+- [Oracle: OCI IAM overview](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/overview.htm)
+- [Oracle: Block Volume backups](https://docs.oracle.com/en-us/iaas/Content/Block/Concepts/blockvolumebackups.htm)
+- [Oracle: OCI budgets](https://docs.oracle.com/en-us/iaas/Content/Billing/Concepts/budgetsoverview.htm)
+- [Microsoft: Official Azure Skills](https://github.com/microsoft/azure-skills)
+- [Microsoft: Azure MCP documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/)
+
+### Tool Creation
+
+Claim context and version notes: [Tool Creation guide](admin-domains/tool-creation.md). These sources support documented product capabilities and boundaries; the proposed workflows remain unevaluated.
+
+- [Microsoft completes GitHub acquisition](https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/)
+- [PSScriptAnalyzer overview](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview)
+- [GitHub Actions secure use](https://docs.github.com/en/actions/reference/security/secure-use)
+- [GitHub Actions OpenID Connect](https://docs.github.com/en/actions/concepts/security/openid-connect)
+- [Python Software Foundation mission](https://www.python.org/psf/mission/)
+- [Python virtual environments](https://docs.python.org/3/library/venv.html)
+- [Python unittest](https://docs.python.org/3/library/unittest.html)
+- [Packaging Python projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+- [Red Hat Ansible Automation Platform](https://docs.ansible.com/platform.html)
+- [Ansible collection testing](https://docs.ansible.com/projects/ansible/latest/dev_guide/developing_collections_testing.html)
+- [Ansible connection methods](https://docs.ansible.com/projects/ansible/latest/inventory_guide/connection_details.html)
+- [Ansible check and diff modes](https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_checkmode.html)
+- [OpenTofu project](https://opentofu.org/)
+- [OpenTofu module tests](https://opentofu.org/docs/cli/commands/test/)
+- [OpenTofu plans](https://opentofu.org/docs/cli/commands/plan/)
+- [The Go project](https://go.dev/project)
+- [Go tests](https://go.dev/doc/tutorial/add-a-test)
+- [Go build and install](https://go.dev/doc/tutorial/compile-install)
+- [Go security](https://go.dev/doc/security/)
+
+## Official Domain Skills And MCP Sources
+
+Reviewed: 2026-10-02. User requirement: only official vendor/upstream sources and officially published MCP implementations for all five areas and 25 organisation/domain entries. [Skill coverage](admin-skill-coverage.md), [official MCP catalog](official-mcp-catalog.md) and [measured validation](evals/admin-domain-validation.md) keep source facts, authored guidance, model trials and target-runtime evidence separate. No community server was selected.
+
+### Systems And Services MCPs And Upstream Skills
+
+Claim context: [Systems And Services official inventory](mcp-domains/systems-and-services.md). Publication/setup verification does not establish runtime support.
+
+- [Broadcom: VMware Private AI MCP registrations](https://developer.broadcom.com/xapis/vmware-private-ai-service-api/latest/mcp-servers/)
+- [Canonical: Multipass and community-led integrations](https://github.com/canonical/multipass)
+- [Canonical: Copilot collections](https://github.com/canonical/copilot-collections)
+- [Microsoft: Learn MCP](https://learn.microsoft.com/en-us/training/support/mcp)
+- [Microsoft: Learn MCP setup](https://learn.microsoft.com/en-us/training/support/mcp-get-started)
+- [Red Hat: MCP server for RHEL, Developer Preview](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/interacting_with_the_command-line_assistant/using-the-rhel-mcp-server-to-enable-ai-assistants-to-run-discover-and-troubleshoot-complex-issues)
+- [SUSE: Multi-Linux Manager MCP Technology Preview](https://www.suse.com/c/ai-assisted-linux-operations-mcp-suse-multi-linux-manager/)
+- [Uyuni upstream: MCP server setup, transports and permissions](https://github.com/uyuni-project/mcp-server-uyuni)
+- [SUSE: SUSEConnect visibility and SLES 16 MCP](https://documentation.suse.com/subscription/suseconnect/html/SLE-suseconnect-visibility/article-suseconnect-visibility.html)
+
+### Networking MCPs And Upstream Skills
+
+Claim context: [Networking official inventory](mcp-domains/networking.md). Publication/setup verification does not establish runtime support.
+
+- [Arista: EOS API/session management](https://www.arista.com/en/um-eos/eos-session-management-commands)
+- [Cisco: DevNet MCP announcement](https://blogs.cisco.com/developer/devnet-content-search-mcp-server)
+- [CiscoDevNet: Content Search MCP setup and experimental references](https://github.com/CiscoDevNet/devnet-content-search-mcp)
+- [Cisco: Meraki MCP setup and limits](https://developer.cisco.com/meraki/api-v1/mcp-server/)
+- [CiscoDevNet: Meraki MCP source](https://github.com/CiscoDevNet/cisco-meraki-mcp)
+- [Cisco: Meraki/Catalyst Center MCP publication](https://blogs.cisco.com/developer/build-agentic-networking-experiences-with-meraki-and-catalyst-center-mcp-servers)
+- [Cisco: Catalyst Center MCP source and authority limits](https://github.com/cisco-en-programmability/catc-mcp-oss)
+- [Fortinet: FortiManager FortiAI internal data flow](https://docs.fortinet.com/document/fortimanager/8.0.0/ai-transparency-note/202884/4-data-flows-protection-and-retention)
+- [Juniper: Junos MCP source and setup](https://github.com/Juniper/junos-mcp-server)
+- [Juniper: Routing Director product MCP guide](https://www.juniper.net/documentation/us/en/software/juniper-routing-director2.9.0/user-guide/topics/topic-map/mcp-server-use.html)
+- [Juniper: Routing Director MCP source, auth and known issue](https://github.com/Juniper/routing-director-mcp-server)
+- [HPE: GreenLake MCP documentation](https://developer.greenlake.hpe.com/docs/greenlake/mcp-server/public)
+- [HPE: GreenLake MCP source](https://github.com/HewlettPackard/gl-mcp)
+- [Palo Alto Networks: Cortex MCP publication](https://www.paloaltonetworks.com/blog/security-operations/introducing-the-cortex-mcp-server/)
+- [Palo Alto Networks: indexed Cortex MCP installation guide; legacy URL redirects](https://docs-cortex.paloaltonetworks.com/r/Cortex/Cortex-MCP-server/Install-the-Cortex-MCP-server)
+
+### Databases MCPs And Upstream Skills
+
+Claim context: [Databases official inventory](mcp-domains/databases.md). Publication/setup verification does not establish runtime support.
+
+- [Microsoft SQL MCP overview](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/overview)
+- [Microsoft SQL MCP local quickstart](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-visual-studio-code)
+- [MongoDB MCP overview](https://www.mongodb.com/docs/mcp-server/overview/)
+- [MongoDB Local MCP configuration](https://www.mongodb.com/docs/mcp-server/local-mcp/configuration/)
+- [MongoDB Local MCP security](https://www.mongodb.com/docs/mcp-server/local-mcp/security-best-practices/)
+- [MongoDB Agent Skills](https://www.mongodb.com/docs/agent-skills/)
+- [MongoDB-published Agent Skills repository](https://github.com/mongodb/agent-skills)
+- [Oracle SQLcl MCP 26.1](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/sqlcl-mcp-server.html)
+- [Oracle SQLcl MCP setup and management 26.1](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/starting-and-managing-sqlcl-mcp-server.html)
+- [Oracle SQLcl MCP production-access caution 25.2](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/25.2/sqcug/using-oracle-sqlcl-mcp-server.html)
+- [Oracle MCP product catalog](https://www.oracle.com/mcp/)
+- [PostgreSQL project identity and official documentation entry](https://www.postgresql.org/about/)
+- [Google-published MCP Toolbox repository](https://github.com/googleapis/mcp-toolbox)
+- [Google-published Toolbox prebuilt reference](https://mcp-toolbox.dev/reference/prebuilt-tools/)
+- [Redis Docs MCP and Agent Skills](https://redis.io/docs/latest/develop/setup/build-with-an-agent/)
+- [Redis MCP overview](https://redis.io/docs/latest/integrate/redis-mcp/)
+- [Redis MCP installation and Cloud MCP distinction](https://redis.io/docs/latest/integrate/redis-mcp/install/)
+- [Redis MCP client setup](https://redis.io/docs/latest/integrate/redis-mcp/client-conf/)
+- [Redis data MCP repository](https://github.com/redis/mcp-redis)
+- [Redis Cloud MCP repository](https://github.com/redis/mcp-redis-cloud)
+- [Redis Agent Skills repository](https://github.com/redis/agent-skills)
+
+### Cloud And Infrastructure MCPs And Upstream Skills
+
+Claim context: [Cloud And Infrastructure official inventory](mcp-domains/cloud-and-infrastructure.md). Publication/setup verification does not establish runtime support.
+
+- [AWS Knowledge public scope, sources and account-free setup](https://awslabs.github.io/mcp/servers/aws-knowledge-mcp-server)
+- [AWS MCP scope](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/mcp-server.html)
+- [AWS MCP authentication and setup](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/getting-started-aws-mcp-server.html)
+- [AWS Agent Toolkit quickstart](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/quick-start.html)
+- [AWS-published Agent Toolkit repository](https://github.com/aws/agent-toolkit-for-aws)
+- [Google Cloud CLI remote MCP preview](https://docs.cloud.google.com/sdk/use-gcloud-mcp)
+- [Google-published MCP Toolbox](https://github.com/googleapis/mcp-toolbox)
+- [Google Toolbox prebuilt reference](https://mcp-toolbox.dev/reference/prebuilt-tools/)
+- [Google official skills repository](https://github.com/google/skills)
+- [Google publisher announcement for official skills](https://cloud.google.com/blog/topics/developers-practitioners/level-up-your-agents-announcing-googles-official-skills-repository)
+- [IBM watsonx.data lakehouse MCP](https://www.ibm.com/docs/en/watsonxdata/saas?topic=data-interacting-through-mcp-server)
+- [IBM watsonx.data local document-library retrieval MCP](https://www.ibm.com/docs/en/watsonxdata/saas?topic=agents-watsonxdata-local-model-context-protocol-mcp-server)
+- [IBM watsonx.data release notes](https://www.ibm.com/docs/en/watsonxdata/saas?topic=overview-whats-new-in-watsonxdata)
+- [Azure MCP documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/)
+- [Microsoft Learn MCP setup](https://learn.microsoft.com/en-us/training/support/mcp-get-started)
+- [Official Azure Skills](https://github.com/microsoft/azure-skills)
+- [Oracle MCP product catalog](https://www.oracle.com/mcp/)
+- [Oracle MCP publisher repository](https://github.com/oracle/mcp)
+- [OCI Cloud MCP specific setup and authority](https://github.com/oracle/mcp/blob/main/src/oci-cloud-mcp-server/README.md)
+
+### Tool Creation MCPs And Upstream Skills
+
+Claim context: [Tool Creation official inventory](mcp-domains/tool-creation.md). Publication/setup verification does not establish runtime support.
+
+- [Go project's gopls MCP modes, requirements, effects and model instructions](https://go.dev/gopls/features/mcp)
+- [Official OpenTofu registry MCP repository and setup](https://github.com/opentofu/opentofu-mcp-server)
+- [OpenTofu MCP local stdio source](https://github.com/opentofu/opentofu-mcp-server/blob/main/src/local.ts)
+- [OpenTofu MCP package manifest](https://github.com/opentofu/opentofu-mcp-server/blob/main/package.json)
+- [GitHub official MCP repository](https://github.com/github/github-mcp-server)
+- [GitHub remote MCP setup and read-only filtering](https://github.com/github/github-mcp-server/blob/main/docs/remote-server.md)
+- [GitHub official MCP agent plugin](https://github.com/github/github-mcp-server/tree/main/agent-plugin)
+- [Python Software Foundation mission](https://www.python.org/psf/mission/)
+- [Python documentation](https://docs.python.org/3/)
+- [Python packaging guide](https://packaging.python.org/en/latest/)
+- [Model Context Protocol Python SDK](https://github.com/modelcontextprotocol/python-sdk)
+- [Ansible Development Tools MCP setup, preview status and capabilities](https://docs.ansible.com/projects/vscode-ansible/mcp/)
+- [Ansible Automation Platform 2.6 MCP deployment, support, identity and data boundaries](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/extend-assembly_deploying_ansible_mcp_server)
+- [Microsoft official skills catalog](https://github.com/microsoft/skills)
+
+### Additional Official Setup And Skill References
+
+- [Azure MCP tool parameters and modes](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/tools/)
+- [Azure MCP authentication and deployment security](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/security)
+- [Agent Skills specification](https://agentskills.io/specification)
+- [Claude native remote connectors](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
+- [PostgreSQL server administration](https://www.postgresql.org/docs/18/admin.html)
+- [BigQuery query cost controls](https://docs.cloud.google.com/bigquery/docs/best-practices-costs)
+- [PostgreSQL EXPLAIN execution and effects](https://www.postgresql.org/docs/18/sql-explain.html)
+- [Microsoft Playwright MCP](https://github.com/microsoft/playwright-mcp)
+
+### Fixture-Driven Guidance Refinements
+
+Claim context: the [full-suite validation record](evals/admin-domain-validation.md). Clarified explicit human approval, unobserved target permissions, domain setup methods, tenant navigation, named role boundaries, eval artifact paths and preview maturity without relaxing fixture criteria.
+
+- [Azure Backup role and permission scope](https://learn.microsoft.com/en-us/azure/backup/backup-rbac-rs-vault)
+
+### GCC Identity Endpoint Correction
+
+Claim context: [portal navigation](../.github/skills/microsoft-portal-navigation/SKILL.md). The original GCC fixture conflated Microsoft 365 GCC with GCC High/DoD; official identity documentation establishes the distinction.
+
+- [Azure Government identity planning](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-plan-identity)
+- [Microsoft Graph national cloud deployments](https://learn.microsoft.com/en-us/graph/deployments)
+
+### Native Codex MCP Verification
+
+Claim context: [MCP setup](../mcp/README.md) and [the dated validation record](evals/admin-domain-validation.md). macOS Codex 0.159.2 discovery and bounded public queries across Learn, Cisco DevNet, AWS Knowledge, Redis Docs and OpenTofu passed; the initial Python HTTP errors remain recorded.
+
+- [Official Codex MCP configuration and desktop refresh](https://learn.chatgpt.com/docs/extend/mcp)
+- [Official Codex app-server direct MCP discovery/call API](https://learn.chatgpt.com/docs/app-server)
+- [Cloudflare client-signature blocking, error 1010](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/)
+
 ## User-Requested Requirements
 
 These items are requirements from the project owner and should be implemented only where public technical sources support the mechanics:
@@ -273,11 +519,16 @@ These items are requirements from the project owner and should be implemented on
 - Prefer official Microsoft sources and public upstream data.
 - Maintain cross-agent portability beyond the first verified hosts.
 - Build toward a future shopping-cart/plugin selection experience.
+- Add source-backed research for systems and services, networking, databases, cloud and infrastructure, and tool creation (2 October 2026).
+- Update skills for all five areas and 25 organisation entries using only official sources and verified official MCP implementations, with explicit fallback and test status (2 October 2026).
+- Capture five main organisations per area. The initial interpretation is a transparent editorial vendor/maintainer shortlist, not an independently established adoption or market-share ranking (2 October 2026).
 
 ## Source Gaps
 
 - First-class claims for specific non-Copilot/non-Claude hosts need host-specific public docs before they are advertised as supported.
 - Provider/model-specific prompt tuning claims need public vendor documentation or eval evidence before they become project guidance.
+- Broader-domain skills and eval fixtures are authored, and official MCP publication/upstream reuse are recorded. Target installations, authenticated tool effects, licensing, practical recovery and workstation parity remain unverified. Initial Python Redis Docs/OpenTofu probes returned HTTP 403; native macOS Codex discovery and public queries across five official servers subsequently passed. Active-chat exposure remains unverified and AWS search relevance gaps are recorded. These narrow checks do not establish a target integration.
+- No independent ranking metric or adoption dataset has been established for the five-organisation shortlists.
 
 ## Sources
 

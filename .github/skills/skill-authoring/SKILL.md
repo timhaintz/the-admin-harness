@@ -11,13 +11,13 @@ Use this skill to create or improve skills in `.github/skills/`.
 ## Workflow
 
 1. Check existing local skills and [docs/upstream-skill-register.md](../../../docs/upstream-skill-register.md) before adding a new skill.
-2. Check official Microsoft skill sources, especially `microsoft/skills`, `microsoft/azure-skills`, and product-specific Microsoft-owned repos for the domain.
+2. Check the product's official vendor or upstream skill sources. For Microsoft work, check `microsoft/skills`, `microsoft/azure-skills`, and product-specific Microsoft-owned repos. Use the [domain skill coverage](../../../docs/admin-skill-coverage.md) to avoid duplicating local organisation routes.
 3. Decide whether the local skill should reference, route to, wrap, vendor, or create a local alternative to upstream guidance. Prefer reference or route when upstream already covers the workflow.
 4. Create `.github/skills/<skill-name>/SKILL.md` where `<skill-name>` matches the frontmatter `name`.
 5. Use lowercase letters, numbers, and hyphens only. Do not use slashes, dots, colons, underscores, leading/trailing hyphens, or consecutive hyphens.
 6. Write a description that covers both capability and trigger conditions.
 7. Keep `SKILL.md` concise. Move detailed source maps, templates, and advanced guidance into `references/`, `examples/`, `scripts/`, or `assets/`.
-8. Add `evals/evals.json` with at least two realistic prompts and expected outputs.
+8. Add `evals/evals.json` with at least two realistic prompts and expected outputs. State that exact artifact path/format in the proposed deliverables; a generic promise of tests leaves the package incomplete.
 9. Include assertions for objective checks where possible.
 10. Validate the skill structure before calling it complete.
 
@@ -43,11 +43,13 @@ Use this `evals/evals.json` shape:
 ## Guardrails
 
 - Prefer official Microsoft skills, plugins, MCP servers, and Microsoft-owned domain repos when they already cover a workflow.
+- Broader-domain procedures and MCP selections must use official vendor or upstream sources. Verify MCP publisher, product coverage, version and setup through the [official MCP catalog](../../../docs/official-mcp-catalog.md); a directory listing, community wrapper or protocol SDK alone does not qualify.
 - Do not copy upstream skill bodies into this repo by default; route to the upstream source and add only Admin Harness-specific portal, tenant, source, or safety guidance.
 - Do not add broad `allowed-tools` unless the script and workflow are reviewed.
 - Do not duplicate source data across multiple skills.
 - Do not write skills that request secrets in chat.
 - Do not create a skill without evals.
+- Label eval fixtures, actual model trials and target-runtime tests separately. A valid skill file is authored guidance, not evidence that a server is installed or a vendor integration works.
 
 ## Sources
 

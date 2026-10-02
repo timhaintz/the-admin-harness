@@ -1,6 +1,6 @@
 # The Admin Harness
 
-The Admin Harness is a source-driven agentic resource for IT administrators. It packages Microsoft portal discovery, documentation-grounded admin workflows, MCP configuration examples, Agent Skills, and safety policies for agents such as VS Code GitHub Copilot, Copilot CLI, Copilot cloud agent, Claude Code, Microsoft Scout, and other Agent Skills-compatible hosts.
+The Admin Harness is a source-driven agentic resource for IT administrators. It packages Microsoft portal discovery, documentation-grounded admin workflows, MCP configuration examples, Agent Skills, safety policies, and research across systems, networking, databases, cloud infrastructure, and tool creation for agents such as VS Code GitHub Copilot, Copilot CLI, Copilot cloud agent, Claude Code, Microsoft Scout, and other Agent Skills-compatible hosts.
 
 This project is intended to be public open source. Everything committed here should be safe for public viewing: no tenant IDs, admin credentials, tokens, `.env` files, browser profiles, customer data, or generated credential caches.
 
@@ -21,6 +21,10 @@ Contributions should follow [CONTRIBUTING.md](CONTRIBUTING.md): branch per chang
 ## Current Status
 
 This repo is in an early public preview phase. It includes cross-agent instructions, Agent Skills, evaluations, MCP configuration templates, source-backed portal coverage tracking, and an initial batch of common Microsoft admin portal skills. It does not yet execute Microsoft tenant changes.
+
+The [administration domain catalog](docs/admin-domain-catalog.md) covers systems and services, networking, databases, cloud and infrastructure, and tool creation, with five organisations per area. [Skill coverage](docs/admin-skill-coverage.md) maps five area routers and all 25 organisation routes; Azure reuses its existing safety skill. New skills use only official vendor/upstream product sources and route to [officially published MCP servers](docs/official-mcp-catalog.md) where verified, with documentation fallback where availability is unverified.
+
+The shortlists are editorial coverage choices, not market-share rankings. Skills and eval fixtures are authored guidance; they do not install tools or certify target integration, provisioning or a ready-to-run desktop. [Validation evidence](docs/evals/admin-domain-validation.md) records 124 final reviewed model-only fixture passes across 45 skills, structural checks and ten native public queries across five official MCP servers. Native HTTP discovery templates are linked from [MCP setup](mcp/README.md).
 
 ## Design Principles
 

@@ -55,6 +55,20 @@ Local portal-specific skills should usually be routing and safety layers. They s
 | `portal-microsoft-365-defender` | `microsoft/azure-skills`, `microsoft/agent365-skills`, Microsoft Graph sample leads | Keep local Microsoft 365 Defender portal skill as a router/safety layer. Route Azure/Sentinel/Defender for Cloud resource work, Agent 365 observability, and Graph sample workflows upstream when relevant. |
 | `portal-power-platform-admin-center` | `microsoft/power-platform-skills`, `microsoft/Dataverse-skills`, `microsoft/Managed-Apps`, `microsoft/skills-for-copilot-studio`, `microsoft/power-cat-skills`, `microsoft/powerplatform-build-tools` | Keep local Power Platform admin center skill as a router/safety layer. Route Power Pages, Dataverse, managed app, Copilot Studio, Power CAT app quality/eval, and Power Platform Build Tools workflows upstream when relevant. |
 
+## Broader Domain Reuse Decisions
+
+Reviewed 2 October 2026. The [five area routers and 25 organisation routes](admin-skill-coverage.md) are local Admin Harness source/scope/review wrappers; they are not vendor-authored packs or copies of upstream procedures. Product details should route to the relevant official upstream capability when configured and suitable. [Official MCP publication and exact product coverage](official-mcp-catalog.md) are recorded separately from Agent Skill availability.
+
+| Local area | Official upstream overlap verified | Local decision |
+| --- | --- | --- |
+| Systems and services | Existing Microsoft `microsoft-docs` route; [Canonical Copilot collections](https://github.com/canonical/copilot-collections) include generic authoring resources. Official RHEL and SUSE MCPs are listed in the [systems inventory](mcp-domains/systems-and-services.md). | Keep thin product/version, identity, observed-service versus workload-health guidance. Generic authoring resources do not establish an Ubuntu administration pack; MCP availability is not an upstream skill pack. |
+| Networking | Cisco's [Content Search MCP](https://github.com/CiscoDevNet/devnet-content-search-mcp) supplies experimental prompt/agent reference samples; other official product MCPs are listed in the [network inventory](mcp-domains/networking.md). | Reference official product setup/procedure; do not copy or promote experimental samples as a mature task-skill pack. Preserve device-family and target-authority boundaries. |
+| Databases | [MongoDB official Agent Skills](https://www.mongodb.com/docs/agent-skills/) / [publisher repository](https://github.com/mongodb/agent-skills); [Redis official agent tools](https://redis.io/docs/latest/develop/setup/build-with-an-agent/) / [publisher skills](https://github.com/redis/agent-skills); [Google MCP Toolbox](https://github.com/googleapis/mcp-toolbox) publishes skills/generation. | Route product development/setup guidance upstream. Local wrappers add target/recovery review and independent data checks. Google Toolbox remains Google-published when its target is PostgreSQL. |
+| Cloud and infrastructure | [AWS Agent Toolkit](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/quick-start.html) / [official pack](https://github.com/aws/agent-toolkit-for-aws); [Google's official skill announcement](https://cloud.google.com/blog/topics/developers-practitioners/level-up-your-agents-announcing-googles-official-skills-repository) / [google/skills](https://github.com/google/skills); existing [Azure Skills](https://github.com/microsoft/azure-skills). | Reference/route official task skills. Reuse updated `azure-admin-safe-operations` instead of adding another Azure wrapper. Keep cloud scope, cost, recovery and evidence handling local. |
+| Tool creation | [Gopls MCP](https://go.dev/gopls/features/mcp) supplies model instructions; [GitHub's official agent plugin](https://github.com/github/github-mcp-server/tree/main/agent-plugin) bundles MCP configuration; [Ansible Development Tools MCP](https://docs.ansible.com/projects/vscode-ansible/mcp/) supplies authoring tools/guidance. | Reuse those references and existing Microsoft skill-authoring routes. An integration plugin or model instructions are not automatically a separate Agent Skill pack. Local wrappers bind artifacts, tests and target effects. |
+
+The remaining vendor checks did not establish an applicable official Agent Skill pack in this bounded review. This is not an exhaustive absence claim. Use official product documentation and recheck upstream publication before expanding local task procedures; do not fill a gap with a community server or vendored unofficial pack.
+
 ## Required Check Before New Skills
 
 Before adding a new Admin Harness skill, contributors must check:
@@ -64,10 +78,27 @@ Before adding a new Admin Harness skill, contributors must check:
 - [microsoft/azure-skills](https://github.com/microsoft/azure-skills) for Azure and Entra-adjacent work;
 - Microsoft-owned domain repos for the product area;
 - official Microsoft Learn or product documentation.
+- For broader-domain work, the relevant vendor/upstream official skill and MCP sources in the inventories above, preserving publisher, product scope and maturity labels.
 
 If an upstream skill exists, the PR should explain why the local skill is a reference, route, wrapper, or justified local implementation.
 
 ## Sources
+
+- [Official domain MCP inventories and publisher references](official-mcp-catalog.md)
+- [Canonical Copilot collections](https://github.com/canonical/copilot-collections)
+- [Cisco Content Search MCP](https://github.com/CiscoDevNet/devnet-content-search-mcp)
+- [MongoDB official Agent Skills documentation](https://www.mongodb.com/docs/agent-skills/)
+- [MongoDB Agent Skills](https://github.com/mongodb/agent-skills)
+- [Redis official agent tools](https://redis.io/docs/latest/develop/setup/build-with-an-agent/)
+- [Redis Agent Skills](https://github.com/redis/agent-skills)
+- [Google MCP Toolbox](https://github.com/googleapis/mcp-toolbox)
+- [AWS Agent Toolkit quickstart](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/quick-start.html)
+- [AWS Agent Toolkit](https://github.com/aws/agent-toolkit-for-aws)
+- [Google official skills announcement](https://cloud.google.com/blog/topics/developers-practitioners/level-up-your-agents-announcing-googles-official-skills-repository)
+- [Google Skills](https://github.com/google/skills)
+- [Gopls MCP model instructions](https://go.dev/gopls/features/mcp)
+- [GitHub official agent plugin](https://github.com/github/github-mcp-server/tree/main/agent-plugin)
+- [Ansible Development Tools MCP](https://docs.ansible.com/projects/vscode-ansible/mcp/)
 
 - [microsoft/skills](https://github.com/microsoft/skills)
 - [microsoft/skills README](https://raw.githubusercontent.com/microsoft/skills/main/README.md)
