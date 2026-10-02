@@ -1,6 +1,6 @@
 # Administration Domain Catalog
 
-Source review date: 2 October 2026. Status: research and proposed workflow coverage; no new tools, skills, MCP servers, or workstation profiles are installed by this catalog.
+Source review date: 2 October 2026. Status: official-source research and authored domain/organisation skills with eval fixtures; no tools, MCP servers or workstation profiles are installed by this catalog. See [skill coverage](admin-skill-coverage.md), [official MCP availability](official-mcp-catalog.md) and [validation evidence](evals/admin-domain-validation.md).
 
 Administrators should be able to select relevant use cases, identify their products and requirements, and find the appropriate authoritative sources and available capabilities. This catalog extends the existing Microsoft portal research across five administration areas. It supports later selectable bundles without assuming that choosing a domain provisions components or grants permission to change a target.
 
@@ -22,7 +22,7 @@ Each detailed guide provides product examples, claim-level official references, 
 
 1. Choose one or more domains and record the actual vendor/product, version, target environment, intended task, and allowed scope.
 2. Use the relevant guide to locate official documentation. Resolve version, edition, region, support, and licensing differences before giving procedural instructions.
-3. Check [the upstream skill register](upstream-skill-register.md) and the product maintainer's current tools or integrations before creating a local skill. Keep existing Microsoft Learn and Azure routing where applicable.
+3. Use [the area and organisation skills](admin-skill-coverage.md), checking [upstream reuse decisions](upstream-skill-register.md). Use only official vendor/upstream product sources and verified official MCP implementations from [the catalog](official-mcp-catalog.md); retain the documentation fallback when no suitable server is verified or configured.
 4. Separate documentation lookup and read-only observation from a proposed change. Establish the target principal and documented permissions through the user's native authentication; no passwords, tokens, or credential caches belong in the repository or chat.
 5. Propose prerequisites, exact scope, effects, success checks, and recovery limits. A profile choice, vendor reference, or model-generated plan is not mutation approval.
 6. Evaluate a chosen workflow in a disposable environment before marking a skill, integration, or profile supported. Retain native evidence and record skipped, unavailable, partial, or unknown results honestly.
@@ -35,8 +35,8 @@ The same discovery and review concepts can be shared across Mac and Windows, but
 | --- | --- |
 | Five-domain organisation and source discovery | Documented in the linked guides |
 | Existing Microsoft portal skills | Unchanged; see [portal skill coverage](portal-skill-coverage.md) |
-| New broader-domain Agent Skills and evals | Not added by this update |
-| New executable MCP profiles or adapters | Not added by this update |
+| Broader-domain Agent Skills and evals | Five area routers and 25 organisation routes, with 24 new specialists and updated existing Azure coverage; fixtures and validation status recorded separately |
+| Official MCP research and configuration examples | Five inventories and native HTTP discovery templates added; no target adapters or server installations performed |
 | Tool installation, service provisioning, or profile selection UI | Proposed; not implemented or tested here |
 | Cross-platform ready-to-use desktop | Proposed deployment concern; not certified by this research |
 | Production or customer target actions | None performed by this update |
@@ -48,7 +48,7 @@ Future profile manifests should bind supported product versions and per-architec
 - Recheck official version-specific documentation when using a guide for an actual task; the review date is not a perpetual compatibility claim.
 - Vendor documentation supports product capabilities and procedures, not comparative adoption or independent security assurance.
 - A genuine ranked top-five list needs a defined metric, population, measurement date, and independently sourced evidence.
-- Upstream skill/MCP overlap, redistribution rights, package provenance, authentication behaviour, and practical workflow evaluations remain to be checked for each new integration.
+- Upstream reuse and official MCP publication are recorded. Redistribution rights, selected package provenance, actual authentication behaviour and practical target evaluations remain to be checked for each integration.
 - Category membership is editorial. Administrators can require products outside these shortlists; coverage should expand from their requirements and authoritative sources.
 
 ## Sources
@@ -59,6 +59,8 @@ Future profile manifests should bind supported product versions and per-architec
 - [Cloud and infrastructure research and official sources](admin-domains/cloud-and-infrastructure.md)
 - [Tool creation research and official sources](admin-domains/tool-creation.md)
 - [Source register](source-register.md)
+- [Official MCP catalog](official-mcp-catalog.md)
+- [Domain skill coverage](admin-skill-coverage.md)
 - [PRD domain research requirements](../PRD.md#77-broader-domain-research)
 - [Existing upstream skill reuse guidance](upstream-skill-register.md)
 - [Script safety](script-safety.md)

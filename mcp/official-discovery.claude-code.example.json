@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "microsoft-learn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "redis-docs": {
+      "type": "http",
+      "url": "https://redis.io/mcp"
+    },
+    "opentofu-registry": {
+      "type": "http",
+      "url": "https://mcp.opentofu.org/mcp"
+    }
+  }
+}

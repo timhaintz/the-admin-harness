@@ -36,8 +36,9 @@ jobs:
 
       - name: Validate MCP JSON templates
         run: |
-          python3 -m json.tool mcp/vscode.example.json >/dev/null
-          python3 -m json.tool mcp/claude-desktop.example.json >/dev/null
+          for template in mcp/*.example.json; do
+            python3 -m json.tool "$template" >/dev/null
+          done
 
       - name: Check for forbidden local artifacts
         run: |

@@ -1,6 +1,6 @@
 # Networking research guide
 
-Status: source-backed research and proposed workflows. Sources checked **2 October 2026**. This guide adds documentation; it does not install a network tool, create target credentials, provision vendor appliances, or establish a tested skill/MCP integration.
+Status: source-backed research and proposed workflows. Sources checked **2 October 2026**. Local [network routing instructions](../../.github/skills/admin-networking/SKILL.md) and five organisation skills with evaluation fixtures are now authored. They do not install tools, create target credentials, provision vendor appliances, or establish target-runtime integration. The [official MCP inventory](../mcp-domains/networking.md) records verified publication and product boundaries separately from configuration and runtime proof.
 
 ## Selection basis
 
@@ -51,6 +51,8 @@ Suggested first evaluations are: synthetic reachable/unreachable paths, a permis
 
 ## Sources
 
+- [Local network router and organisation routes](../../.github/skills/admin-networking/SKILL.md)
+- [Official networking MCP inventory](../mcp-domains/networking.md)
 - [Cisco: IOS XE 17.18.x RESTCONF](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/1718/b-1718-programmability-cg/restconf_protocol.html)
 - [Cisco: IOS XE 17.18.x model-based AAA](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/1718/b-1718-programmability-cg/model-based-aaa.html)
 - [HPE: completion of the Juniper acquisition](https://www.hpe.com/us/en/newsroom/press-release/2025/07/hewlett-packard-enterprise-closes-acquisition-of-juniper-networks-to-offer-industry-leading-comprehensive-cloud-native-ai-driven-portfolio.html)

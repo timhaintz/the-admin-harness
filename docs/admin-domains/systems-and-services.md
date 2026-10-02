@@ -1,6 +1,6 @@
 # Systems and services research guide
 
-Status: source-backed research and proposed workflows. Sources checked **2 October 2026**. This guide adds documentation; it does not add installed tools, executable integrations, skills, or a provisioned workstation profile.
+Status: source-backed research and proposed workflows. Sources checked **2 October 2026**. Local [systems routing instructions](../../.github/skills/admin-systems-services/SKILL.md) and five organisation skills with evaluation fixtures are now authored. They do not install tools, provision operating systems, or establish target-runtime integration. The [official MCP inventory](../mcp-domains/systems-and-services.md) records verified publication and product boundaries separately from configuration and runtime proof.
 
 ## Selection basis
 
@@ -49,6 +49,8 @@ Suggested first evaluations are: a synthetic healthy service, a deliberately fai
 
 ## Sources
 
+- [Local systems router and organisation routes](../../.github/skills/admin-systems-services/SKILL.md)
+- [Official systems MCP inventory](../mcp-domains/systems-and-services.md)
 - [Microsoft: Windows Server management overview](https://learn.microsoft.com/en-us/windows-server/administration/overview)
 - [Microsoft: Windows Admin Center user access options](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/plan/user-access-options)
 - [Red Hat: RHEL 10 service management](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_systemd_unit_files_to_customize_and_optimize_your_system/managing-system-services-with-systemctl)

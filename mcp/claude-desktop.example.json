@@ -1,13 +1,5 @@
 {
   "mcpServers": {
-    "microsoft-docs": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://learn.microsoft.com/api/mcp"
-      ]
-    },
     "azure": {
       "command": "npx",
       "args": [

@@ -22,7 +22,9 @@ Contributions should follow [CONTRIBUTING.md](CONTRIBUTING.md): branch per chang
 
 This repo is in an early public preview phase. It includes cross-agent instructions, Agent Skills, evaluations, MCP configuration templates, source-backed portal coverage tracking, and an initial batch of common Microsoft admin portal skills. It does not yet execute Microsoft tenant changes.
 
-The [administration domain catalog](docs/admin-domain-catalog.md) adds five vendor or maintainer shortlists for systems and services, networking, databases, cloud and infrastructure, and tool creation. Each area records five organisations, representative products, official documentation, workflow research leads, and validation gaps. These are editorial research selections, not market-share rankings or implemented integrations. Existing Microsoft portal skills remain the implemented skill coverage; the broader catalog does not install tools, provision services, or certify a ready-to-run workstation.
+The [administration domain catalog](docs/admin-domain-catalog.md) covers systems and services, networking, databases, cloud and infrastructure, and tool creation, with five organisations per area. [Skill coverage](docs/admin-skill-coverage.md) maps five area routers and all 25 organisation routes; Azure reuses its existing safety skill. New skills use only official vendor/upstream product sources and route to [officially published MCP servers](docs/official-mcp-catalog.md) where verified, with documentation fallback where availability is unverified.
+
+The shortlists are editorial coverage choices, not market-share rankings. Skills and eval fixtures are authored guidance; they do not install tools or certify target integration, provisioning or a ready-to-run desktop. [Validation evidence](docs/evals/admin-domain-validation.md) records structural checks, model-only trials and limited public MCP protocol checks separately. Native HTTP discovery templates are linked from [MCP setup](mcp/README.md).
 
 ## Design Principles
 

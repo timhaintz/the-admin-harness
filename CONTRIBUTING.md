@@ -23,6 +23,8 @@ scripts/validate-portal-skills.sh
 bash scripts/validate-script-safety.sh
 python3 -m json.tool mcp/vscode.example.json >/dev/null
 python3 -m json.tool mcp/claude-desktop.example.json >/dev/null
+python3 -m json.tool mcp/official-discovery.vscode.example.json >/dev/null
+python3 -m json.tool mcp/official-discovery.claude-code.example.json >/dev/null
 ```
 
 ## Source Rules
@@ -30,6 +32,7 @@ python3 -m json.tool mcp/claude-desktop.example.json >/dev/null
 - Add or update [docs/source-register.md](docs/source-register.md) for new public source claims.
 - Every Markdown file must include a `Sources` section.
 - Prefer official Microsoft sources for admin procedure, role, permission, product limit, and tenant-impacting guidance.
+- For the broader domain skills, use only official vendor/upstream sources and officially published MCP implementations verified through those sources. Preserve preview/experimental status and product coverage; do not fill a missing official server with a community wrapper.
 - Prefer upstream `msportals.io` JSON files for portal entries.
 - Mark source gaps explicitly instead of filling them with guesses.
 
@@ -38,6 +41,7 @@ python3 -m json.tool mcp/claude-desktop.example.json >/dev/null
 - Keep canonical skills under `.github/skills/<skill-name>/SKILL.md`.
 - Before adding a skill, check [docs/upstream-skill-register.md](docs/upstream-skill-register.md) and official Microsoft skill sources for overlap.
 - If an upstream skill exists, explain whether the local change references, routes to, wraps, vendors, or intentionally creates an alternative to it.
+- Keep [domain skill coverage](docs/admin-skill-coverage.md) and [official MCP availability](docs/official-mcp-catalog.md) current. Skill fixtures and model-only trials do not establish target-runtime integration.
 - Every skill must include `evals/evals.json` with at least two realistic evals.
 - Portal-specific skills must follow [docs/portal-skill-template.md](docs/portal-skill-template.md) and be tracked in [docs/portal-skill-coverage.md](docs/portal-skill-coverage.md).
 - Do not hard-code long portal lists into skill bodies.

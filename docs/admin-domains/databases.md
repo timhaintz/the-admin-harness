@@ -1,6 +1,6 @@
 # Databases: organisation and workflow research
 
-Checked: 2026-10-02. Status: research and proposed coverage; this page does not implement a database skill, connector, provisioner, or ready-to-use lab.
+Checked: 2026-10-02. Status: sourced coverage with local routing and review skills. Connectors, provisioning, ready-to-use labs, and target execution remain unvalidated.
 
 This is an editorial shortlist of five organisations or maintainer groups for the database profile. It covers relational databases, document databases, and an in-memory data store. It is not a market-share ranking, an exhaustive catalog, or a recommendation to install every product. Organisations are listed alphabetically; the PostgreSQL Global Development Group is a community maintainer group rather than a commercial vendor.
 
@@ -15,6 +15,16 @@ This is an editorial shortlist of five organisations or maintainer groups for th
 | Redis Ltd. (Redis) | Redis Open Source; separately consider Redis Cloud or Redis Software | User/command/key access through ACLs; persistence through RDB snapshots, AOF, or both. [ACLs](https://redis.io/docs/latest/operate/oss_and_stack/management/security/acl/), [network security](https://redis.io/docs/latest/operate/oss_and_stack/management/security/), and [persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) describe distinct controls and durability tradeoffs. | The referenced docs use `latest`; resolve the exact product and release. Redis recommends restricting direct access to trusted clients. Check the [release-specific license information](https://redis.io/legal/licenses/) before selecting or redistributing a package; this page makes no legal or cost determination. |
 
 ## Proposed chooser requirements
+
+Start with [admin-databases](../../.github/skills/admin-databases/SKILL.md), then select the matching organisation skill below. The [official MCP source map](../mcp-domains/databases.md) records product boundaries and authentication requirements; a published server is not proof that it is installed, configured, or authorised for the selected target.
+
+| Organisation / maintainer | Local routing and review skill |
+| --- | --- |
+| Microsoft | [SQL Server administration](../../.github/skills/database-microsoft-sql-server/SKILL.md) |
+| MongoDB, Inc. | [MongoDB administration](../../.github/skills/database-mongodb/SKILL.md) |
+| Oracle | [Oracle Database administration](../../.github/skills/database-oracle/SKILL.md) |
+| PostgreSQL Global Development Group | [PostgreSQL administration](../../.github/skills/database-postgresql/SKILL.md) |
+| Redis Ltd. | [Redis administration](../../.github/skills/database-redis/SKILL.md) |
 
 The database chooser should ask for the system and deployment mode, exact release/edition, architecture, intended task, database/topology scope, network route, permitted identity, and recovery objective. Preparing an administration client is a separate choice from creating a database server or paid managed service. Show downloads, disk/memory requirements, dependencies, edition constraints, and any proposed billable resources before preparation.
 
@@ -38,7 +48,7 @@ All examples below are design candidates, not completed tests or executable proc
 
 No connectors, package versions, architecture compatibility, costs, or end-to-end recovery guarantees have been validated by this research. Edition rights, support lifecycle, managed-service features, extension compatibility, and account-specific permissions require fresh target-specific sources before execution. Other systems remain candidates for later coverage; the five-row limit is a prioritisation choice, not an exclusion policy.
 
-For Microsoft-related work, check the [upstream skill register](../upstream-skill-register.md) and route to official upstream capabilities when applicable. This page does not introduce local skills or claim that upstream tools cover every SQL Server administration task.
+Check the [upstream skill register](../upstream-skill-register.md) and route to official upstream capabilities when applicable. Local skills add task routing, review, and verification requirements; they do not claim that upstream tools cover every database administration task. In particular, Microsoft's SQL MCP configured-entity operations are distinct from general SQL Server backup and recovery administration.
 
 ## Sources
 
@@ -61,3 +71,4 @@ All product references below were checked on 2026-10-02. Moving documentation se
 - [Redis: Persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)
 - [Redis: Licenses](https://redis.io/legal/licenses/)
 - [Admin Harness: Upstream skill register](../upstream-skill-register.md)
+- [Admin Harness: Official database MCP source map](../mcp-domains/databases.md)

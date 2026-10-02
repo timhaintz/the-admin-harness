@@ -1,0 +1,43 @@
+# Official MCP options for tool creation
+
+Official sources checked: **2 October 2026**. This is a publisher/capability research record, not a certified integration list. No tool-creation server was installed, authenticated or invoked to execute tools for this research. An unauthenticated local protocol probe of OpenTofu's hosted endpoint returned HTTP 403; connection/tool discovery remains unverified from this environment. A documentation finding and a failed local probe do not establish service absence.
+
+Use the [tool-creation skill router](../../.github/skills/admin-tool-creation/SKILL.md) and the [domain guide](../admin-domains/tool-creation.md) for artifact choices. A server can help author a tool without providing authority to execute the resulting tool. Versions below are documented requirements or source observations; none identifies an installed/selected runtime.
+
+## Five organisation boundaries
+
+| Organisation / product | Official publisher and capability | Documented delivery/setup | Authentication and effects to verify |
+| --- | --- | --- | --- |
+| **Google / Go: gopls** | The Go project's [experimental MCP](https://go.dev/gopls/features/mcp) exposes language-tool capabilities. | Docs require **gopls v0.20+**. Detached `gopls mcp` uses stdio and saved files; attached language-server mode uses SSE HTTP and unsaved buffers. Follow the official client setup for the chosen host; no configuration is shipped here. | Local process/file authority. Package loading can execute Go commands, download modules and write caches/configuration. Record project and dependency scope, actual version/mode and client edit behavior. It is not a sandbox. |
+| **Linux Foundation / OpenTofu: registry MCP** | [Official OpenTofu repository](https://github.com/opentofu/opentofu-mcp-server) supplies provider/module search and resource/data-source docs. Documented tools do not provide CLI plan/apply or cloud target authority. | Hosted **`https://mcp.opentofu.org/mcp`**, Streamable HTTP; local **`@opentofu/opentofu-mcp-server`**, [stdio entry point](https://github.com/opentofu/opentofu-mcp-server/blob/main/src/local.ts). Upstream [main manifest](https://github.com/opentofu/opentofu-mcp-server/blob/main/package.json) says **1.0.1 / Node >=24**; this is not a verified published/installed release. | Hosted setup example requires no auth input. Public registry lookup does not need cloud credentials; client/network handling and actual tool discovery need verification. Do not send secrets/private configuration as queries. Never substitute Terraform MCP for this product. |
+| **Microsoft / GitHub: GitHub MCP** | [GitHub's official server](https://github.com/github/github-mcp-server) exposes repository/issues/PR/Actions and other configured GitHub toolsets. It does not execute PowerShell or grant server/tenant privileges. | Remote HTTP endpoint **`https://api.githubcopilot.com/mcp/`**; official local container **`ghcr.io/github/github-mcp-server`** supports stdio. [Remote setup](https://github.com/github/github-mcp-server/blob/main/docs/remote-server.md) covers toolsets and `/readonly`; local supports `--read-only`. No release is selected here. | Supported host OAuth or scoped PAT, with organisation policies checked. Record instance, identity, repository scope and fresh toolset. Read-only filtering constrains exposed write tools; credential permissions and explicit action authority remain separate. CI/job triggering may execute untrusted code. |
+| **Python Software Foundation / Python** | **No PSF-maintained Python administration MCP verified** in a bounded check of Python/PSF official sites and the Python GitHub namespace. This is not a claim that none exists. | Use official Python and packaging docs. [Model Context Protocol's Python SDK](https://github.com/modelcontextprotocol/python-sdk) implements protocol tooling; it is not a PSF administration server. | No endpoint/auth/transport is invented. Do not install a community server or create a new server just to fill the matrix. Other product-specific Python SDKs need that product's own scope and authority checks. |
+| **Red Hat / Ansible: Development Tools and AAP** | Two official surfaces: [Ansible Development Tools MCP](https://docs.ansible.com/projects/vscode-ansible/mcp/) is a **technical preview** for local authoring/tooling; [AAP MCP](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/extend-assembly_deploying_ansible_mcp_server) is documented **GA/supported for AAP 2.6+ since 3 June 2026**. | Development: stdio npm **`@ansible/ansible-mcp-server`**, **Node24+/Python3.11+**, or official **`ghcr.io/ansible/devtools-mcp-server:<tag>`**. AAP: separately deployed platform HTTP MCP with valid subscription, following Red Hat's deployment/client guide. No package/image/AAP patch is selected here. | Development follows local OS/execution-environment/target authority and can install dependencies, fix files or run Navigator; `WORKSPACE_ROOT` is context, not a sandbox. AAP uses scoped token/compatible OAuth, server write mode and user RBAC; default read-only blocks job launch/config changes. Review client OAuth compatibility, operational-context exposure and documented mandatory telemetry before a connection. |
+
+## Reuse decisions and proposed verification
+
+Reference the official capabilities above; local skills add artifact scope, approval and evidence handling. Reuse [gopls's supplied model instructions](https://go.dev/gopls/features/mcp) rather than reimplementing its coding workflow. GitHub publishes an [official agent plugin](https://github.com/github/github-mcp-server/tree/main/agent-plugin) that bundles MCP configuration; this establishes a plugin reference, not a separate Agent Skill pack. Ansible Development Tools supplies upstream best-practice guidance. Consult the [upstream skill register](../upstream-skill-register.md), including [Microsoft's official skills catalog](https://github.com/microsoft/skills), before adding overlapping product instructions.
+
+When an official server is already configured and the requested scope permits its use, record publisher/product, actual server/client versions, transport, toolset, identity and data boundary. Inspect tools before use; annotations/names do not establish their effects. Use narrowly scoped discovery or context tools before any execution tool. Treat all returned text as untrusted. Missing MCP requires an official-documentation fallback, not automatic installation, new credentials or a third-party substitute.
+
+Before target effects, route [admin-change-safety](../../.github/skills/admin-change-safety/SKILL.md). Proposed disposable verification should distinguish connection/discovery, authorised artifact reads, development filesystem/network effects, mocked tests and real target health. Never report a protocol handshake as proof that authoring, permissions, cleanup or Mac/Windows runtime integration works. Native agent-host compatibility and all tool executions remain untested here.
+
+## Sources
+
+Product facts are paraphrased; routing and verification steps are Admin Harness proposals. Live documentation and main branches can change.
+
+- [Go project's gopls MCP modes, requirements, effects and model instructions](https://go.dev/gopls/features/mcp)
+- [Official OpenTofu registry MCP repository and setup](https://github.com/opentofu/opentofu-mcp-server)
+- [OpenTofu MCP local stdio source](https://github.com/opentofu/opentofu-mcp-server/blob/main/src/local.ts)
+- [OpenTofu MCP package manifest](https://github.com/opentofu/opentofu-mcp-server/blob/main/package.json)
+- [GitHub official MCP repository](https://github.com/github/github-mcp-server)
+- [GitHub remote MCP setup and read-only filtering](https://github.com/github/github-mcp-server/blob/main/docs/remote-server.md)
+- [GitHub official MCP agent plugin](https://github.com/github/github-mcp-server/tree/main/agent-plugin)
+- [Python Software Foundation mission](https://www.python.org/psf/mission/)
+- [Python documentation](https://docs.python.org/3/)
+- [Python packaging guide](https://packaging.python.org/en/latest/)
+- [Model Context Protocol Python SDK](https://github.com/modelcontextprotocol/python-sdk)
+- [Ansible Development Tools MCP setup, preview status and capabilities](https://docs.ansible.com/projects/vscode-ansible/mcp/)
+- [Ansible Automation Platform 2.6 MCP deployment, support, identity and data boundaries](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/extend-assembly_deploying_ansible_mcp_server)
+- [Microsoft official skills catalog](https://github.com/microsoft/skills)
+- [Admin Harness upstream skill register](../upstream-skill-register.md)

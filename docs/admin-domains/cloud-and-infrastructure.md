@@ -1,6 +1,6 @@
 # Cloud and infrastructure: organisation and workflow research
 
-Checked: 2026-10-02. Status: research and proposed coverage; this page does not implement cloud adapters, deployment automation, a provisioner, or ready-to-use labs.
+Checked: 2026-10-02. Status: sourced coverage with local routing and review skills. Cloud adapters, deployment automation, provisioning, ready-to-use labs, and target execution remain unvalidated.
 
 This is an editorial shortlist of five cloud-provider organisations for the cloud and infrastructure profile. It is not a market-share ranking or an exhaustive infrastructure catalog. Organisations are listed alphabetically. Provider selection should follow the user's existing environment and requirements; selecting a profile must not silently create an account, spend money, or grant privileges.
 
@@ -15,6 +15,16 @@ This is an editorial shortlist of five cloud-provider organisations for the clou
 | Oracle | Oracle Cloud Infrastructure (OCI) tenancy and compartment resources governed by IAM | [OCI IAM](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/overview.htm) describes policy-based access and compartment scope. [Block Volume backups](https://docs.oracle.com/en-us/iaas/Content/Block/Concepts/blockvolumebackups.htm) support backing up volumes and restoring new volumes. | [OCI budgets](https://docs.oracle.com/en-us/iaas/Content/Billing/Concepts/budgetsoverview.htm) are soft spending limits with alerts. Match region, compartment, volume/backup scope, encryption requirements, and restoration plan; retained backups and restored resources need an explicit cost and cleanup review. |
 
 ## Proposed chooser requirements
+
+Start with [admin-cloud-infrastructure](../../.github/skills/admin-cloud-infrastructure/SKILL.md), then select the matching organisation skill below. The [official MCP source map](../mcp-domains/cloud-and-infrastructure.md) distinguishes documentation, service-specific, and resource-operation capabilities. Published integrations do not establish installation, authentication, or authority over a target account.
+
+| Organisation | Local routing and review skill |
+| --- | --- |
+| AWS | [AWS administration](../../.github/skills/cloud-aws/SKILL.md) |
+| Google | [Google Cloud administration](../../.github/skills/cloud-google/SKILL.md) |
+| IBM | [IBM Cloud administration](../../.github/skills/cloud-ibm/SKILL.md) |
+| Microsoft | [Existing Azure administration wrapper](../../.github/skills/azure-admin-safe-operations/SKILL.md) |
+| Oracle | [OCI administration](../../.github/skills/cloud-oracle/SKILL.md) |
 
 Ask for provider, task, cloud partition or environment, account/project/subscription/tenancy scope, region, target resources, identity, permitted actions, and recovery objective. Resolve exact CLI/API/provider versions and supported host architecture before preparing clients. These are moving service documents, not proof that a particular CLI, API release, MCP server, or desktop image is supported.
 
@@ -40,7 +50,7 @@ These are design candidates, not completed tests or runnable labs. Begin with sy
 
 For Azure, consult the [upstream skill register](../upstream-skill-register.md), [official Azure Skills](https://github.com/microsoft/azure-skills), and [Azure MCP documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/) before creating an overlapping local skill. The existing harness safety wrapper adds review and scope context; this research does not establish a complete Azure execution adapter.
 
-No AWS, Google Cloud, IBM Cloud, or OCI agent integration has been selected or validated here. Provider APIs, MCP authentication, tool effects, regional feature availability, resource quotas, preview status, pricing, and restore consistency need task-specific verification. Private-cloud and on-premises infrastructure remain in scope for later research; this first cloud-provider shortlist does not cover every infrastructure supplier. No account was accessed, cloud resource created, cost incurred, or recovery guarantee tested as part of this document research.
+Official AWS, Google Cloud, IBM watsonx.data, and OCI integrations are recorded in the MCP source map, but their target runtimes have not been installed or validated here. Provider APIs, MCP authentication, tool effects, regional feature availability, resource quotas, preview status, pricing, and restore consistency need task-specific verification. Private-cloud and on-premises infrastructure remain in scope for later research; this first cloud-provider shortlist does not cover every infrastructure supplier. No account was accessed, cloud resource created, cost incurred, or recovery guarantee tested as part of this document research.
 
 ## Sources
 
@@ -64,3 +74,4 @@ All product references below were checked on 2026-10-02. Refresh service capabil
 - [Microsoft: Official Azure Skills](https://github.com/microsoft/azure-skills)
 - [Microsoft: Azure MCP documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/)
 - [Admin Harness: Upstream skill register](../upstream-skill-register.md)
+- [Admin Harness: Official cloud MCP source map](../mcp-domains/cloud-and-infrastructure.md)

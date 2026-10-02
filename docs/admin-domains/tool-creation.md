@@ -1,6 +1,6 @@
 # Tool creation
 
-Research checked: **2 October 2026**. Status: **proposed domain coverage; documentation researched, integrations and workflows not runtime-verified**.
+Research checked: **2 October 2026**. Status: **domain guidance, skill routes and evaluation fixtures added; integrations and workflows not runtime-verified**.
 
 This domain helps administrators author, test, review, package and maintain automation: scripts, command-line tools, configuration-management content and infrastructure modules. It can support any of the other administration domains. These five organisations are an editorial coverage shortlist based on those distinct authoring needs and available primary documentation. They are not a market-share ranking, and inclusion does not establish a supported integration.
 
@@ -28,7 +28,9 @@ The workflow and packaging columns are **Admin Harness proposals** informed by t
 
 The chooser should ask for the required artifact (script, CLI, playbook/collection or infrastructure module), intended target platforms, chosen language/tools, and whether the task is read-only or changes state. Show the selected runtimes, dependencies, test environment and requested credentials before preparing them. Source-control authentication, CI execution identity and target administration authority must remain distinct.
 
-Start with one authoring toolchain selected by the administrator. Reuse official skills and established host integrations after the [upstream overlap check](../upstream-skill-register.md); new local skills still need repository-standard evaluations. This research adds no agent loop, MCP server, credentials or installed toolchain.
+Start with one authoring toolchain selected by the administrator. Reuse official skills and established host integrations after the [upstream overlap check](../upstream-skill-register.md). The new local routes add scope, review and evidence decisions around those tools; their evaluation fixtures do not certify runtime integration. This research adds no agent loop, MCP server, credentials or installed toolchain.
+
+The [admin-tool-creation router](../../.github/skills/admin-tool-creation/SKILL.md) selects [Go](../../.github/skills/tool-google-go/SKILL.md), [OpenTofu](../../.github/skills/tool-linux-foundation-opentofu/SKILL.md), [PowerShell/GitHub](../../.github/skills/tool-microsoft-powershell-github/SKILL.md), [Python](../../.github/skills/tool-python/SKILL.md) or [Ansible](../../.github/skills/tool-red-hat-ansible/SKILL.md). The [official MCP record](../mcp-domains/tool-creation.md) distinguishes publisher, product, delivery and authority boundaries. A configured server is optional for authoring; source-backed documentation remains available when MCP is absent. GitHub MCP is not a PowerShell executor, registry MCP is not cloud execution, and Ansible development tooling is separate from AAP job execution.
 
 Proposed acceptance cases:
 
@@ -63,3 +65,4 @@ Official sources checked on 2 October 2026; linked documentation may change. Pro
 - [Go security](https://go.dev/doc/security/)
 - [Admin Harness script safety](../script-safety.md)
 - [Admin Harness upstream skill register](../upstream-skill-register.md)
+- [Admin Harness tool-creation MCP record](../mcp-domains/tool-creation.md)
