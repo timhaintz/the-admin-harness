@@ -14,11 +14,11 @@
     {
       "id": "portal-gcc-entra",
       "prompt": "I am in GCC. What Entra portal should I use?",
-      "expected_output": "Returns the GCC Entra admin center candidate and warns that sovereign cloud endpoints differ from commercial cloud.",
+      "expected_output": "Explains that Microsoft 365 GCC uses Microsoft Entra Public, while GCC High/DoD use Microsoft Entra Government. Confirms the intended tenant identity cloud and gives a source-backed public portal route for GCC; does not prescribe a government endpoint solely from GCC.",
       "assertions": [
-        "The output distinguishes GCC or government cloud from commercial cloud",
-        "The output includes an Entra government portal candidate",
-        "The output does not give only the commercial entra.microsoft.com URL"
+        "The output distinguishes Microsoft 365 GCC from GCC High/DoD identity clouds",
+        "The output identifies GCC as Microsoft Entra Public and cites official Microsoft identity or national cloud documentation",
+        "The output does not prescribe a government Entra endpoint solely because the user said GCC"
       ]
     },
     {

@@ -8,6 +8,8 @@ Use `.github/skills/` as the canonical project skill directory. Every skill shou
 
 Before adding a new skill, check [docs/upstream-skill-register.md](../docs/upstream-skill-register.md). Prefer official Microsoft skills, plugins, MCP servers, and Microsoft-owned domain repos when they already cover a workflow; local skills should add portal, tenant, source, and safety routing rather than duplicate upstream skill bodies.
 
+For broader systems, network, database, cloud and tool-creation skills, use only official vendor/upstream sources and MCP servers with verified official publishers. Consult [domain skill coverage](../docs/admin-skill-coverage.md) and [the official MCP catalog](../docs/official-mcp-catalog.md). Preserve exact product scope, preview labels, unavailable-server fallback and the distinction between authored guidance and tested target integration.
+
 Do not hard-code long Microsoft portal lists into skills. Prefer upstream source references, especially `adamfowlerit/msportals.io` JSON files under `_data/portals/`, until this repo has an approved fetch/cache script.
 
 Never commit secrets, tenant IDs, admin credentials, access tokens, `.env` files, browser profiles, or generated credential caches. Any workflow that could modify a Microsoft tenant must be planned first and require explicit human approval.

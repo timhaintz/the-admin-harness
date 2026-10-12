@@ -9,6 +9,8 @@ MCP profiles describe executable integrations that an agent host can use. They a
 - Repository profile: GitHub MCP for issues, pull requests, workflows, and source lookup.
 - Browser profile: Playwright or browser automation MCP for approved visual inspection and navigation.
 
+The [official MCP catalog](official-mcp-catalog.md) maps all five broader domains and 25 organisation entries to vendor/upstream-published implementations where verified, with official-documentation fallback for unverified availability. The [domain skills](admin-skill-coverage.md) choose the relevant product route; they do not install servers or grant access.
+
 ## Safety Defaults
 
 - Templates must use placeholder environment variables only.

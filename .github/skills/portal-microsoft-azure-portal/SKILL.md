@@ -87,12 +87,12 @@ Suggested MCP queries:
 
 Return:
 
-- Portal name and URL.
+- Portal name and URL. For navigation, identify the portal-entry source (the local portal source reference or upstream admin.json) separately from procedural Microsoft Learn documentation; citing only a product overview omits catalog provenance.
 - Microsoft Learn MCP or official Azure doc source checked.
 - Relevant Azure MCP, `azure-admin-safe-operations`, or upstream Microsoft Azure skill checked when the task overlaps one.
 - Read-only navigation or investigation steps first.
 - Scope, required Azure RBAC role or permission, subscription/cloud caveats, provider prerequisites, cost/quota considerations, and validation steps.
-- Risk tier and approval boundary.
+- Risk tier and exact human approval prerequisite before execution; safety review or routing alone is not approval. Preserve already valid explicit authority only for its exact artifact, scope and fresh preconditions.
 - Recovery, rollback, support, or specialist-workspace next steps.
 
 ## Sources

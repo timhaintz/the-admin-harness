@@ -88,7 +88,7 @@ Suggested MCP queries:
 
 Return:
 
-- Portal name and URL.
+- Portal name and primary URL. For navigation, include the documented tenant-aware secondary pattern or explain the B2B/tenant-context caveat without a real tenant ID; a generic tenant confirmation alone omits this navigation detail.
 - Microsoft Learn MCP or official Microsoft doc source checked.
 - Relevant specialist portal or upstream Microsoft skill checked when the task overlaps one.
 - Read-only navigation or investigation steps first.
