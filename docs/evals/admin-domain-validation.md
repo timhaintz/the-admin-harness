@@ -1,6 +1,6 @@
 # Administration Domain Validation
 
-Date: 2 October 2026. This record separates authored skill/eval artifacts, structural validation, model-only forward trials and actual MCP/target tests. It does not certify an admin workstation or a protected execution boundary.
+Records: 2, 3 and 13 October 2026. This record separates authored skill/eval artifacts, structural validation, model-only forward trials and actual MCP/target tests. It does not certify an admin workstation or a protected execution boundary. The full-suite results below are historical; subsequent installed-skill omissions and targeted retests are recorded separately.
 
 ## Public MCP Protocol Checks
 
@@ -63,7 +63,7 @@ The full 124-case review found nine response omissions: SUSE preview maturity, e
 
 The full review also found an invalid existing `portal-gcc-entra` fixture: it expected a government identity endpoint merely from Microsoft 365 GCC. Microsoft's identity documentation distinguishes GCC's Microsoft Entra Public tenant from GCC High/DoD Microsoft Entra Government; a separate Azure Government subscription can have a separate tenant. The skill and fixture were corrected against these official sources, with the original expectation retained in the full-suite evidence. Criteria were corrected for factual accuracy, not relaxed to match a response.
 
-## Recorded Results
+## Recorded Results — 2 October 2026
 
 The [full-suite response and assertion record](admin-domain-full-fixture-trials.json) contains 171 responses: 124 initial cases and 47 repeats covering 34 distinct cases. All 124 final cases pass their reviewed criteria. It retains nine initial gaps and three repeat gaps, plus the original invalid GCC expectation and its source-backed correction. Exact intermediate guidance snapshots are not retained; per-case hashes identify the final skill/fixture artifacts. Stored evidence normalizes temporary checkout links and replaces fictional tenant UUIDs with placeholders after grading the local originals.
 
@@ -76,9 +76,27 @@ The [full-suite response and assertion record](admin-domain-full-fixture-trials.
 | Documentation consistency | Relative links, heading anchors and whitespace checked | External service availability can change |
 | Native public MCP queries | Five servers, 21 advertised tools, 10 successful calls covering 9 distinct tools | macOS native client only; active-chat exposure and the other tools remain unverified |
 
-These checks complete the selected documentation/skills and public-query validation scope for PR #16. GitHub validation and CodeQL must also pass on the pushed revision before merging.
+These checks completed the selected 2 October documentation/skills and public-query run. The subsequent installed run exposed guidance omissions that required targeted retesting; the historical passes do not erase those omissions. GitHub validation and CodeQL must pass on the final pushed revision before merging.
 
-No authenticated operational integration, role-denial enforcement, backup recovery, privileged operation, Windows/Omarchy delivery or identical desktop experience was tested. These future milestones need authorised disposable environments and independent state/health evidence.
+No authenticated operational integration, role-denial enforcement, backup recovery, privileged operation, Windows/Omarchy delivery or identical desktop experience was tested. These future milestones need authorised disposable environments and independent state/health evidence. The owner explicitly kept the MongoDB target-lab test deferred on 13 October.
+
+## Installed-Skill Follow-Up — 3 October 2026
+
+Native Codex registered all 45 installed skills without parse errors, and eight selected public MCP calls passed directly in the chat across the five official servers. A fresh 124-case installed-guidance run plus nine bounded repeats recorded 121 latest passes, two response gaps and one MongoDB case that lacked target/query evidence. The remaining responses omitted the VMware `admin-change-safety` handoff and explicit OpenTofu human approval. The policies were already linked, but those answers did not fully satisfy the fixtures. Full local records remain outside the source checkout and Git; the relevant earlier responses and grades are retained in [the targeted retest record](admin-domain-safety-retests.json).
+
+The MongoDB fixture assumes a configured authorised replica-set lab, actual read-only/privilege evidence and query/metric input. None was available in that public-research-only run. Its target-dependent assertions are unexercised, not passing model-only observations. The documentation/skills release does not provision or access that lab.
+
+## Targeted Safety Closure — 13 October 2026
+
+The owner authorised resolving the two guidance gaps and merging PR #16 with a full merge commit after green checks, while deferring the MongoDB lab. The VMware and OpenTofu skill bodies now require a proposed change plan to identify recorded target-authorised human approval bound to the exact reviewed artifact/version, action and scope. Existing applicable approval is preserved. VMware also identifies `admin-change-safety` as the next workflow in the returned plan, making the handoff usable by the administrator.
+
+Two fresh responders loaded candidate skills, the shared safety workflow and relevant scope references before receiving the four original prompts in a separate turn. They saw no assertions, expected answers or earlier findings. During response generation they invoked zero tools; unchanged answers were archived only after the evaluation stage ended. An independent reviewer assessed the original criteria. The first refinement passed six of eight responses but still omitted the named VMware handoff twice. Those failures remain recorded. After clarifying the returned handoff, two new responders repeated both VMware cases; all four responses and 16 assertions passed. Combined with the unchanged OpenTofu retests, final evidence covers all four affected fixture cases twice: **eight responses and 32 assertions pass**.
+
+[The targeted record](admin-domain-safety-retests.json) retains the relevant 3 October failures, all 12 new responses and grades, both refinement diffs, and exact skill/fixture hashes. Only the two vendor skill bodies changed; all 124 fixture criteria and the other 43 skill bodies match the earlier candidate. Their prior results remain dated evidence, not fresh reruns. Exact model build/settings and token/timing statistics were not recorded; this is qualitative guidance evidence with shared batch context, not a reliable pass-rate benchmark. CI validates fixture structure rather than running an automated model evaluator.
+
+Five selected public queries also passed directly in the active chat on 13 October, one each for Microsoft Learn, Cisco DevNet, AWS Knowledge, Redis Docs and OpenTofu. The targeted record includes exact arguments, result counts, URLs and response hashes. AWS returned two re:Post results and one official documentation result; only the `docs.aws.amazon.com` reference was accepted for procedural authority. No target credentials, database access, device operations or provider tests were used. This refresh is separate from the tools-disabled response trials and does not cover every advertised MCP tool.
+
+The VMware/OpenTofu gaps are closed for the selected documentation/skills scope. MongoDB topology/privilege confirmation and query diagnosis remain deferred, as do authenticated operations and desktop delivery. Repository validation and CodeQL must pass on the final pushed revision before the authorised full merge.
 
 ## Sources
 

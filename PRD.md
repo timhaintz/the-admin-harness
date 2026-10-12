@@ -304,6 +304,8 @@ Milestone 1 skills:
 
 Broader-domain coverage now includes [five area routers and 25 organisation routes](docs/admin-skill-coverage.md), with Azure reusing its existing skill. These thin skills reference or route to official upstream packs and MCP implementations; they add Admin Harness scope, review and evidence guidance without copying upstream procedures. Every new skill has eval fixtures. [Validation evidence](docs/evals/admin-domain-validation.md) distinguishes structural and model-only checks from unperformed target/desktop trials.
 
+The 13 October PR #16 completion scope resolves the observed VMware/OpenTofu guidance gaps and repeats the affected fixtures before merging. Earlier full-suite and installed-run results remain dated evidence. The MongoDB target-lab case remains deferred to operational integration; no configured database, query evidence or target operation is implied by this documentation/skills release.
+
 Future skills:
 
 - Portal-specific Microsoft Learn MCP skills for every supported source-backed portal entry, starting with high-value admin portals.
@@ -381,8 +383,10 @@ Future skills:
 - [x] Add five source-backed administration domain guides and a five-organisation shortlist for each.
 - [x] Author five domain routers, 24 new organisation routes and updates to existing Azure coverage, using official sources and eval fixtures.
 - [x] Record official MCP availability, product/authentication boundaries and upstream reuse decisions for all 25 organisation/domain entries.
-- [x] Exercise all 124 synthetic fixture cases across 45 skills and review final responses against their assertions; retain initial gaps, repeats and source-backed corrections in the validation evidence. This is model-only guidance validation, not target execution.
-- [x] Configure five official public discovery servers in a native macOS Codex client and test bounded documentation/registry queries; active-chat exposure and other hosts remain separate checks.
+- [x] Exercise all 124 synthetic fixture cases across 45 skills in the dated full-suite run; retain subsequent installed-run gaps, repeats and source-backed corrections. This is model-only guidance validation, not target execution.
+- [x] Close the observed VMware/OpenTofu guidance gaps with the unchanged affected fixtures: eight final responses and 32 assertions pass in the 13 October targeted retests.
+- [x] Configure five official public discovery servers in a native macOS Codex client and test bounded documentation/registry queries; direct active-chat calls passed on 3 and 13 October. Other hosts remain separate checks.
+- [ ] Exercise the MongoDB target-lab case with configured read-only/privilege evidence and a bounded query sample; explicitly deferred to operational integration by the owner on 13 October.
 - [ ] Validate selected authenticated target integrations in disposable environments; authored skills and model-only checks are not target proof.
 - [ ] Implement and validate selectable domain/profile provisioning and cross-platform workstation packaging before advertising those capabilities.
 
