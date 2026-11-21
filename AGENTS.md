@@ -58,6 +58,14 @@ Use these risk tiers when designing skills and workflows:
 
 Never ask the user to paste passwords, API keys, refresh tokens, or admin credentials into chat. Use platform-native auth flows, environment variables, OS credential stores, or MCP OAuth where appropriate.
 
+## Codex task handoff
+
+For Codex work, state the admin outcome, approved scope, risk tier and observable
+acceptance evidence. Keep tenant mutations behind the existing approval model,
+regardless of model capability. Use the [Codex workflow](docs/agent-host-compatibility.md#codex-with-gpt-62)
+for bounded research/review tasks; do not change host model settings or add a
+hosted API dependency to this source-only harness.
+
 ## Validation
 
 For documentation-only changes, run the smallest relevant checks available. For repo-wide validation, prefer the project scripts:
